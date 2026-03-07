@@ -181,7 +181,18 @@
       }
     }
   ],
-  "widgets": [],
+  "widgets": [
+    {
+      "id": "quick-notes",
+      "name": "Quick Notes",
+      "version": "1.0.0",
+      "type": "widget",
+      "description": "Bloco de notas com salvamento automático",
+      "author": "Nardoto",
+      "icon": "StickyNote",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/quick-notes.zip"
+    }
+  ],
   "panels": [
     {
       "id": "nardoto-search",
