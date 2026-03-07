@@ -1,0 +1,232 @@
+{
+  "themes": [
+    {
+      "id": "default",
+      "name": "Default",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Tema padrão do Nardoto Studio",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/default.zip",
+      "preview": {
+        "primary": "#E85A2A",
+        "background": "#0A0A0A",
+        "accent": "#FF6B3D",
+        "card": "#141414"
+      }
+    },
+    {
+      "id": "inferno",
+      "name": "Nardoto Original",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "A essência do Studio - laranja icônica com chuva digital",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/inferno.zip",
+      "preview": {
+        "primary": "#E85A2A",
+        "background": "#0A0404",
+        "accent": "#B8441E",
+        "card": "#1A0C08"
+      }
+    },
+    {
+      "id": "matrix",
+      "name": "Matrix",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Enter the Matrix - green terminal aesthetic with retro mono font",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/matrix.zip",
+      "preview": {
+        "primary": "#0D9B3A",
+        "background": "#000000",
+        "accent": "#08702A",
+        "card": "#031208"
+      }
+    },
+    {
+      "id": "cyberpunk",
+      "name": "Cyberpunk",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Neon-infused cyberpunk with electric accents",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cyberpunk.zip",
+      "preview": {
+        "primary": "#00D4FF",
+        "background": "#0D0D1A",
+        "accent": "#FF00FF",
+        "card": "#1A1A2E"
+      }
+    },
+    {
+      "id": "cinema",
+      "name": "Cinema",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Classic dark cinema experience with bold red highlights",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cinema.zip",
+      "preview": {
+        "primary": "#FF0000",
+        "background": "#0F0F0F",
+        "accent": "#CC0000",
+        "card": "#212121"
+      }
+    },
+    {
+      "id": "lavender",
+      "name": "Lavender",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Soft purple tones for a calm workspace",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/lavender.zip",
+      "preview": {
+        "primary": "#A855F7",
+        "background": "#0F0A1A",
+        "accent": "#C084FC",
+        "card": "#1A1025"
+      }
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Futuristic minimalism - monochrome elegance with silver accents",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/noir.zip",
+      "preview": {
+        "primary": "#A1A1AA",
+        "background": "#09090B",
+        "accent": "#D4D4D8",
+        "card": "#18181B"
+      }
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Warm pink-to-orange gradient vibes inspired by golden hour",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/sunset.zip",
+      "preview": {
+        "primary": "#E1306C",
+        "background": "#0A0A0A",
+        "accent": "#F77737",
+        "card": "#1A1A1A"
+      }
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Late-night sessions with vibrant green accents on deep black",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/midnight.zip",
+      "preview": {
+        "primary": "#1DB954",
+        "background": "#121212",
+        "accent": "#1ED760",
+        "card": "#181818"
+      }
+    },
+    {
+      "id": "ocean-blue",
+      "name": "Ocean Blue",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Cool ocean tones for late-night sessions",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/ocean-blue.zip",
+      "preview": {
+        "primary": "#2563EB",
+        "background": "#0B1120",
+        "accent": "#60A5FA",
+        "card": "#1E293B"
+      }
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Deep green forest vibes",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/forest.zip",
+      "preview": {
+        "primary": "#22C55E",
+        "background": "#0A1A0F",
+        "accent": "#4ADE80",
+        "card": "#132A1A"
+      }
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "High-energy dark theme with electric red-pink accents",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/pulse.zip",
+      "preview": {
+        "primary": "#FE2C55",
+        "background": "#000000",
+        "accent": "#25F4EE",
+        "card": "#121212"
+      }
+    },
+    {
+      "id": "twilight",
+      "name": "Twilight",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Cool indigo layers with a vibrant blurple accent",
+      "author": "Nardoto",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/twilight.zip",
+      "preview": {
+        "primary": "#5865F2",
+        "background": "#1E1F22",
+        "accent": "#7289DA",
+        "card": "#2B2D31"
+      }
+    }
+  ],
+  "widgets": [],
+  "panels": [
+    {
+      "id": "nardoto-search",
+      "name": "Web Search",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Busca de imagens e notícias na web",
+      "author": "Nardoto",
+      "icon": "Search",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-search.zip"
+    },
+    {
+      "id": "nardoto-tradutor",
+      "name": "Tradutor IA",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Tradução de textos e legendas com IA",
+      "author": "Nardoto",
+      "icon": "Languages",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-tradutor.zip"
+    },
+    {
+      "id": "nardoto-image-gen",
+      "name": "Gerador de Imagens",
+      "version": "1.0.1",
+      "type": "panel",
+      "description": "Geração de imagens em massa via IA",
+      "author": "Nardoto",
+      "icon": "Image",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-image-gen.zip"
+    }
+  ]
+}
