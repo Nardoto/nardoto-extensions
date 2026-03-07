@@ -1,21 +1,6 @@
 {
   "themes": [
-    {
-      "id": "default",
-      "name": "Default",
-      "version": "1.0.0",
-      "type": "theme",
-      "description": "Tema padrão do Nardoto Studio",
-      "author": "Nardoto",
-      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/default.zip",
-      "preview": {
-        "primary": "#E85A2A",
-        "background": "#0A0A0A",
-        "accent": "#FF6B3D",
-        "card": "#141414"
-      }
-    },
-    {
+{
       "id": "inferno",
       "name": "Nardoto Original",
       "version": "1.0.0",
