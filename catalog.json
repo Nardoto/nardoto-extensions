@@ -223,6 +223,16 @@
       "author": "Nardoto",
       "icon": "Image",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-image-gen.zip"
+    },
+    {
+      "id": "nardoto-html-viewer",
+      "name": "Visualizador HTML",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Visualize HTML e JSON gerados pela IA",
+      "author": "Nardoto",
+      "icon": "Code",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-html-viewer.zip"
     }
   ]
 }
