@@ -217,7 +217,7 @@
     {
       "id": "nardoto-image-gen",
       "name": "Gerador de Imagens",
-      "version": "1.0.1",
+      "version": "1.1.2",
       "type": "panel",
       "description": "Geração de imagens em massa via IA",
       "author": "Nardoto",
