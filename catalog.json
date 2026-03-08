@@ -237,7 +237,7 @@
     {
       "id": "nardoto-inworld-tts",
       "name": "Inworld TTS",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "type": "panel",
       "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
       "author": "Nardoto",
