@@ -227,12 +227,22 @@
     {
       "id": "nardoto-html-viewer",
       "name": "Visualizador HTML",
-      "version": "1.0.0",
+      "version": "1.1.2",
       "type": "panel",
-      "description": "Visualize HTML e JSON gerados pela IA",
+      "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
       "author": "Nardoto",
       "icon": "Code",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-html-viewer.zip"
+    },
+    {
+      "id": "nardoto-inworld-tts",
+      "name": "Inworld TTS",
+      "version": "1.1.0",
+      "type": "panel",
+      "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
+      "author": "Nardoto",
+      "icon": "AudioLines",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-inworld-tts.zip"
     }
   ]
 }
