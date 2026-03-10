@@ -217,7 +217,7 @@
     {
       "id": "nardoto-image-gen",
       "name": "Gerador de Imagens",
-      "version": "1.1.2",
+      "version": "1.1.4",
       "type": "panel",
       "description": "Geração de imagens em massa via IA",
       "author": "Nardoto",
@@ -237,7 +237,7 @@
     {
       "id": "nardoto-inworld-tts",
       "name": "Inworld TTS",
-      "version": "1.2.0",
+      "version": "1.3.7",
       "type": "panel",
       "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
       "author": "Nardoto",
