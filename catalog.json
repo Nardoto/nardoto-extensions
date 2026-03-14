@@ -1,19 +1,14 @@
 {
   "themes": [
-{
+    {
       "id": "inferno",
       "name": "Nardoto Original",
       "version": "1.0.0",
       "type": "theme",
-      "description": "A essência do Studio - laranja icônica com chuva digital",
+      "description": "A ess\u00eancia do Studio - laranja ic\u00f4nica com chuva digital",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/inferno.zip",
-      "preview": {
-        "primary": "#E85A2A",
-        "background": "#0A0404",
-        "accent": "#B8441E",
-        "card": "#1A0C08"
-      }
+      "preview": { "primary": "#E85A2A", "background": "#0A0404", "accent": "#B8441E", "card": "#1A0C08" }
     },
     {
       "id": "matrix",
@@ -23,12 +18,7 @@
       "description": "Enter the Matrix - green terminal aesthetic with retro mono font",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/matrix.zip",
-      "preview": {
-        "primary": "#0D9B3A",
-        "background": "#000000",
-        "accent": "#08702A",
-        "card": "#031208"
-      }
+      "preview": { "primary": "#0D9B3A", "background": "#000000", "accent": "#08702A", "card": "#031208" }
     },
     {
       "id": "cyberpunk",
@@ -38,12 +28,7 @@
       "description": "Neon-infused cyberpunk with electric accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cyberpunk.zip",
-      "preview": {
-        "primary": "#00D4FF",
-        "background": "#0D0D1A",
-        "accent": "#FF00FF",
-        "card": "#1A1A2E"
-      }
+      "preview": { "primary": "#00D4FF", "background": "#0D0D1A", "accent": "#FF00FF", "card": "#1A1A2E" }
     },
     {
       "id": "cinema",
@@ -53,12 +38,7 @@
       "description": "Classic dark cinema experience with bold red highlights",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cinema.zip",
-      "preview": {
-        "primary": "#FF0000",
-        "background": "#0F0F0F",
-        "accent": "#CC0000",
-        "card": "#212121"
-      }
+      "preview": { "primary": "#FF0000", "background": "#0F0F0F", "accent": "#CC0000", "card": "#212121" }
     },
     {
       "id": "lavender",
@@ -68,12 +48,7 @@
       "description": "Soft purple tones for a calm workspace",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/lavender.zip",
-      "preview": {
-        "primary": "#A855F7",
-        "background": "#0F0A1A",
-        "accent": "#C084FC",
-        "card": "#1A1025"
-      }
+      "preview": { "primary": "#A855F7", "background": "#0F0A1A", "accent": "#C084FC", "card": "#1A1025" }
     },
     {
       "id": "noir",
@@ -83,12 +58,7 @@
       "description": "Futuristic minimalism - monochrome elegance with silver accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/noir.zip",
-      "preview": {
-        "primary": "#A1A1AA",
-        "background": "#09090B",
-        "accent": "#D4D4D8",
-        "card": "#18181B"
-      }
+      "preview": { "primary": "#A1A1AA", "background": "#09090B", "accent": "#D4D4D8", "card": "#18181B" }
     },
     {
       "id": "sunset",
@@ -98,12 +68,7 @@
       "description": "Warm pink-to-orange gradient vibes inspired by golden hour",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/sunset.zip",
-      "preview": {
-        "primary": "#E1306C",
-        "background": "#0A0A0A",
-        "accent": "#F77737",
-        "card": "#1A1A1A"
-      }
+      "preview": { "primary": "#E1306C", "background": "#0A0A0A", "accent": "#F77737", "card": "#1A1A1A" }
     },
     {
       "id": "midnight",
@@ -113,12 +78,7 @@
       "description": "Late-night sessions with vibrant green accents on deep black",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/midnight.zip",
-      "preview": {
-        "primary": "#1DB954",
-        "background": "#121212",
-        "accent": "#1ED760",
-        "card": "#181818"
-      }
+      "preview": { "primary": "#1DB954", "background": "#121212", "accent": "#1ED760", "card": "#181818" }
     },
     {
       "id": "ocean-blue",
@@ -128,12 +88,7 @@
       "description": "Cool ocean tones for late-night sessions",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/ocean-blue.zip",
-      "preview": {
-        "primary": "#2563EB",
-        "background": "#0B1120",
-        "accent": "#60A5FA",
-        "card": "#1E293B"
-      }
+      "preview": { "primary": "#2563EB", "background": "#0B1120", "accent": "#60A5FA", "card": "#1E293B" }
     },
     {
       "id": "forest",
@@ -143,12 +98,7 @@
       "description": "Deep green forest vibes",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/forest.zip",
-      "preview": {
-        "primary": "#22C55E",
-        "background": "#0A1A0F",
-        "accent": "#4ADE80",
-        "card": "#132A1A"
-      }
+      "preview": { "primary": "#22C55E", "background": "#0A1A0F", "accent": "#4ADE80", "card": "#132A1A" }
     },
     {
       "id": "pulse",
@@ -158,12 +108,7 @@
       "description": "High-energy dark theme with electric red-pink accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/pulse.zip",
-      "preview": {
-        "primary": "#FE2C55",
-        "background": "#000000",
-        "accent": "#25F4EE",
-        "card": "#121212"
-      }
+      "preview": { "primary": "#FE2C55", "background": "#000000", "accent": "#25F4EE", "card": "#121212" }
     },
     {
       "id": "twilight",
@@ -173,12 +118,7 @@
       "description": "Cool indigo layers with a vibrant blurple accent",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/twilight.zip",
-      "preview": {
-        "primary": "#5865F2",
-        "background": "#1E1F22",
-        "accent": "#7289DA",
-        "card": "#2B2D31"
-      }
+      "preview": { "primary": "#5865F2", "background": "#1E1F22", "accent": "#7289DA", "card": "#2B2D31" }
     }
   ],
   "widgets": [
@@ -187,7 +127,14 @@
       "name": "Quick Notes",
       "version": "1.0.0",
       "type": "widget",
-      "description": "Bloco de notas com salvamento automático",
+      "description": "Bloco de notas com salvamento autom\u00e1tico",
+      "detailedDescription": "O Quick Notes \u00e9 um bloco de notas leve integrado ao Studio. Suas anota\u00e7\u00f5es s\u00e3o salvas automaticamente e persistem entre sess\u00f5es. Ideal para anotar ideias r\u00e1pidas, roteiros, refer\u00eancias e lembretes enquanto voc\u00ea trabalha no seu projeto de v\u00eddeo.",
+      "features": [
+        "Salvamento autom\u00e1tico a cada altera\u00e7\u00e3o",
+        "Notas persistem entre sess\u00f5es do Studio",
+        "Interface minimalista sem distra\u00e7\u00f5es",
+        "Acess\u00edvel de qualquer tela do aplicativo"
+      ],
       "author": "Nardoto",
       "icon": "StickyNote",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/quick-notes.zip"
@@ -196,10 +143,18 @@
   "panels": [
     {
       "id": "nardoto-search",
-      "name": "Web Search",
-      "version": "1.0.0",
+      "name": "Pesquisa Unificada",
+      "version": "2.3.0",
       "type": "panel",
-      "description": "Busca de imagens e notícias na web",
+      "description": "Pesquisa unificada: not\u00edcias, imagens e v\u00eddeos do YouTube",
+      "detailedDescription": "A extens\u00e3o Pesquisa Unificada permite buscar not\u00edcias, imagens e v\u00eddeos do YouTube diretamente dentro do Studio, sem precisar abrir o navegador. Os resultados aparecem organizados por categoria com preview inline, e voc\u00ea pode inserir m\u00eddias encontradas diretamente no seu projeto.",
+      "features": [
+        "Busca integrada em m\u00faltiplas fontes (not\u00edcias, imagens, YouTube)",
+        "Preview de imagens e thumbnails de v\u00eddeo inline",
+        "Resultados organizados por categoria",
+        "Copiar links e inserir m\u00eddias diretamente no projeto",
+        "Filtros por tipo de conte\u00fado"
+      ],
       "author": "Nardoto",
       "icon": "Search",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-search.zip"
@@ -209,7 +164,15 @@
       "name": "Tradutor IA",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Tradução de textos e legendas com IA",
+      "description": "Tradu\u00e7\u00e3o de textos e legendas com IA",
+      "detailedDescription": "O Tradutor IA utiliza intelig\u00eancia artificial para traduzir textos e legendas entre diversos idiomas com alta qualidade. Suporta tradu\u00e7\u00e3o de arquivos SRT completos, mantendo a formata\u00e7\u00e3o e timing originais. Ideal para criar vers\u00f5es multil\u00edngue dos seus v\u00eddeos.",
+      "features": [
+        "Tradu\u00e7\u00e3o de texto livre entre m\u00faltiplos idiomas",
+        "Tradu\u00e7\u00e3o de arquivos de legenda SRT com preserva\u00e7\u00e3o de timing",
+        "Detec\u00e7\u00e3o autom\u00e1tica do idioma de origem",
+        "Tradu\u00e7\u00e3o em lote de m\u00faltiplos textos",
+        "Corre\u00e7\u00e3o gramatical integrada"
+      ],
       "author": "Nardoto",
       "icon": "Languages",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-tradutor.zip"
@@ -219,7 +182,15 @@
       "name": "Gerador de Imagens",
       "version": "1.1.4",
       "type": "panel",
-      "description": "Geração de imagens em massa via IA",
+      "description": "Gera\u00e7\u00e3o de imagens em massa via IA",
+      "detailedDescription": "O Gerador de Imagens permite criar imagens por IA diretamente no Studio usando o servi\u00e7o ai33.pro. Suporta gera\u00e7\u00e3o em massa a partir de listas de prompts, ideal para criar thumbnails, backgrounds, ilustra\u00e7\u00f5es e assets visuais para seus projetos de v\u00eddeo.",
+      "features": [
+        "Gera\u00e7\u00e3o de imagens por IA com prompts em texto",
+        "Modo batch: gerar m\u00faltiplas imagens de uma vez",
+        "Diversos estilos e resolu\u00e7\u00f5es dispon\u00edveis",
+        "Download direto para a pasta do projeto",
+        "Hist\u00f3rico de gera\u00e7\u00f5es anteriores"
+      ],
       "author": "Nardoto",
       "icon": "Image",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-image-gen.zip"
@@ -229,7 +200,16 @@
       "name": "Visualizador HTML",
       "version": "1.1.2",
       "type": "panel",
-      "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
+      "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e hist\u00f3rico",
+      "detailedDescription": "O Visualizador HTML renderiza c\u00f3digo HTML e dados JSON gerados pela IA do chat em tempo real. Possui preview com zoom, console de depura\u00e7\u00e3o integrado e hist\u00f3rico de visualiza\u00e7\u00f5es. \u00datil para inspecionar respostas estruturadas da IA, visualizar dashboards e prot\u00f3tipos interativos.",
+      "features": [
+        "Renderiza\u00e7\u00e3o de HTML em tempo real com preview",
+        "Visualiza\u00e7\u00e3o formatada de dados JSON",
+        "Zoom e navega\u00e7\u00e3o no conte\u00fado renderizado",
+        "Console de depura\u00e7\u00e3o integrado",
+        "Hist\u00f3rico de visualiza\u00e7\u00f5es anteriores",
+        "Suporte a CSS e JavaScript inline"
+      ],
       "author": "Nardoto",
       "icon": "Code",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-html-viewer.zip"
@@ -239,10 +219,97 @@
       "name": "Inworld TTS",
       "version": "1.3.8",
       "type": "panel",
-      "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
+      "description": "Gera\u00e7\u00e3o de voz, clonagem e design de vozes via Inworld AI",
+      "detailedDescription": "O Inworld TTS transforma texto em fala usando a plataforma Inworld AI. Oferece gera\u00e7\u00e3o de voz com m\u00faltiplas vozes pr\u00e9-configuradas, clonagem de voz a partir de amostras de \u00e1udio e design de vozes personalizadas. Ideal para narra\u00e7\u00e3o de v\u00eddeos, di\u00e1logos de personagens e dublagem.",
+      "features": [
+        "Gera\u00e7\u00e3o de voz (TTS) com m\u00faltiplas vozes",
+        "Clonagem de voz a partir de amostras de \u00e1udio",
+        "Design de vozes personalizadas com controle de tom e estilo",
+        "Exporta\u00e7\u00e3o direta para o projeto em alta qualidade",
+        "Suporte a m\u00faltiplos idiomas",
+        "Preview de \u00e1udio antes da exporta\u00e7\u00e3o"
+      ],
       "author": "Nardoto",
       "icon": "AudioLines",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-inworld-tts.zip"
+    },
+    {
+      "id": "google-tts",
+      "name": "Google TTS",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Texto para fala com Google Gemini TTS - 30+ vozes, Audio Drama, estilos de narra\u00e7\u00e3o",
+      "detailedDescription": "O Google TTS utiliza o Gemini TTS do Google para converter texto em fala com qualidade profissional. Com mais de 30 vozes dispon\u00edveis, suporte a Audio Drama (m\u00faltiplas vozes em um \u00fanico texto) e diversos estilos de narra\u00e7\u00e3o, \u00e9 perfeito para criar narra\u00e7\u00f5es, podcasts e di\u00e1logos realistas.",
+      "features": [
+        "Mais de 30 vozes com diferentes tons e sotaques",
+        "Audio Drama: m\u00faltiplas vozes em um \u00fanico texto",
+        "Estilos de narra\u00e7\u00e3o configur\u00e1veis (formal, casual, dram\u00e1tico)",
+        "Alta qualidade de \u00e1udio com entona\u00e7\u00e3o natural",
+        "Suporte a textos longos com divis\u00e3o autom\u00e1tica",
+        "Exporta\u00e7\u00e3o em formato WAV de alta fidelidade"
+      ],
+      "author": "Nardoto",
+      "icon": "Mic",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/google-tts.zip"
+    },
+    {
+      "id": "nardoto-earth",
+      "name": "Nardoto Earth",
+      "version": "1.9.0",
+      "type": "panel",
+      "description": "Gerador de rotas KML/ESP com IA para Google Earth e Earth Studio",
+      "detailedDescription": "O Nardoto Earth gera rotas e anima\u00e7\u00f5es para Google Earth e Earth Studio usando intelig\u00eancia artificial. Crie trajetos KML e projetos ESP automaticamente a partir de descri\u00e7\u00f5es textuais. Inclui integra\u00e7\u00e3o com Street View, renderiza\u00e7\u00e3o de cenas e exporta\u00e7\u00e3o pronta para produ\u00e7\u00e3o de v\u00eddeo.",
+      "features": [
+        "Gera\u00e7\u00e3o de rotas KML com IA a partir de descri\u00e7\u00e3o textual",
+        "Cria\u00e7\u00e3o de projetos ESP para Google Earth Studio",
+        "Integra\u00e7\u00e3o com Google Street View para captura de imagens",
+        "Renderiza\u00e7\u00e3o de cenas com c\u00e2mera animada",
+        "Exporta\u00e7\u00e3o pronta para edi\u00e7\u00e3o de v\u00eddeo",
+        "Storyboard integrado para planejamento de cenas"
+      ],
+      "author": "Nardoto",
+      "icon": "Globe",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-earth.zip"
+    },
+    {
+      "id": "nardoto-elevenlabs",
+      "name": "ElevenLabs Studio",
+      "version": "1.1.0",
+      "type": "panel",
+      "description": "Narra\u00e7\u00e3o, efeitos sonoros, clonagem de voz e produ\u00e7\u00e3o de \u00e1udio completa via ElevenLabs",
+      "detailedDescription": "O ElevenLabs Studio integra a API da ElevenLabs diretamente no Nardoto Studio. Oferece narra\u00e7\u00e3o com vozes ultra-realistas, clonagem de voz instant\u00e2nea, gera\u00e7\u00e3o de efeitos sonoros, isolamento de voz e produ\u00e7\u00e3o de \u00e1udio profissional. Tudo sem sair do editor.",
+      "features": [
+        "Narra\u00e7\u00e3o com vozes ultra-realistas da ElevenLabs",
+        "Clonagem de voz instant\u00e2nea a partir de amostras",
+        "Gera\u00e7\u00e3o de efeitos sonoros por descri\u00e7\u00e3o textual",
+        "Isolamento de voz em grava\u00e7\u00f5es existentes",
+        "M\u00faltiplos idiomas e sotaques dispon\u00edveis",
+        "Exporta\u00e7\u00e3o direta para o projeto"
+      ],
+      "author": "Nardoto",
+      "icon": "AudioLines",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-elevenlabs.zip"
+    },
+    {
+      "id": "nardoto-ai33-tts",
+      "name": "AI33 TTS",
+      "version": "2.0.0",
+      "type": "panel",
+      "description": "TTS, dublagem, transcri\u00e7\u00e3o, efeitos sonoros, voice changer, isolamento de voz, m\u00fasica e imagens via ai33.pro",
+      "detailedDescription": "O AI33 TTS \u00e9 a extens\u00e3o de \u00e1udio mais completa do Studio. Atrav\u00e9s do servi\u00e7o ai33.pro, oferece texto para fala (incluindo batch JSON/SRT e di\u00e1logo multi-voz), dublagem autom\u00e1tica de v\u00eddeos, transcri\u00e7\u00e3o de \u00e1udio, gera\u00e7\u00e3o de efeitos sonoros, voice changer, isolamento de voz, gera\u00e7\u00e3o de m\u00fasica e cria\u00e7\u00e3o de imagens. Tudo em um \u00fanico painel.",
+      "features": [
+        "TTS com suporte a texto simples, batch JSON/SRT e di\u00e1logo multi-voz",
+        "Dublagem autom\u00e1tica de v\u00eddeos com sincroniza\u00e7\u00e3o labial",
+        "Transcri\u00e7\u00e3o de \u00e1udio para texto com alta precis\u00e3o",
+        "Gera\u00e7\u00e3o de efeitos sonoros por descri\u00e7\u00e3o textual",
+        "Voice changer: alterar a voz de grava\u00e7\u00f5es existentes",
+        "Isolamento de voz: separar voz de m\u00fasica/ru\u00eddo",
+        "Gera\u00e7\u00e3o de m\u00fasica por IA",
+        "Gera\u00e7\u00e3o de imagens integrada"
+      ],
+      "author": "Nardoto",
+      "icon": "Mic",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-ai33-tts.zip"
     }
   ]
 }
