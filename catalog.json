@@ -267,9 +267,18 @@
     {
       "id": "nardoto-elevenlabs",
       "name": "ElevenLabs Studio",
-      "version": "1.1.0",
+      "version": "1.2.5",
       "type": "panel",
       "description": "Narração, efeitos sonoros, clonagem de voz e produção de áudio completa via ElevenLabs",
+      "detailedDescription": "O ElevenLabs Studio integra a API da ElevenLabs diretamente no Nardoto Studio. Oferece narração com vozes ultra-realistas, clonagem de voz instantânea, geração de efeitos sonoros, isolamento de voz e produção de áudio profissional. Tudo sem sair do editor.",
+      "features": [
+        "Narração com vozes ultra-realistas da ElevenLabs",
+        "Clonagem de voz instantânea a partir de amostras",
+        "Geração de efeitos sonoros por descrição textual",
+        "Isolamento de voz em gravações existentes",
+        "Múltiplos idiomas e sotaques disponíveis",
+        "Exportação direta para o projeto"
+      ],
       "author": "Nardoto",
       "icon": "AudioLines",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-elevenlabs.zip"
