@@ -5,10 +5,15 @@
       "name": "Nardoto Original",
       "version": "1.0.0",
       "type": "theme",
-      "description": "A ess\u00eancia do Studio - laranja ic\u00f4nica com chuva digital",
+      "description": "A essência do Studio - laranja icônica com chuva digital",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/inferno.zip",
-      "preview": { "primary": "#E85A2A", "background": "#0A0404", "accent": "#B8441E", "card": "#1A0C08" }
+      "preview": {
+        "primary": "#E85A2A",
+        "background": "#0A0404",
+        "accent": "#B8441E",
+        "card": "#1A0C08"
+      }
     },
     {
       "id": "matrix",
@@ -18,7 +23,12 @@
       "description": "Enter the Matrix - green terminal aesthetic with retro mono font",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/matrix.zip",
-      "preview": { "primary": "#0D9B3A", "background": "#000000", "accent": "#08702A", "card": "#031208" }
+      "preview": {
+        "primary": "#0D9B3A",
+        "background": "#000000",
+        "accent": "#08702A",
+        "card": "#031208"
+      }
     },
     {
       "id": "cyberpunk",
@@ -28,7 +38,12 @@
       "description": "Neon-infused cyberpunk with electric accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cyberpunk.zip",
-      "preview": { "primary": "#00D4FF", "background": "#0D0D1A", "accent": "#FF00FF", "card": "#1A1A2E" }
+      "preview": {
+        "primary": "#00D4FF",
+        "background": "#0D0D1A",
+        "accent": "#FF00FF",
+        "card": "#1A1A2E"
+      }
     },
     {
       "id": "cinema",
@@ -38,7 +53,12 @@
       "description": "Classic dark cinema experience with bold red highlights",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cinema.zip",
-      "preview": { "primary": "#FF0000", "background": "#0F0F0F", "accent": "#CC0000", "card": "#212121" }
+      "preview": {
+        "primary": "#FF0000",
+        "background": "#0F0F0F",
+        "accent": "#CC0000",
+        "card": "#212121"
+      }
     },
     {
       "id": "lavender",
@@ -48,7 +68,12 @@
       "description": "Soft purple tones for a calm workspace",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/lavender.zip",
-      "preview": { "primary": "#A855F7", "background": "#0F0A1A", "accent": "#C084FC", "card": "#1A1025" }
+      "preview": {
+        "primary": "#A855F7",
+        "background": "#0F0A1A",
+        "accent": "#C084FC",
+        "card": "#1A1025"
+      }
     },
     {
       "id": "noir",
@@ -58,7 +83,12 @@
       "description": "Futuristic minimalism - monochrome elegance with silver accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/noir.zip",
-      "preview": { "primary": "#A1A1AA", "background": "#09090B", "accent": "#D4D4D8", "card": "#18181B" }
+      "preview": {
+        "primary": "#A1A1AA",
+        "background": "#09090B",
+        "accent": "#D4D4D8",
+        "card": "#18181B"
+      }
     },
     {
       "id": "sunset",
@@ -68,7 +98,12 @@
       "description": "Warm pink-to-orange gradient vibes inspired by golden hour",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/sunset.zip",
-      "preview": { "primary": "#E1306C", "background": "#0A0A0A", "accent": "#F77737", "card": "#1A1A1A" }
+      "preview": {
+        "primary": "#E1306C",
+        "background": "#0A0A0A",
+        "accent": "#F77737",
+        "card": "#1A1A1A"
+      }
     },
     {
       "id": "midnight",
@@ -78,7 +113,12 @@
       "description": "Late-night sessions with vibrant green accents on deep black",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/midnight.zip",
-      "preview": { "primary": "#1DB954", "background": "#121212", "accent": "#1ED760", "card": "#181818" }
+      "preview": {
+        "primary": "#1DB954",
+        "background": "#121212",
+        "accent": "#1ED760",
+        "card": "#181818"
+      }
     },
     {
       "id": "ocean-blue",
@@ -88,7 +128,12 @@
       "description": "Cool ocean tones for late-night sessions",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/ocean-blue.zip",
-      "preview": { "primary": "#2563EB", "background": "#0B1120", "accent": "#60A5FA", "card": "#1E293B" }
+      "preview": {
+        "primary": "#2563EB",
+        "background": "#0B1120",
+        "accent": "#60A5FA",
+        "card": "#1E293B"
+      }
     },
     {
       "id": "forest",
@@ -98,7 +143,12 @@
       "description": "Deep green forest vibes",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/forest.zip",
-      "preview": { "primary": "#22C55E", "background": "#0A1A0F", "accent": "#4ADE80", "card": "#132A1A" }
+      "preview": {
+        "primary": "#22C55E",
+        "background": "#0A1A0F",
+        "accent": "#4ADE80",
+        "card": "#132A1A"
+      }
     },
     {
       "id": "pulse",
@@ -108,7 +158,12 @@
       "description": "High-energy dark theme with electric red-pink accents",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/pulse.zip",
-      "preview": { "primary": "#FE2C55", "background": "#000000", "accent": "#25F4EE", "card": "#121212" }
+      "preview": {
+        "primary": "#FE2C55",
+        "background": "#000000",
+        "accent": "#25F4EE",
+        "card": "#121212"
+      }
     },
     {
       "id": "twilight",
@@ -118,7 +173,12 @@
       "description": "Cool indigo layers with a vibrant blurple accent",
       "author": "Nardoto",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/twilight.zip",
-      "preview": { "primary": "#5865F2", "background": "#1E1F22", "accent": "#7289DA", "card": "#2B2D31" }
+      "preview": {
+        "primary": "#5865F2",
+        "background": "#1E1F22",
+        "accent": "#7289DA",
+        "card": "#2B2D31"
+      }
     }
   ],
   "widgets": [
@@ -127,13 +187,13 @@
       "name": "Quick Notes",
       "version": "1.0.0",
       "type": "widget",
-      "description": "Bloco de notas com salvamento autom\u00e1tico",
-      "detailedDescription": "O Quick Notes \u00e9 um bloco de notas leve integrado ao Studio. Suas anota\u00e7\u00f5es s\u00e3o salvas automaticamente e persistem entre sess\u00f5es. Ideal para anotar ideias r\u00e1pidas, roteiros, refer\u00eancias e lembretes enquanto voc\u00ea trabalha no seu projeto de v\u00eddeo.",
+      "description": "Bloco de notas com salvamento automático",
+      "detailedDescription": "O Quick Notes é um bloco de notas leve integrado ao Studio. Suas anotações são salvas automaticamente e persistem entre sessões. Ideal para anotar ideias rápidas, roteiros, referências e lembretes enquanto você trabalha no seu projeto de vídeo.",
       "features": [
-        "Salvamento autom\u00e1tico a cada altera\u00e7\u00e3o",
-        "Notas persistem entre sess\u00f5es do Studio",
-        "Interface minimalista sem distra\u00e7\u00f5es",
-        "Acess\u00edvel de qualquer tela do aplicativo"
+        "Salvamento automático a cada alteração",
+        "Notas persistem entre sessões do Studio",
+        "Interface minimalista sem distrações",
+        "Acessível de qualquer tela do aplicativo"
       ],
       "author": "Nardoto",
       "icon": "StickyNote",
@@ -145,14 +205,14 @@
       "version": "2.0.0",
       "type": "widget",
       "description": "Editor Markdown com preview, abas e suporte a arquivos",
-      "detailedDescription": "O Editor Markdown \u00e9 um editor completo integrado ao Studio. Escreva em Markdown com preview em tempo real, organize seus documentos em abas, abra e salve arquivos .md e .txt. Ideal para roteiros, documenta\u00e7\u00e3o e anota\u00e7\u00f5es longas.",
+      "detailedDescription": "O Editor Markdown é um editor completo integrado ao Studio. Escreva em Markdown com preview em tempo real, organize seus documentos em abas, abra e salve arquivos .md e .txt. Ideal para roteiros, documentação e anotações longas.",
       "features": [
         "Editor Markdown com preview em tempo real",
-        "Sistema de abas para m\u00faltiplos documentos",
+        "Sistema de abas para múltiplos documentos",
         "Abrir e salvar arquivos .md e .txt",
-        "Toolbar com atalhos de formata\u00e7\u00e3o (negrito, it\u00e1lico, c\u00f3digo, listas)",
+        "Toolbar com atalhos de formatação (negrito, itálico, código, listas)",
         "Atalhos de teclado (Ctrl+S, Ctrl+O, Ctrl+B, Ctrl+I)",
-        "Salvamento autom\u00e1tico do estado entre sess\u00f5es"
+        "Salvamento automático do estado entre sessões"
       ],
       "author": "Nardoto",
       "icon": "FileEdit",
@@ -165,14 +225,14 @@
       "name": "Pesquisa Unificada",
       "version": "2.3.0",
       "type": "panel",
-      "description": "Pesquisa unificada: not\u00edcias, imagens e v\u00eddeos do YouTube",
-      "detailedDescription": "A extens\u00e3o Pesquisa Unificada permite buscar not\u00edcias, imagens e v\u00eddeos do YouTube diretamente dentro do Studio, sem precisar abrir o navegador. Os resultados aparecem organizados por categoria com preview inline, e voc\u00ea pode inserir m\u00eddias encontradas diretamente no seu projeto.",
+      "description": "Pesquisa unificada: notícias, imagens e vídeos do YouTube",
+      "detailedDescription": "A extensão Pesquisa Unificada permite buscar notícias, imagens e vídeos do YouTube diretamente dentro do Studio, sem precisar abrir o navegador. Os resultados aparecem organizados por categoria com preview inline, e você pode inserir mídias encontradas diretamente no seu projeto.",
       "features": [
-        "Busca integrada em m\u00faltiplas fontes (not\u00edcias, imagens, YouTube)",
-        "Preview de imagens e thumbnails de v\u00eddeo inline",
+        "Busca integrada em múltiplas fontes (notícias, imagens, YouTube)",
+        "Preview de imagens e thumbnails de vídeo inline",
         "Resultados organizados por categoria",
-        "Copiar links e inserir m\u00eddias diretamente no projeto",
-        "Filtros por tipo de conte\u00fado"
+        "Copiar links e inserir mídias diretamente no projeto",
+        "Filtros por tipo de conteúdo"
       ],
       "author": "Nardoto",
       "icon": "Search",
@@ -183,14 +243,14 @@
       "name": "Tradutor IA",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Tradu\u00e7\u00e3o de textos e legendas com IA",
-      "detailedDescription": "O Tradutor IA utiliza intelig\u00eancia artificial para traduzir textos e legendas entre diversos idiomas com alta qualidade. Suporta tradu\u00e7\u00e3o de arquivos SRT completos, mantendo a formata\u00e7\u00e3o e timing originais. Ideal para criar vers\u00f5es multil\u00edngue dos seus v\u00eddeos.",
+      "description": "Tradução de textos e legendas com IA",
+      "detailedDescription": "O Tradutor IA utiliza inteligência artificial para traduzir textos e legendas entre diversos idiomas com alta qualidade. Suporta tradução de arquivos SRT completos, mantendo a formatação e timing originais. Ideal para criar versões multilíngue dos seus vídeos.",
       "features": [
-        "Tradu\u00e7\u00e3o de texto livre entre m\u00faltiplos idiomas",
-        "Tradu\u00e7\u00e3o de arquivos de legenda SRT com preserva\u00e7\u00e3o de timing",
-        "Detec\u00e7\u00e3o autom\u00e1tica do idioma de origem",
-        "Tradu\u00e7\u00e3o em lote de m\u00faltiplos textos",
-        "Corre\u00e7\u00e3o gramatical integrada"
+        "Tradução de texto livre entre múltiplos idiomas",
+        "Tradução de arquivos de legenda SRT com preservação de timing",
+        "Detecção automática do idioma de origem",
+        "Tradução em lote de múltiplos textos",
+        "Correção gramatical integrada"
       ],
       "author": "Nardoto",
       "icon": "Languages",
@@ -201,14 +261,14 @@
       "name": "Gerador de Imagens",
       "version": "1.1.4",
       "type": "panel",
-      "description": "Gera\u00e7\u00e3o de imagens em massa via IA",
-      "detailedDescription": "O Gerador de Imagens permite criar imagens por IA diretamente no Studio usando o servi\u00e7o ai33.pro. Suporta gera\u00e7\u00e3o em massa a partir de listas de prompts, ideal para criar thumbnails, backgrounds, ilustra\u00e7\u00f5es e assets visuais para seus projetos de v\u00eddeo.",
+      "description": "Geração de imagens em massa via IA",
+      "detailedDescription": "O Gerador de Imagens permite criar imagens por IA diretamente no Studio usando o serviço ai33.pro. Suporta geração em massa a partir de listas de prompts, ideal para criar thumbnails, backgrounds, ilustrações e assets visuais para seus projetos de vídeo.",
       "features": [
-        "Gera\u00e7\u00e3o de imagens por IA com prompts em texto",
-        "Modo batch: gerar m\u00faltiplas imagens de uma vez",
-        "Diversos estilos e resolu\u00e7\u00f5es dispon\u00edveis",
+        "Geração de imagens por IA com prompts em texto",
+        "Modo batch: gerar múltiplas imagens de uma vez",
+        "Diversos estilos e resoluções disponíveis",
         "Download direto para a pasta do projeto",
-        "Hist\u00f3rico de gera\u00e7\u00f5es anteriores"
+        "Histórico de gerações anteriores"
       ],
       "author": "Nardoto",
       "icon": "Image",
@@ -219,14 +279,14 @@
       "name": "Visualizador HTML",
       "version": "1.1.2",
       "type": "panel",
-      "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e hist\u00f3rico",
-      "detailedDescription": "O Visualizador HTML renderiza c\u00f3digo HTML e dados JSON gerados pela IA do chat em tempo real. Possui preview com zoom, console de depura\u00e7\u00e3o integrado e hist\u00f3rico de visualiza\u00e7\u00f5es. \u00datil para inspecionar respostas estruturadas da IA, visualizar dashboards e prot\u00f3tipos interativos.",
+      "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
+      "detailedDescription": "O Visualizador HTML renderiza código HTML e dados JSON gerados pela IA do chat em tempo real. Possui preview com zoom, console de depuração integrado e histórico de visualizações. Útil para inspecionar respostas estruturadas da IA, visualizar dashboards e protótipos interativos.",
       "features": [
-        "Renderiza\u00e7\u00e3o de HTML em tempo real com preview",
-        "Visualiza\u00e7\u00e3o formatada de dados JSON",
-        "Zoom e navega\u00e7\u00e3o no conte\u00fado renderizado",
-        "Console de depura\u00e7\u00e3o integrado",
-        "Hist\u00f3rico de visualiza\u00e7\u00f5es anteriores",
+        "Renderização de HTML em tempo real com preview",
+        "Visualização formatada de dados JSON",
+        "Zoom e navegação no conteúdo renderizado",
+        "Console de depuração integrado",
+        "Histórico de visualizações anteriores",
         "Suporte a CSS e JavaScript inline"
       ],
       "author": "Nardoto",
@@ -253,40 +313,19 @@
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-inworld-tts.zip"
     },
     {
-      "id": "nardoto-ai33-tts",
-      "name": "AI33 TTS",
-      "version": "2.3.2",
-      "type": "panel",
-      "description": "TTS, dublagem, transcrição, efeitos sonoros, voice changer, isolamento de voz, música e imagens via ai33.pro",
-      "detailedDescription": "O AI33 TTS é uma central completa de áudio e mídia via ai33.pro. Gere narração com múltiplas vozes, duble vídeos automaticamente, transcreva áudio para texto, crie efeitos sonoros, mude vozes, isole vocais, gere música e imagens - tudo dentro do Studio.",
-      "features": [
-        "TTS com múltiplas vozes e estilos",
-        "Dublagem automática de vídeos",
-        "Transcrição de áudio para texto (STT)",
-        "Geração de efeitos sonoros por descrição",
-        "Voice Changer e isolamento de voz",
-        "Geração de música e imagens com IA",
-        "Batch mode com até 9 workers simultâneos",
-        "Concatenação automática de áudios + geração de SRT"
-      ],
-      "author": "Nardoto",
-      "icon": "Mic",
-      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-ai33-tts.zip"
-    },
-    {
       "id": "google-tts",
       "name": "Google TTS",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Texto para fala com Google Gemini TTS - 30+ vozes, Audio Drama, estilos de narra\u00e7\u00e3o",
-      "detailedDescription": "O Google TTS utiliza o Gemini TTS do Google para converter texto em fala com qualidade profissional. Com mais de 30 vozes dispon\u00edveis, suporte a Audio Drama (m\u00faltiplas vozes em um \u00fanico texto) e diversos estilos de narra\u00e7\u00e3o, \u00e9 perfeito para criar narra\u00e7\u00f5es, podcasts e di\u00e1logos realistas.",
+      "description": "Texto para fala com Google Gemini TTS - 30+ vozes, Audio Drama, estilos de narração",
+      "detailedDescription": "O Google TTS utiliza o Gemini TTS do Google para converter texto em fala com qualidade profissional. Com mais de 30 vozes disponíveis, suporte a Audio Drama (múltiplas vozes em um único texto) e diversos estilos de narração, é perfeito para criar narrações, podcasts e diálogos realistas.",
       "features": [
         "Mais de 30 vozes com diferentes tons e sotaques",
-        "Audio Drama: m\u00faltiplas vozes em um \u00fanico texto",
-        "Estilos de narra\u00e7\u00e3o configur\u00e1veis (formal, casual, dram\u00e1tico)",
-        "Alta qualidade de \u00e1udio com entona\u00e7\u00e3o natural",
-        "Suporte a textos longos com divis\u00e3o autom\u00e1tica",
-        "Exporta\u00e7\u00e3o em formato WAV de alta fidelidade"
+        "Audio Drama: múltiplas vozes em um único texto",
+        "Estilos de narração configuráveis (formal, casual, dramático)",
+        "Alta qualidade de áudio com entonação natural",
+        "Suporte a textos longos com divisão automática",
+        "Exportação em formato WAV de alta fidelidade"
       ],
       "author": "Nardoto",
       "icon": "Mic",
@@ -298,13 +337,13 @@
       "version": "1.9.0",
       "type": "panel",
       "description": "Gerador de rotas KML/ESP com IA para Google Earth e Earth Studio",
-      "detailedDescription": "O Nardoto Earth gera rotas e anima\u00e7\u00f5es para Google Earth e Earth Studio usando intelig\u00eancia artificial. Crie trajetos KML e projetos ESP automaticamente a partir de descri\u00e7\u00f5es textuais. Inclui integra\u00e7\u00e3o com Street View, renderiza\u00e7\u00e3o de cenas e exporta\u00e7\u00e3o pronta para produ\u00e7\u00e3o de v\u00eddeo.",
+      "detailedDescription": "O Nardoto Earth gera rotas e animações para Google Earth e Earth Studio usando inteligência artificial. Crie trajetos KML e projetos ESP automaticamente a partir de descrições textuais. Inclui integração com Street View, renderização de cenas e exportação pronta para produção de vídeo.",
       "features": [
-        "Gera\u00e7\u00e3o de rotas KML com IA a partir de descri\u00e7\u00e3o textual",
-        "Cria\u00e7\u00e3o de projetos ESP para Google Earth Studio",
-        "Integra\u00e7\u00e3o com Google Street View para captura de imagens",
-        "Renderiza\u00e7\u00e3o de cenas com c\u00e2mera animada",
-        "Exporta\u00e7\u00e3o pronta para edi\u00e7\u00e3o de v\u00eddeo",
+        "Geração de rotas KML com IA a partir de descrição textual",
+        "Criação de projetos ESP para Google Earth Studio",
+        "Integração com Google Street View para captura de imagens",
+        "Renderização de cenas com câmera animada",
+        "Exportação pronta para edição de vídeo",
         "Storyboard integrado para planejamento de cenas"
       ],
       "author": "Nardoto",
@@ -316,15 +355,15 @@
       "name": "ElevenLabs Studio",
       "version": "1.2.5",
       "type": "panel",
-      "description": "Narra\u00e7\u00e3o, efeitos sonoros, clonagem de voz e produ\u00e7\u00e3o de \u00e1udio completa via ElevenLabs",
-      "detailedDescription": "O ElevenLabs Studio integra a API da ElevenLabs diretamente no Nardoto Studio. Oferece narra\u00e7\u00e3o com vozes ultra-realistas, clonagem de voz instant\u00e2nea, gera\u00e7\u00e3o de efeitos sonoros, isolamento de voz e produ\u00e7\u00e3o de \u00e1udio profissional. Tudo sem sair do editor.",
+      "description": "Narração, efeitos sonoros, clonagem de voz e produção de áudio completa via ElevenLabs",
+      "detailedDescription": "O ElevenLabs Studio integra a API da ElevenLabs diretamente no Nardoto Studio. Oferece narração com vozes ultra-realistas, clonagem de voz instantânea, geração de efeitos sonoros, isolamento de voz e produção de áudio profissional. Tudo sem sair do editor.",
       "features": [
-        "Narra\u00e7\u00e3o com vozes ultra-realistas da ElevenLabs",
-        "Clonagem de voz instant\u00e2nea a partir de amostras",
-        "Gera\u00e7\u00e3o de efeitos sonoros por descri\u00e7\u00e3o textual",
-        "Isolamento de voz em grava\u00e7\u00f5es existentes",
-        "M\u00faltiplos idiomas e sotaques dispon\u00edveis",
-        "Exporta\u00e7\u00e3o direta para o projeto"
+        "Narração com vozes ultra-realistas da ElevenLabs",
+        "Clonagem de voz instantânea a partir de amostras",
+        "Geração de efeitos sonoros por descrição textual",
+        "Isolamento de voz em gravações existentes",
+        "Múltiplos idiomas e sotaques disponíveis",
+        "Exportação direta para o projeto"
       ],
       "author": "Nardoto",
       "icon": "AudioLines",
@@ -332,18 +371,18 @@
     },
     {
       "id": "nardoto-flow-automation",
-      "name": "Automa\u00e7\u00e3o Flow",
+      "name": "Automação Flow",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Automa\u00e7\u00e3o em lote do Google Flow - gera v\u00eddeos e imagens com fila inteligente, retry autom\u00e1tico e m\u00faltiplos modos",
-      "detailedDescription": "Baseada no DarkLAB, esta extens\u00e3o automatiza a gera\u00e7\u00e3o de v\u00eddeos e imagens no Google Flow. Suporta text-to-video, image-first, refer\u00eancia de imagem e gera\u00e7\u00e3o de imagem. Inclui fila de jobs com retry inteligente em queue full (480 tentativas), detec\u00e7\u00e3o de policy error, upscale 1080p autom\u00e1tico, e controles de pause/play/stop.",
+      "description": "Automação em lote do Google Flow - gera vídeos e imagens com fila inteligente, retry automático e múltiplos modos",
+      "detailedDescription": "Baseada no DarkLAB, esta extensão automatiza a geração de vídeos e imagens no Google Flow. Suporta text-to-video, image-first, referência de imagem e geração de imagem. Inclui fila de jobs com retry inteligente em queue full (480 tentativas), detecção de policy error, upscale 1080p automático, e controles de pause/play/stop.",
       "features": [
         "Fila de jobs com retry inteligente (480 tentativas)",
-        "M\u00faltiplos modos: texto, refer\u00eancia, imagem primeiro",
-        "Upscale 1080p autom\u00e1tico",
-        "Detec\u00e7\u00e3o de queue full e policy error",
+        "Múltiplos modos: texto, referência, imagem primeiro",
+        "Upscale 1080p automático",
+        "Detecção de queue full e policy error",
         "Controles pause/play/stop com abort seguro",
-        "At\u00e9 25 v\u00eddeos simult\u00e2neos"
+        "Até 25 vídeos simultâneos"
       ],
       "author": "Nardoto",
       "icon": "Zap",
@@ -374,16 +413,16 @@
       "name": "Nardoto Scripts",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Console de automa\u00e7\u00e3o JavaScript para pipelines criativos",
-      "detailedDescription": "O Nardoto Scripts \u00e9 um console de automa\u00e7\u00e3o onde voc\u00ea escreve scripts JavaScript para automatizar tarefas no Studio. Com acesso \u00e0 API completa do app (download, TTS, legendas, IA, renderiza\u00e7\u00e3o), voc\u00ea pode criar pipelines completos como: baixar v\u00eddeo do YouTube, gerar legendas, criar narra\u00e7\u00e3o TTS e inserir tudo no projeto automaticamente.",
+      "description": "Console de automação JavaScript para pipelines criativos",
+      "detailedDescription": "O Nardoto Scripts é um console de automação onde você escreve scripts JavaScript para automatizar tarefas no Studio. Com acesso à API completa do app (download, TTS, legendas, IA, renderização), você pode criar pipelines completos como: baixar vídeo do YouTube, gerar legendas, criar narração TTS e inserir tudo no projeto automaticamente.",
       "features": [
-        "Editor de c\u00f3digo JavaScript com syntax highlighting",
+        "Editor de código JavaScript com syntax highlighting",
         "API ns.* com acesso a todas as funcionalidades do Studio",
         "10+ receitas prontas para pipelines completos",
-        "Console de sa\u00edda com log, progresso e erros",
+        "Console de saída com log, progresso e erros",
         "Gerenciamento de scripts salvos com auto-save",
         "Importar e exportar scripts como arquivos .js",
-        "Cancelamento de scripts em execu\u00e7\u00e3o",
+        "Cancelamento de scripts em execução",
         "Atalhos: Ctrl+Enter (executar), Ctrl+S (salvar), Ctrl+N (novo)"
       ],
       "author": "Nardoto",
