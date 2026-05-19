@@ -188,52 +188,18 @@
       "version": "1.0.0",
       "type": "widget",
       "description": "Bloco de notas com salvamento automático",
-      "detailedDescription": "O Quick Notes é um bloco de notas leve integrado ao Studio. Suas anotações são salvas automaticamente e persistem entre sessões. Ideal para anotar ideias rápidas, roteiros, referências e lembretes enquanto você trabalha no seu projeto de vídeo.",
-      "features": [
-        "Salvamento automático a cada alteração",
-        "Notas persistem entre sessões do Studio",
-        "Interface minimalista sem distrações",
-        "Acessível de qualquer tela do aplicativo"
-      ],
       "author": "Nardoto",
       "icon": "StickyNote",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/quick-notes.zip"
-    },
-    {
-      "id": "nardoto-editor",
-      "name": "Editor Markdown",
-      "version": "2.0.0",
-      "type": "widget",
-      "description": "Editor Markdown com preview, abas e suporte a arquivos",
-      "detailedDescription": "O Editor Markdown é um editor completo integrado ao Studio. Escreva em Markdown com preview em tempo real, organize seus documentos em abas, abra e salve arquivos .md e .txt. Ideal para roteiros, documentação e anotações longas.",
-      "features": [
-        "Editor Markdown com preview em tempo real",
-        "Sistema de abas para múltiplos documentos",
-        "Abrir e salvar arquivos .md e .txt",
-        "Toolbar com atalhos de formatação (negrito, itálico, código, listas)",
-        "Atalhos de teclado (Ctrl+S, Ctrl+O, Ctrl+B, Ctrl+I)",
-        "Salvamento automático do estado entre sessões"
-      ],
-      "author": "Nardoto",
-      "icon": "FileEdit",
-      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-editor.zip"
     }
   ],
   "panels": [
     {
       "id": "nardoto-search",
       "name": "Pesquisa Unificada",
-      "version": "2.3.0",
+      "version": "2.2.0",
       "type": "panel",
       "description": "Pesquisa unificada: notícias, imagens e vídeos do YouTube",
-      "detailedDescription": "A extensão Pesquisa Unificada permite buscar notícias, imagens e vídeos do YouTube diretamente dentro do Studio, sem precisar abrir o navegador. Os resultados aparecem organizados por categoria com preview inline, e você pode inserir mídias encontradas diretamente no seu projeto.",
-      "features": [
-        "Busca integrada em múltiplas fontes (notícias, imagens, YouTube)",
-        "Preview de imagens e thumbnails de vídeo inline",
-        "Resultados organizados por categoria",
-        "Copiar links e inserir mídias diretamente no projeto",
-        "Filtros por tipo de conteúdo"
-      ],
       "author": "Nardoto",
       "icon": "Search",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-search.zip"
@@ -244,32 +210,16 @@
       "version": "1.0.0",
       "type": "panel",
       "description": "Tradução de textos e legendas com IA",
-      "detailedDescription": "O Tradutor IA utiliza inteligência artificial para traduzir textos e legendas entre diversos idiomas com alta qualidade. Suporta tradução de arquivos SRT completos, mantendo a formatação e timing originais. Ideal para criar versões multilíngue dos seus vídeos.",
-      "features": [
-        "Tradução de texto livre entre múltiplos idiomas",
-        "Tradução de arquivos de legenda SRT com preservação de timing",
-        "Detecção automática do idioma de origem",
-        "Tradução em lote de múltiplos textos",
-        "Correção gramatical integrada"
-      ],
       "author": "Nardoto",
       "icon": "Languages",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-tradutor.zip"
     },
     {
       "id": "nardoto-image-gen",
-      "name": "Gerador de Imagens",
-      "version": "1.1.4",
+      "name": "ai33",
+      "version": "1.1.5",
       "type": "panel",
       "description": "Geração de imagens em massa via IA",
-      "detailedDescription": "O Gerador de Imagens permite criar imagens por IA diretamente no Studio usando o serviço ai33.pro. Suporta geração em massa a partir de listas de prompts, ideal para criar thumbnails, backgrounds, ilustrações e assets visuais para seus projetos de vídeo.",
-      "features": [
-        "Geração de imagens por IA com prompts em texto",
-        "Modo batch: gerar múltiplas imagens de uma vez",
-        "Diversos estilos e resoluções disponíveis",
-        "Download direto para a pasta do projeto",
-        "Histórico de gerações anteriores"
-      ],
       "author": "Nardoto",
       "icon": "Image",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-image-gen.zip"
@@ -280,15 +230,6 @@
       "version": "1.1.2",
       "type": "panel",
       "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
-      "detailedDescription": "O Visualizador HTML renderiza código HTML e dados JSON gerados pela IA do chat em tempo real. Possui preview com zoom, console de depuração integrado e histórico de visualizações. Útil para inspecionar respostas estruturadas da IA, visualizar dashboards e protótipos interativos.",
-      "features": [
-        "Renderização de HTML em tempo real com preview",
-        "Visualização formatada de dados JSON",
-        "Zoom e navegação no conteúdo renderizado",
-        "Console de depuração integrado",
-        "Histórico de visualizações anteriores",
-        "Suporte a CSS e JavaScript inline"
-      ],
       "author": "Nardoto",
       "icon": "Code",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-html-viewer.zip"
@@ -296,18 +237,9 @@
     {
       "id": "nardoto-inworld-tts",
       "name": "Inworld TTS",
-      "version": "1.4.1",
+      "version": "1.5.0",
       "type": "panel",
       "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
-      "detailedDescription": "O Inworld TTS transforma texto em fala usando a plataforma Inworld AI. Oferece geração de voz com múltiplas vozes pré-configuradas, clonagem de voz a partir de amostras de áudio e design de vozes personalizadas. Ideal para narração de vídeos, diálogos de personagens e dublagem.",
-      "features": [
-        "Geração de voz (TTS) com múltiplas vozes",
-        "Clonagem de voz a partir de amostras de áudio",
-        "Design de vozes personalizadas com controle de tom e estilo",
-        "Exportação direta para o projeto em alta qualidade",
-        "Suporte a múltiplos idiomas",
-        "Preview de áudio antes da exportação"
-      ],
       "author": "Nardoto",
       "icon": "AudioLines",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-inworld-tts.zip"
@@ -317,16 +249,7 @@
       "name": "Google TTS",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Texto para fala com Google Gemini TTS - 30+ vozes, Audio Drama, estilos de narração",
-      "detailedDescription": "O Google TTS utiliza o Gemini TTS do Google para converter texto em fala com qualidade profissional. Com mais de 30 vozes disponíveis, suporte a Audio Drama (múltiplas vozes em um único texto) e diversos estilos de narração, é perfeito para criar narrações, podcasts e diálogos realistas.",
-      "features": [
-        "Mais de 30 vozes com diferentes tons e sotaques",
-        "Audio Drama: múltiplas vozes em um único texto",
-        "Estilos de narração configuráveis (formal, casual, dramático)",
-        "Alta qualidade de áudio com entonação natural",
-        "Suporte a textos longos com divisão automática",
-        "Exportação em formato WAV de alta fidelidade"
-      ],
+      "description": "Texto para fala com Google Gemini TTS - 30 vozes, Audio Drama, estilos de narracao",
       "author": "Nardoto",
       "icon": "Mic",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/google-tts.zip"
@@ -334,18 +257,9 @@
     {
       "id": "nardoto-earth",
       "name": "Nardoto Earth",
-      "version": "1.9.0",
+      "version": "1.2.0",
       "type": "panel",
       "description": "Gerador de rotas KML/ESP com IA para Google Earth e Earth Studio",
-      "detailedDescription": "O Nardoto Earth gera rotas e animações para Google Earth e Earth Studio usando inteligência artificial. Crie trajetos KML e projetos ESP automaticamente a partir de descrições textuais. Inclui integração com Street View, renderização de cenas e exportação pronta para produção de vídeo.",
-      "features": [
-        "Geração de rotas KML com IA a partir de descrição textual",
-        "Criação de projetos ESP para Google Earth Studio",
-        "Integração com Google Street View para captura de imagens",
-        "Renderização de cenas com câmera animada",
-        "Exportação pronta para edição de vídeo",
-        "Storyboard integrado para planejamento de cenas"
-      ],
       "author": "Nardoto",
       "icon": "Globe",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-earth.zip"
@@ -370,64 +284,1692 @@
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-elevenlabs.zip"
     },
     {
-      "id": "nardoto-flow-automation",
-      "name": "Automação Flow",
+      "id": "epidemic-sound",
+      "name": "Epidemic Sound",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Automação em lote do Google Flow - gera vídeos e imagens com fila inteligente, retry automático e múltiplos modos",
-      "detailedDescription": "Baseada no DarkLAB, esta extensão automatiza a geração de vídeos e imagens no Google Flow. Suporta text-to-video, image-first, referência de imagem e geração de imagem. Inclui fila de jobs com retry inteligente em queue full (480 tentativas), detecção de policy error, upscale 1080p automático, e controles de pause/play/stop.",
-      "features": [
-        "Fila de jobs com retry inteligente (480 tentativas)",
-        "Múltiplos modos: texto, referência, imagem primeiro",
-        "Upscale 1080p automático",
-        "Detecção de queue full e policy error",
-        "Controles pause/play/stop com abort seguro",
-        "Até 25 vídeos simultâneos"
-      ],
+      "description": "Busca e download de músicas, SFX, voiceover e stems do Epidemic Sound + Freesound",
       "author": "Nardoto",
-      "icon": "Zap",
-      "downloadUrl": ""
+      "icon": "Music",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/epidemic-sound.zip"
     },
     {
-      "id": "nardoto-canva",
-      "name": "Canva Studio",
+      "id": "mapeamento-filme",
+      "name": "Mapeamento de Filme",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Crie designs profissionais com templates Canva direto no Nardoto Studio",
-      "detailedDescription": "O Canva Studio conecta sua conta Canva ao Nardoto Studio via OAuth. Crie designs com presets prontos (YouTube Thumbnail, Instagram Post, Apresentação, etc.), liste seus designs existentes, exporte em PNG/JPG/PDF/MP4/GIF e insira direto no projeto. Edição visual acontece no Canva, exportação e gestão acontecem no Studio.",
-      "features": [
-        "Conexão OAuth segura com conta Canva",
-        "Criação de designs com presets prontos (YouTube, Instagram, Facebook, etc.)",
-        "Tamanho personalizado (40 a 8000px)",
-        "Listagem de todos os designs da conta com thumbnails",
-        "Exportação assíncrona em PNG, JPG, PDF, MP4 e GIF",
-        "Edição visual no Canva com um clique",
-        "Download e inserção direta no projeto"
-      ],
+      "description": "Extrai frames, analisa com IA e gera resumo visual de filmes",
       "author": "Nardoto",
-      "icon": "Palette",
-      "downloadUrl": ""
+      "icon": "Film",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/mapeamento-filme.zip"
     },
     {
-      "id": "nardoto-scripts",
-      "name": "Nardoto Scripts",
+      "id": "remotion-studio",
+      "name": "Remotion Studio",
+      "version": "2.0.0",
+      "type": "panel",
+      "description": "Crie vídeos com código usando Remotion e IA - criação, cenas e SFX",
+      "author": "Nardoto",
+      "icon": "Film",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/remotion-studio.zip"
+    },
+    {
+      "id": "nardoto-newsroom",
+      "name": "Newsroom Intel",
       "version": "1.0.0",
       "type": "panel",
-      "description": "Console de automação JavaScript para pipelines criativos",
-      "detailedDescription": "O Nardoto Scripts é um console de automação onde você escreve scripts JavaScript para automatizar tarefas no Studio. Com acesso à API completa do app (download, TTS, legendas, IA, renderização), você pode criar pipelines completos como: baixar vídeo do YouTube, gerar legendas, criar narração TTS e inserir tudo no projeto automaticamente.",
-      "features": [
-        "Editor de código JavaScript com syntax highlighting",
-        "API ns.* com acesso a todas as funcionalidades do Studio",
-        "10+ receitas prontas para pipelines completos",
-        "Console de saída com log, progresso e erros",
-        "Gerenciamento de scripts salvos com auto-save",
-        "Importar e exportar scripts como arquivos .js",
-        "Cancelamento de scripts em execução",
-        "Atalhos: Ctrl+Enter (executar), Ctrl+S (salvar), Ctrl+N (novo)"
-      ],
+      "description": "Coleta noticias, imagens, videos, fontes e creditos em um pacote pronto para videos geopoliticos",
       "author": "Nardoto",
-      "icon": "Terminal",
-      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-scripts.zip"
+      "icon": "Search",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-newsroom.zip"
+    }
+  ],
+  "mcps": [
+    {
+      "id": "mcp-heygen",
+      "name": "HeyGen",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Avatares e videos com IA. 230+ avatares, 175+ idiomas, lip sync e traducao automatica.",
+      "author": "HeyGen",
+      "homepage": "https://heygen.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-heygen.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-heygen/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.heygen.com/mcp/v1/",
+        "auth": "oauth",
+        "category": "video",
+        "tagline": "Avatar IA pra narrar seus videos sem gravar",
+        "longDescription": "A HeyGen e a maior plataforma de avatares com IA do mercado. Sao mais de 230 avatares prontos (homens, mulheres, varias etnias e idades) ou voce pode criar seu proprio avatar digital a partir de 2 minutos de video.\n\nDepois de criar o avatar, basta digitar o roteiro e a HeyGen gera o video com o avatar falando, com sincronia labial perfeita, em mais de 175 idiomas.\n\nTambem faz traducao automatica de videos ja prontos: voce envia um MP4 em portugues e recebe a mesma pessoa falando ingles, espanhol, mandarim etc com a propria voz dela.",
+        "howItWorksInStudio": "Voce conecta sua conta HeyGen via OAuth (1 clique). No chat, pede pro Claude/Gemini gerar o video com avatar e roteiro. O video gerado fica salvo na sua conta HeyGen e voce pode baixar pelo link que aparece no chat.\n\nIntegra muito bem com o fluxo intro-narrador do canal: voce escreve o testemunho biblico, manda pro HeyGen criar o avatar narrador, e ja recebe o MP4 pronto pra entrar na timeline.",
+        "useCases": [
+          {
+            "title": "Avatar narrador biblico",
+            "description": "Cria a apresentacao de Nardoto em cenarios biblicos sem precisar gravar",
+            "example": "@HeyGen gera um video do meu avatar falando: \"Meu nome e Davi. Sentei aqui pra contar o que vivi quando enfrentei Golias...\""
+          },
+          {
+            "title": "Traduzir video pronto pra outro idioma",
+            "description": "Pega um video em PT e dubla pra EN/ES/etc com lip sync",
+            "example": "@HeyGen traduz este video pro espanhol mantendo minha voz"
+          },
+          {
+            "title": "Listar avatares disponiveis",
+            "description": "Ve quais avatares voce ja tem na conta",
+            "example": "@HeyGen lista meus avatares digitais"
+          },
+          {
+            "title": "Criar gemeo digital",
+            "description": "Cria um avatar do proprio Nardoto a partir de gravacao",
+            "example": "@HeyGen cria um avatar digital a partir do video em /downloads/teste.mp4"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta gratuita",
+            "url": "https://app.heygen.com/login"
+          },
+          {
+            "step": "Plano gratuito ja libera o MCP. Plano Creator (US$ 24/mes) tem 15 minutos de geracao mensal",
+            "url": "https://www.heygen.com/pricing"
+          },
+          {
+            "step": "Clique em \"Conectar\" no card do MCP HeyGen no Studio (OAuth automatico, sem precisar de API key)"
+          }
+        ],
+        "costInfo": "Plano gratuito: 1 minuto de video/mes. Creator US$ 24/mes: 15 minutos. Team US$ 79/mes: 30 minutos. Cobranca direto na HeyGen, nao passa pelo Nardoto Studio.",
+        "capabilities": [
+          "create_video_from_avatar",
+          "create_video_from_image",
+          "list_avatar_groups",
+          "create_video_translation",
+          "create_lipsync",
+          "create_digital_twin"
+        ]
+      }
+    },
+    {
+      "id": "mcp-higgsfield",
+      "name": "Higgsfield",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Geracao de video e imagem cinematica de alta fidelidade via Higgsfield AI.",
+      "author": "Higgsfield",
+      "homepage": "https://higgsfield.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-higgsfield.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-higgsfield/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.higgsfield.ai/",
+        "auth": "apikey",
+        "category": "video",
+        "tagline": "30+ modelos de IA visual numa unica conversa",
+        "longDescription": "Higgsfield e um hub que da acesso a 30+ modelos diferentes de imagem e video num so lugar: Soul, Cinema Studio, Flux, Seedream, Kling, Minimax Hailuo, Veo3 (Google) e mais.\n\nO MCP da Higgsfield e especial: o agente AI escolhe automaticamente o melhor modelo pra cada tarefa. Voce pede \"uma imagem cinematica de Davi vs Golias\" e ele decide se usa Flux (foto-realismo), Soul (estilo cinematografico) ou outro.\n\nUm dos casos de uso mais fortes pro nicho do canal Nardoto: criar capas no estilo classico (Caravaggio, Rembrandt) com qualidade museu.",
+        "howItWorksInStudio": "Voce coloca a API key uma vez. Depois, no chat, qualquer pedido visual aciona o MCP. A imagem ou o video gerado aparece INLINE no chat (graca a integracao com tool_result image). Voce clica em \"Salvar na biblioteca\" e ele vai pro projeto.\n\nIdeal pra fluxo de capas, b-roll de cenarios biblicos, e visualizacoes de momentos historicos sem precisar de banco de imagens stock.",
+        "useCases": [
+          {
+            "title": "Capas no estilo Caravaggio",
+            "description": "Pinturas classicas pra usar como thumb",
+            "example": "@Higgsfield gera uma imagem cinematica estilo Caravaggio: Davi segurando a cabeca de Golias, iluminacao tenebrosa"
+          },
+          {
+            "title": "B-roll biblico cinematico",
+            "description": "Cenarios pra video sem direitos autorais",
+            "example": "@Higgsfield gera 4 imagens de um deserto biblico ao por do sol"
+          },
+          {
+            "title": "Video curto cinematico",
+            "description": "Cenas em movimento pra introducao",
+            "example": "@Higgsfield gera um video de 5s: caverna iluminada por tocha, camera avancando"
+          },
+          {
+            "title": "Variacao de personagem",
+            "description": "Mesmo personagem em poses diferentes (character consistency)",
+            "example": "@Higgsfield gera 3 imagens do mesmo Moises: em pe, ajoelhado e segurando o cajado"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta em higgsfield.ai",
+            "url": "https://higgsfield.ai"
+          },
+          {
+            "step": "Gera API key em account/api",
+            "url": "https://higgsfield.ai/account/api"
+          },
+          {
+            "step": "Cole a key no MCPCard do Studio quando clicar em Conectar"
+          }
+        ],
+        "costInfo": "Sistema de creditos: plano gratuito 100 creditos. Pro US$ 19/mes: 1000 creditos. Cada geracao consome 1-10 creditos dependendo do modelo. Cobranca direto na Higgsfield.",
+        "envSchema": [
+          {
+            "key": "HIGGSFIELD_API_KEY",
+            "label": "API Key",
+            "secret": true,
+            "required": true,
+            "description": "Pegue em higgsfield.ai/account/api"
+          }
+        ],
+        "capabilities": [
+          "generate_image",
+          "generate_video",
+          "character_consistency",
+          "list_models"
+        ]
+      }
+    },
+    {
+      "id": "mcp-piapi",
+      "name": "PiAPI",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Hub multi-provedor (Midjourney, Suno, Kling, Hailuo etc). Pague por uso, 1 chave.",
+      "author": "PiAPI",
+      "homepage": "https://piapi.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-piapi.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-piapi/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@apinetwork/piapi-mcp-server"
+        ],
+        "auth": "env",
+        "category": "video",
+        "requiresNode": true,
+        "tagline": "Midjourney + Suno + Kling + Veo numa unica API",
+        "longDescription": "PiAPI agrega APIs nao-oficiais de Midjourney, Suno, Kling, Hailuo, Luma, Udio e mais. Em vez de criar conta e pagar mensalidade em cada uma, voce paga pay-as-you-go aqui e tem acesso a todas com 1 chave.\n\nEspecialmente util pra acessar Midjourney via API (que oficialmente nao tem API publica) e pra Suno (geracao de musica) que tem demanda alta.\n\nO MCP da PiAPI roda local via npx (precisa Node instalado). Mais lento na primeira chamada (baixa o pacote) mas depois fica rapido.",
+        "howItWorksInStudio": "Voce coloca a chave PIAPI. No chat, peca midjourney/suno/kling/etc por nome e o MCP roteia pro modelo certo. Imagens vem inline no chat. Audios e videos vem como URL pra baixar.\n\nFluxo tipico: pede trilha sonora pra video epico no Suno → recebe MP3 pra baixar → joga no painel de audio do Studio.",
+        "useCases": [
+          {
+            "title": "Musica epica via Suno",
+            "description": "Gera trilha sonora original sem direitos autorais",
+            "example": "@PiAPI gera uma musica epica orquestral via Suno: tema \"Davi vs Golias\", duracao 2 minutos"
+          },
+          {
+            "title": "Capa estilo Midjourney",
+            "description": "Acesso ao Midjourney sem precisar do Discord",
+            "example": "@PiAPI midjourney: portrait of a biblical warrior, cinematic lighting, hyperrealistic"
+          },
+          {
+            "title": "Video Kling",
+            "description": "Video 6s de alta qualidade",
+            "example": "@PiAPI kling: ancient temple at sunset, slow camera push-in, cinematic"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta PiAPI",
+            "url": "https://piapi.ai"
+          },
+          {
+            "step": "Adicione credito (minimo US$ 5)",
+            "url": "https://piapi.ai/dashboard/billing"
+          },
+          {
+            "step": "Copie a API key no dashboard"
+          },
+          {
+            "step": "Cole no MCPCard ao clicar Conectar"
+          }
+        ],
+        "costInfo": "Pay-as-you-go. Midjourney ~US$ 0.04/imagem. Suno ~US$ 0.10/musica. Kling ~US$ 0.30/video 6s. Credito minimo US$ 5.",
+        "envSchema": [
+          {
+            "key": "PIAPI_API_KEY",
+            "label": "PiAPI Key",
+            "secret": true,
+            "required": true,
+            "description": "Pegue em piapi.ai/dashboard"
+          }
+        ],
+        "capabilities": [
+          "midjourney_imagine",
+          "suno_generate",
+          "kling_video",
+          "luma_video",
+          "udio_music"
+        ]
+      }
+    },
+    {
+      "id": "mcp-kie-ai",
+      "name": "Kie.ai",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Plataforma unificada de geracao de video (Veo, Runway, Kling) com 1 chave.",
+      "author": "Kie.ai",
+      "homepage": "https://kie.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-kie-ai.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-kie-ai/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.kie.ai/",
+        "auth": "apikey",
+        "category": "video",
+        "tagline": "25+ modelos de imagem, video e audio numa API",
+        "longDescription": "Kie.ai e similar ao PiAPI mas focado em qualidade premium. Da acesso a Google Veo 3 (modelo cinematografico de ultimo nivel), Runway Gen-4, Kling 2.5, Hailuo 02 Pro, e modelos de imagem como Ideogram, Recraft, FLUX 1.1 Pro.\n\nDiferencial: tem uma camada de cache inteligente que evita gerar a mesma coisa 2x, economizando creditos. E a documentacao e em ingles/portugues claro.\n\nMCP via HTTP, sem precisar instalar nada local.",
+        "howItWorksInStudio": "Coloca a key uma vez via API key. No chat, pede direto: \"gera video estilo Veo 3 de...\" ou \"gera imagem Ideogram com texto: ...\" - o MCP escolhe ou voce especifica o modelo. Resultado vem como URL pra baixar.\n\nIdeal pra quem quer qualidade premium sem ter que aprender 5 dashboards diferentes.",
+        "useCases": [
+          {
+            "title": "Cena epica via Veo 3",
+            "description": "O melhor modelo de video AI do momento",
+            "example": "@Kie.ai veo3: batalha de exercitos antigos, camera aerea, slow motion, cinematic"
+          },
+          {
+            "title": "Texto na imagem via Ideogram",
+            "description": "Capa com titulo legivel (Ideogram e o melhor pra texto)",
+            "example": "@Kie.ai ideogram: capa com titulo \"REVELACOES\" em fonte serif, fundo dramatico"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Cadastre-se",
+            "url": "https://kie.ai/auth/sign-up"
+          },
+          {
+            "step": "Adicione credito (US$ 10 minimo)",
+            "url": "https://kie.ai/billing"
+          },
+          {
+            "step": "Pegue a API key",
+            "url": "https://kie.ai/settings/api-keys"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "Pay-as-you-go. Veo 3 ~US$ 0.50/segundo de video. Ideogram ~US$ 0.05/imagem. Tem cache que evita cobrar 2x pelo mesmo prompt.",
+        "envSchema": [
+          {
+            "key": "KIE_API_KEY",
+            "label": "Kie API Key",
+            "secret": true,
+            "required": true,
+            "description": "Dashboard em kie.ai"
+          }
+        ],
+        "capabilities": [
+          "veo3_generate",
+          "runway_gen4",
+          "kling_25",
+          "ideogram_text",
+          "flux_pro"
+        ]
+      }
+    },
+    {
+      "id": "mcp-runway",
+      "name": "Runway",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Geracao de video Gen-3 e Gen-4 com Runway. Text-to-video, image-to-video, motion brush.",
+      "author": "Runway",
+      "homepage": "https://runwayml.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-runway.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-runway/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@runway/mcp-server"
+        ],
+        "auth": "env",
+        "category": "video",
+        "requiresNode": true,
+        "tagline": "Gen-4: o video AI mais cinematografico do mercado",
+        "longDescription": "Runway e o pioneiro do video AI cinematografico. O modelo Gen-4 (lancado em 2026) e considerado o estado-da-arte: cameras realistas, fisica natural, consistencia de personagem entre frames.\n\nFuncionalidades fortes: image-to-video (transforma uma imagem em video animado de 10s), motion brush (voce desenha onde a animacao acontece), e camera control (especifica pan, tilt, dolly).\n\nFunciona via npx, precisa de Node no PATH. Pra primeira chamada baixa o pacote (~1min).",
+        "howItWorksInStudio": "API key colocada uma vez. No chat: peca text-to-video, image-to-video, ou camera-controlled video. Resultado vem como URL.\n\nFluxo classico: gera capa estatica no Higgsfield → manda pro Runway transformar em video animado de 10s → entra na intro do video como cenario em movimento.",
+        "useCases": [
+          {
+            "title": "Animar capa estatica",
+            "description": "Imagem virou video com movimento de camera",
+            "example": "@Runway image-to-video da capa em /downloads/capa.png, camera fazendo zoom out lento"
+          },
+          {
+            "title": "Cena historica cinematografica",
+            "description": "Reconstrucao de momento biblico/historico",
+            "example": "@Runway gera video 10s: praca de Jerusalem antiga, mercadores, luz dourada, camera tracking"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta",
+            "url": "https://app.runwayml.com/signup"
+          },
+          {
+            "step": "Habilite acesso a API",
+            "url": "https://dev.runwayml.com"
+          },
+          {
+            "step": "Pegue API key em dev.runwayml.com",
+            "url": "https://dev.runwayml.com/api-keys"
+          },
+          {
+            "step": "Garanta que Node esta instalado (node --version no terminal)"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "Pay-as-you-go. Gen-4 video 10s ~US$ 1.50. Image-to-video ~US$ 0.80. Plano gratuito tem 125 creditos pra testar.",
+        "envSchema": [
+          {
+            "key": "RUNWAY_API_KEY",
+            "label": "Runway API Key",
+            "secret": true,
+            "required": true,
+            "description": "dev.runwayml.com"
+          }
+        ],
+        "capabilities": [
+          "text_to_video",
+          "image_to_video",
+          "motion_brush",
+          "camera_control"
+        ]
+      }
+    },
+    {
+      "id": "mcp-elevenlabs",
+      "name": "ElevenLabs",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "TTS ultra-realista, clonagem de voz, dublagem multi-idioma e efeitos sonoros.",
+      "author": "ElevenLabs",
+      "homepage": "https://elevenlabs.io",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-elevenlabs.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-elevenlabs/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "elevenlabs-mcp"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresPython": true,
+        "tagline": "A voz IA mais realista do mercado, com sua propria voz clonada",
+        "longDescription": "ElevenLabs e o padrao-ouro de TTS. As vozes sao indistinguiveis de humanas, com emocao, pausas naturais e respiracao.\n\nVoce pode usar vozes prontas (mais de 5000) ou clonar a sua propria a partir de 1 minuto de audio. Depois e so digitar texto e receber MP3 com sua voz lendo qualquer coisa, em qualquer idioma.\n\nTambem faz dubbing (pega video em portugues, traz a mesma voz falando ingles), e voice changer (transforma uma voz em outra mantendo entonacao).",
+        "howItWorksInStudio": "API key colocada uma vez. No chat, peca TTS, clonagem ou dubbing. O audio gerado vem como URL pra baixar.\n\nFluxo recomendado pro canal: clone a propria voz uma vez. Depois cada testemunho biblico ou narracao de geopolitica e gerada com 1 prompt no chat, em segundos, no SEU timbre.",
+        "useCases": [
+          {
+            "title": "Narracao com sua voz clonada",
+            "description": "TTS no SEU timbre, sem precisar gravar",
+            "example": "@ElevenLabs gera audio com minha voz clonada: \"Imagine viver durante a queda do imperio romano...\""
+          },
+          {
+            "title": "Voz de personagem biblico",
+            "description": "Usa voz pronta com sotaque/idade especifica",
+            "example": "@ElevenLabs lista vozes de homem idoso e gera o testemunho de Abraao"
+          },
+          {
+            "title": "Dublar video pra outro idioma",
+            "description": "Mantem sua voz mudando o idioma",
+            "example": "@ElevenLabs dubla o video em /tmp/teste.mp4 pro espanhol mantendo minha voz"
+          },
+          {
+            "title": "Efeito sonoro custom",
+            "description": "Sons que nao existem em biblioteca",
+            "example": "@ElevenLabs gera efeito sonoro de \"ondas batendo numa costa rochosa, drone distante\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Instale uv (gerenciador Python rapido)",
+            "url": "https://docs.astral.sh/uv/getting-started/installation/"
+          },
+          {
+            "step": "Crie conta",
+            "url": "https://elevenlabs.io/sign-up"
+          },
+          {
+            "step": "Plano gratuito ja serve (10k caracteres/mes)",
+            "url": "https://elevenlabs.io/pricing"
+          },
+          {
+            "step": "Pegue API key",
+            "url": "https://elevenlabs.io/app/settings/api-keys"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar (primeira execucao baixa o pacote elevenlabs-mcp via uvx, ~1min)"
+          }
+        ],
+        "costInfo": "Plano gratuito: 10.000 caracteres/mes (cabe ~10 min de audio). Starter US$ 5: 30.000 (~30 min). Creator US$ 22: 100.000 (~100 min) + clonagem profissional.",
+        "envSchema": [
+          {
+            "key": "ELEVENLABS_API_KEY",
+            "label": "API Key",
+            "secret": true,
+            "required": true,
+            "description": "elevenlabs.io/app/settings/api-keys"
+          }
+        ],
+        "capabilities": [
+          "text_to_speech",
+          "voice_clone",
+          "list_voices",
+          "dub_video",
+          "sound_effect"
+        ]
+      }
+    },
+    {
+      "id": "mcp-epidemic-sound",
+      "name": "Epidemic Sound",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Biblioteca premium de musica e SFX 100% livre de direitos autorais.",
+      "author": "Epidemic Sound",
+      "homepage": "https://www.epidemicsound.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-epidemic-sound.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-epidemic-sound/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://www.epidemicsound.com/a/mcp-service/mcp",
+        "auth": "apikey",
+        "category": "audio",
+        "tagline": "Trilha sonora premium sem dor de cabeca de copyright",
+        "longDescription": "Epidemic Sound e o servico mais usado por youtubers profissionais. 40.000+ musicas e 90.000+ SFX, todos liberados pra YouTube/TikTok/Instagram com a assinatura ativa.\n\nA grande vantagem e o catalogo curado por categoria/emocao/instrumento, e o sistema de stems (voce baixa partes separadas: bateria, baixo, melodia) pra montar variacoes.\n\nO MCP permite buscar e baixar direto pelo chat, sem abrir a web.",
+        "howItWorksInStudio": "Cole sua API key uma vez (gerada no painel da Epidemic). No chat, peca musica por mood/genero/BPM. O MCP retorna URLs pra download.\n\nFluxo tipico: voce ja tem extensao Epidemic Sound no Studio (ja existente). O MCP virou alternativa via chat — util quando voce ja sabe a vibe (\"preciso de algo epico orquestral 90 BPM\") e quer pular o passo de navegar a UI.\n\nAVISO: API key do Epidemic Sound expira a cada 30 dias. Quando isso acontecer, regenere e cole de novo aqui.",
+        "useCases": [
+          {
+            "title": "Trilha epica orquestral",
+            "description": "Pra introducoes dramaticas de video biblico",
+            "example": "@EpidemicSound busca 3 musicas orquestrais epicas, mood \"tense build-up\", 2-4 minutos"
+          },
+          {
+            "title": "SFX especifico",
+            "description": "Achar som rapido sem navegar",
+            "example": "@EpidemicSound acha SFX de \"passos em cascalho, deserto, ate 3 segundos\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Assine Epidemic (Personal US$ 9.99/mes ou Commercial US$ 19/mes)",
+            "url": "https://www.epidemicsound.com/subscription/"
+          },
+          {
+            "step": "Gere a API key no painel Developer",
+            "url": "https://www.epidemicsound.com/a/account/api-keys"
+          },
+          {
+            "step": "Cole a key no MCPCard ao Conectar (lembrete: expira em 30 dias)"
+          }
+        ],
+        "costInfo": "Assinatura Personal US$ 9.99/mes pra uso pessoal. Commercial US$ 19/mes pra canais monetizados. API key gratis (incluida na assinatura). Cobranca direto na Epidemic.",
+        "envSchema": [
+          {
+            "key": "EPIDEMIC_API_KEY",
+            "label": "API Key",
+            "secret": true,
+            "required": true,
+            "description": "Gere em epidemicsound.com/a/account/api-keys (expira em 30 dias)"
+          }
+        ],
+        "capabilities": [
+          "search_music",
+          "search_sfx",
+          "download_track",
+          "download_stems"
+        ]
+      }
+    },
+    {
+      "id": "mcp-suno",
+      "name": "Suno",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Geracao de musica original com IA. Crie temas customizados em 60s.",
+      "author": "Suno",
+      "homepage": "https://suno.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-suno.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-suno/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "suno-mcp-server"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresNode": true,
+        "tagline": "Musica AI original em 60s — 100% sua, sem royalty",
+        "longDescription": "Suno e o modelo de musica AI mais avancado de 2026. Voce descreve a musica em texto (\"trilha epica orquestral pra video sobre Davi e Golias, com coral feminino no climax\") e em ~60 segundos recebe uma musica completa com letra, melodia e producao profissional.\n\nDiferencial: voce pode pedir uma letra especifica (\"escreva uma cancao sobre a coragem de Davi\"), pedir estilo de artista (\"estilo trilha sonora Hans Zimmer\"), ou pedir musica instrumental.\n\nA musica gerada e SUA — voce pode monetizar sem dividir royalty.",
+        "howItWorksInStudio": "Roda via npx (precisa Node). Chave Suno colocada uma vez.\n\nNo chat: peca musica por descricao. Em 1-2 minutos recebe MP3 + letra. Salva direto na biblioteca de audio do projeto.",
+        "useCases": [
+          {
+            "title": "Trilha cinematica customizada",
+            "description": "Musica feita sob medida pro tema do video",
+            "example": "@Suno cria trilha epica orquestral sem voz, 2 min, tema \"queda do imperio babilonico\", crescendo dramatico no minuto 1"
+          },
+          {
+            "title": "Musica com letra sobre tema biblico",
+            "description": "Cancao narrativa pra abertura/fechamento",
+            "example": "@Suno cria musica gospel modernizada com letra sobre a fuga do Egito, 2:30, voz feminina principal"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta Suno",
+            "url": "https://suno.com"
+          },
+          {
+            "step": "Plano Pro US$ 10/mes libera download MP3 + uso comercial",
+            "url": "https://suno.com/pricing"
+          },
+          {
+            "step": "Gere API key (em settings/api)"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "Plano gratuito 10 musicas/dia (sem uso comercial). Pro US$ 10/mes: 500/mes com uso comercial. Premier US$ 30/mes: 2000/mes.",
+        "envSchema": [
+          {
+            "key": "SUNO_API_KEY",
+            "label": "Suno Key",
+            "secret": true,
+            "required": true,
+            "description": "suno.com/settings/api"
+          }
+        ],
+        "capabilities": [
+          "generate_song",
+          "generate_instrumental",
+          "extend_song",
+          "get_lyrics"
+        ]
+      }
+    },
+    {
+      "id": "mcp-pexels",
+      "name": "Pexels",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Banco gigante de fotos e videos stock 100% gratuitos.",
+      "author": "Pexels",
+      "homepage": "https://pexels.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-pexels.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-pexels/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "pexels-mcp-server"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Stock 100% gratis sem precisar de credito",
+        "longDescription": "Pexels e o maior banco de fotos e videos stock gratuitos. Tudo licenca CC0 — voce usa em qualquer projeto pessoal ou comercial sem precisar dar credito.\n\nO catalogo cobre principalmente fotos cotidianas, paisagens, business, lifestyle. Pra nicho biblico/historico nao e ideal — pra isso use Higgsfield/Runway pra GERAR a imagem. Pexels e melhor pra b-roll generico (paisagens, ceu, mar, etc).",
+        "howItWorksInStudio": "Roda via npx. Chave gratuita (1 minuto pra cadastro). Limite generoso (200 req/hora).\n\nNo chat: pede foto ou video. Resultado vem com URL pra baixar.",
+        "useCases": [
+          {
+            "title": "B-roll de paisagem",
+            "description": "Cobertura visual generica gratis",
+            "example": "@Pexels busca 3 videos de deserto ao por do sol, 4K"
+          },
+          {
+            "title": "Foto de objeto",
+            "description": "Quando precisa de imagem real, nao gerada",
+            "example": "@Pexels busca foto de pergaminho antigo em fundo preto"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta gratis",
+            "url": "https://www.pexels.com/api/"
+          },
+          {
+            "step": "Pegue API key (instantaneo)",
+            "url": "https://www.pexels.com/api/key/"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "100% gratis. Sem limite mensal, so rate limit (200 requests/hora). Sem necessidade de plano pago.",
+        "envSchema": [
+          {
+            "key": "PEXELS_API_KEY",
+            "label": "Pexels API Key",
+            "secret": true,
+            "required": true,
+            "description": "pexels.com/api (gratis)"
+          }
+        ],
+        "capabilities": [
+          "search_photos",
+          "search_videos",
+          "get_curated_photos"
+        ]
+      }
+    },
+    {
+      "id": "mcp-unsplash",
+      "name": "Unsplash",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Fotos profissionais gratuitas com atribuicao automatica.",
+      "author": "Unsplash",
+      "homepage": "https://unsplash.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-unsplash.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-unsplash/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "unsplash-smart-mcp-server"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Foto profissional gratis, qualidade editorial",
+        "longDescription": "Unsplash tem o catalogo mais bonito de stock gratuito. Os fotografos sao profissionais (muitos trabalham pra revistas). Qualidade visual MUITO superior ao Pexels.\n\nA contrapartida: Unsplash recomenda atribuicao (creditar o fotografo no video). O MCP retorna ja com o link de atribuicao pra voce copiar.\n\nDiferente do Pexels, Unsplash so tem fotos, nao videos.",
+        "howItWorksInStudio": "Roda via npx. Key gratis (rate limit 50/hora). No chat, peca fotos e o MCP ja inclui atribuicao pra voce colar no final do video.",
+        "useCases": [
+          {
+            "title": "Thumbnail elegante",
+            "description": "Foto editorial pra capa de video",
+            "example": "@Unsplash busca foto: pessoa solitaria caminhando no deserto, mood contemplativo"
+          },
+          {
+            "title": "Atmosfera visual",
+            "description": "Imagens pra montar pacote visual",
+            "example": "@Unsplash busca 5 fotos de ceu nublado dramatico, alta resolucao"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta dev",
+            "url": "https://unsplash.com/developers"
+          },
+          {
+            "step": "Crie um \"app\"",
+            "url": "https://unsplash.com/oauth/applications"
+          },
+          {
+            "step": "Copie a Access Key (nao a Secret)"
+          },
+          {
+            "step": "Cole no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "100% gratis. Limite 50 requests/hora pra apps em desenvolvimento, 5000/hora apos aprovacao de uso.",
+        "envSchema": [
+          {
+            "key": "UNSPLASH_ACCESS_KEY",
+            "label": "Access Key",
+            "secret": true,
+            "required": true,
+            "description": "unsplash.com/oauth/applications"
+          }
+        ],
+        "capabilities": [
+          "search_photos",
+          "get_random",
+          "attribution"
+        ]
+      }
+    },
+    {
+      "id": "mcp-stock-images",
+      "name": "Stock Images Multi",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca em Pexels + Unsplash + Pixabay simultaneamente.",
+      "author": "jeanpfs",
+      "homepage": "https://github.com/jeanpfs/stock-images-mcp",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-stock-images.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-stock-images/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "stock-images-mcp"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Busca em 3 bancos stock de uma vez",
+        "longDescription": "Em vez de instalar Pexels e Unsplash separados, esse MCP agrega Pexels + Unsplash + Pixabay numa busca unica. Voce pede uma vez e ele consulta os 3 e retorna o melhor.\n\nUtil quando voce nao sabe qual banco tem o que voce precisa. Tambem deduplica resultados.",
+        "howItWorksInStudio": "Roda via npx. Configura 1 a 3 chaves (uma pra cada banco). Quanto mais bancos, melhor a cobertura. Pixabay e a unica que tambem tem videos free.",
+        "useCases": [
+          {
+            "title": "Busca ampla generica",
+            "description": "Quando voce nao sabe que estilo quer",
+            "example": "@StockImages busca 10 fotos de \"templo antigo iluminado\", todas as fontes"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Pegue Pexels key",
+            "url": "https://www.pexels.com/api/key/"
+          },
+          {
+            "step": "Pegue Unsplash key",
+            "url": "https://unsplash.com/oauth/applications"
+          },
+          {
+            "step": "Pegue Pixabay key",
+            "url": "https://pixabay.com/accounts/register/"
+          },
+          {
+            "step": "Cole as 3 (ou pelo menos 1) no MCPCard ao Conectar"
+          }
+        ],
+        "costInfo": "100% gratis. Bancos individuais tem rate limit proprio.",
+        "envSchema": [
+          {
+            "key": "PEXELS_API_KEY",
+            "label": "Pexels Key",
+            "secret": true,
+            "required": false
+          },
+          {
+            "key": "UNSPLASH_ACCESS_KEY",
+            "label": "Unsplash Key",
+            "secret": true,
+            "required": false
+          },
+          {
+            "key": "PIXABAY_API_KEY",
+            "label": "Pixabay Key",
+            "secret": true,
+            "required": false
+          }
+        ],
+        "capabilities": [
+          "search_all",
+          "search_by_source"
+        ]
+      }
+    },
+    {
+      "id": "mcp-notion",
+      "name": "Notion",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Workspace completo: paginas, databases, tasks. Oficial Notion.",
+      "author": "Notion",
+      "homepage": "https://notion.so",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-notion.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-notion/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.notion.com/mcp",
+        "auth": "oauth",
+        "category": "workspace",
+        "tagline": "Seu workspace Notion como tool do agente",
+        "longDescription": "MCP oficial do Notion. Da acesso completo ao seu workspace: criar/ler/atualizar paginas, queries em databases, gerenciar tasks.\n\nIdeal pra quem usa Notion como CMS do canal: roteiros, planejamento de videos, lista de ideias, cronograma de publicacao.\n\nO agente pode tanto buscar info (\"qual o roteiro do video da semana?\") quanto criar (\"salva esse roteiro novo na database de Roteiros\").",
+        "howItWorksInStudio": "OAuth uma vez. No chat, peca info ou peca acao em paginas/databases.\n\nFluxo classico: termina de escrever um roteiro novo no chat -> pede pra salvar no Notion -> ele cria a pagina ja categorizada e taggeada na sua database.",
+        "useCases": [
+          {
+            "title": "Buscar roteiro existente",
+            "description": "Localiza pagina pelo titulo ou tag",
+            "example": "@Notion busca o roteiro \"Davi vs Golias\" na database de Roteiros"
+          },
+          {
+            "title": "Criar pagina nova",
+            "description": "Salva conteudo gerado direto no workspace",
+            "example": "@Notion cria pagina em \"Roteiros\" com este texto, tag \"Velho Testamento\", status \"Em revisao\""
+          },
+          {
+            "title": "Listar tarefas pendentes",
+            "description": "Resumo do que tem pra fazer",
+            "example": "@Notion lista todas as tasks com prioridade alta da database Producao"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Notion (gratis serve)",
+            "url": "https://www.notion.so/signup"
+          },
+          {
+            "step": "Clique em Conectar no MCPCard (OAuth automatico — escolhe quais paginas/databases compartilhar)"
+          }
+        ],
+        "costInfo": "Plano gratuito do Notion ja libera o MCP. Sem cobranca extra.",
+        "capabilities": [
+          "search_pages",
+          "create_page",
+          "query_database",
+          "update_page",
+          "list_databases"
+        ]
+      }
+    },
+    {
+      "id": "mcp-google-workspace",
+      "name": "Google Workspace",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Gmail, Drive, Calendar, Docs, Sheets numa unica conexao OAuth.",
+      "author": "Google",
+      "homepage": "https://workspace.google.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-google-workspace.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-google-workspace/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://workspacemcp.googleapis.com/",
+        "auth": "oauth",
+        "category": "workspace",
+        "tagline": "Toda a suite Google operavel via chat",
+        "longDescription": "MCP oficial da Google. Da acesso a Gmail, Drive, Calendar, Docs, Sheets, Chat e Tasks numa unica conexao OAuth.\n\nVoce pode: ler emails, enviar respostas drafts, fazer queries no Drive, criar eventos no Calendar, ler/escrever Docs e Sheets.\n\nA seguranca e granular — no momento do OAuth voce escolhe exatamente quais scopes liberar.",
+        "howItWorksInStudio": "OAuth uma vez. No chat, peca por servico: \"lista emails de hoje\", \"cria evento amanha 14h\", \"adiciona linha na planilha de gastos\".\n\nFluxo ideal: matinal — o chat resume sua caixa de entrada, mostra agenda do dia, e voce ja sai pra producao sem abrir 5 abas.",
+        "useCases": [
+          {
+            "title": "Resumo da manha",
+            "description": "Veja o que tem na sua caixa + agenda",
+            "example": "@GoogleWorkspace resume emails nao-lidos de hoje + eventos no calendar das proximas 24h"
+          },
+          {
+            "title": "Salvar arquivo no Drive",
+            "description": "Manda video/audio gerado direto pro Drive",
+            "example": "@GoogleWorkspace faz upload de /tmp/video.mp4 pra pasta \"Canais/Nardoto/2026\" no Drive"
+          },
+          {
+            "title": "Agendar publicacao",
+            "description": "Cria evento de release no calendar",
+            "example": "@GoogleWorkspace cria evento \"Publicar video Davi\" pra terca-feira 9h, lembrete 1h antes"
+          },
+          {
+            "title": "Atualizar planilha de financeiro",
+            "description": "Lanca despesa nova em Sheets",
+            "example": "@GoogleWorkspace adiciona linha em \"Despesas 2026\": HeyGen, US$ 24, hoje, \"TV avatar mensal\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Google (qualquer Gmail serve)"
+          },
+          {
+            "step": "Clique em Conectar no MCPCard"
+          },
+          {
+            "step": "No popup, escolha quais scopes liberar (Drive/Gmail/Calendar/Sheets/etc)"
+          }
+        ],
+        "costInfo": "Gratuito pra conta Google pessoal. Workspace Business: ja inclui no plano sem custo extra.",
+        "oauth": {
+          "scopes": [
+            "https://www.googleapis.com/auth/drive",
+            "https://www.googleapis.com/auth/calendar",
+            "https://www.googleapis.com/auth/gmail.modify",
+            "https://www.googleapis.com/auth/spreadsheets"
+          ]
+        },
+        "capabilities": [
+          "gmail_read",
+          "gmail_send",
+          "drive_search",
+          "drive_upload",
+          "calendar_create",
+          "sheets_write"
+        ]
+      }
+    },
+    {
+      "id": "mcp-linear",
+      "name": "Linear",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Tasks, issues e roadmap pra producao do canal.",
+      "author": "Linear",
+      "homepage": "https://linear.app",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-linear.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-linear/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.linear.app/sse",
+        "auth": "oauth",
+        "category": "workspace",
+        "tagline": "Roadmap de producao no chat",
+        "longDescription": "MCP oficial da Linear. Linear e a ferramenta de PM preferida por times tech enxutos. Pro nicho de criador de conteudo, funciona como \"pipeline visual de producao\": cada video e uma issue, com status (ideia → roteiro → gravacao → edicao → publicado).\n\nVoce pode criar/buscar/atualizar issues, mover entre status, atribuir prioridades — tudo via chat.",
+        "howItWorksInStudio": "OAuth uma vez. No chat: cria, lista, move issues.\n\nFluxo: termina o roteiro do proximo video -> pede pra criar issue \"Edicao do video X\" status \"Pronto pra edicao\" no Linear.",
+        "useCases": [
+          {
+            "title": "Criar issue de novo video",
+            "description": "Entrar com ideia nova no pipeline",
+            "example": "@Linear cria issue \"Video: A queda de Jerico\" no team Producao, status Backlog, label \"Velho Testamento\""
+          },
+          {
+            "title": "Listar issues em andamento",
+            "description": "Status do pipeline",
+            "example": "@Linear lista issues do team Producao em status \"Em edicao\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie workspace Linear (gratis pra ate 10 users)",
+            "url": "https://linear.app"
+          },
+          {
+            "step": "Conecte via OAuth no MCPCard"
+          }
+        ],
+        "costInfo": "Plano gratuito ate 250 issues. Standard US$ 8/membro/mes. Pra solo creator, o gratuito ja resolve.",
+        "capabilities": [
+          "create_issue",
+          "list_issues",
+          "update_issue",
+          "list_teams"
+        ]
+      }
+    },
+    {
+      "id": "mcp-asana",
+      "name": "Asana",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Project management para equipes, alternativa ao Linear.",
+      "author": "Asana",
+      "homepage": "https://asana.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-asana.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-asana/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.asana.com/sse",
+        "auth": "oauth",
+        "category": "workspace",
+        "tagline": "Alternativa ao Linear pra times maiores",
+        "longDescription": "MCP oficial da Asana. Asana e mais \"corporate\" que Linear — voce ve em times maiores que rodam multiplos projetos paralelos. Se voce ja usa Asana pra organizar o canal, esse MCP integra direto.",
+        "howItWorksInStudio": "OAuth uma vez. Crie, mova, atribua tasks via chat.",
+        "useCases": [
+          {
+            "title": "Criar task",
+            "description": "Adiciona task em projeto especifico",
+            "example": "@Asana cria task \"Editar video Davi\" no projeto Producao Canal, assign pro Diego, due Friday"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Asana",
+            "url": "https://asana.com"
+          },
+          {
+            "step": "Conecte via OAuth no MCPCard"
+          }
+        ],
+        "costInfo": "Plano gratuito ate 15 membros. Premium US$ 11/membro/mes.",
+        "capabilities": [
+          "create_task",
+          "list_tasks",
+          "update_task",
+          "list_projects"
+        ]
+      }
+    },
+    {
+      "id": "mcp-slack",
+      "name": "Slack",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Mensagens, canais e bots no seu workspace Slack.",
+      "author": "Slack",
+      "homepage": "https://slack.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-slack.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-slack/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.slack.com/",
+        "auth": "oauth",
+        "category": "social",
+        "tagline": "Notifica e coordena via Slack pelo chat",
+        "longDescription": "MCP oficial do Slack. Util pra times que coordenam producao via Slack. O agente pode enviar mensagens, ler canais, criar threads.",
+        "howItWorksInStudio": "OAuth. Util pra notificar o time quando termina edicao, ou pedir resumo do que rolou nos canais.",
+        "useCases": [
+          {
+            "title": "Notificar publicacao",
+            "description": "Avisa o time quando o video sai",
+            "example": "@Slack envia mensagem em #canal-producao: \"Video Davi vs Golias publicado no YouTube\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Workspace Slack ativo"
+          },
+          {
+            "step": "OAuth no MCPCard (admin pode precisar aprovar app)"
+          }
+        ],
+        "costInfo": "Plano gratuito do Slack ja serve. Sem cobranca extra do MCP.",
+        "capabilities": [
+          "send_message",
+          "list_channels",
+          "read_thread"
+        ]
+      }
+    },
+    {
+      "id": "mcp-posteverywhere",
+      "name": "PostEverywhere",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Agenda e publica em IG, TikTok, YT, LinkedIn, FB, X, Threads, Pinterest.",
+      "author": "PostEverywhere",
+      "homepage": "https://posteverywhere.io",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-posteverywhere.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-posteverywhere/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@posteverywhere/mcp"
+        ],
+        "auth": "env",
+        "category": "social",
+        "requiresNode": true,
+        "tagline": "Publica seu video em 8 redes com 1 comando",
+        "longDescription": "PostEverywhere e uma plataforma que centraliza a publicacao em 8 redes sociais. Voce conecta cada rede uma vez no painel deles, depois pelo MCP voce manda \"publica este video no IG + TikTok + YT\" e ele agenda/posta tudo.\n\nCobre as 8 grandes: Instagram, TikTok, YouTube, LinkedIn, Facebook, X (Twitter), Threads, Pinterest.\n\nEspecialmente util pro creator que recorta um video longo em multiplos shorts/reels — voce manda 1 comando no chat e os 5-10 cortes vao todos pra todas as redes ao mesmo tempo.",
+        "howItWorksInStudio": "Roda via npx. Conecte sua conta PostEverywhere uma vez. Cada rede social conecta no painel deles (web).\n\nNo chat: peca pra publicar/agendar. Pode mandar varios videos numa batida.",
+        "useCases": [
+          {
+            "title": "Publicar Short em todas as redes",
+            "description": "Mesmo recorte vai pra IG, TikTok, YT Shorts, etc",
+            "example": "@PostEverywhere publica /downloads/recorte1.mp4 em IG Reels, TikTok, YT Shorts. Caption: \"5 verdades sobre Davi\", hashtags #biblia #davi"
+          },
+          {
+            "title": "Agendar drop futuro",
+            "description": "Programa publicacao pra horario otimo",
+            "example": "@PostEverywhere agenda /downloads/video.mp4 pra terca 19h, redes IG + Threads"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta",
+            "url": "https://posteverywhere.io"
+          },
+          {
+            "step": "Conecte cada rede social no painel deles (uma vez)"
+          },
+          {
+            "step": "Pegue a API key"
+          },
+          {
+            "step": "Cole no MCPCard"
+          }
+        ],
+        "costInfo": "Plano gratuito: 5 posts/mes em ate 3 redes. Starter US$ 19/mes: 100 posts. Pro US$ 49/mes: ilimitado + agendamento avancado.",
+        "envSchema": [
+          {
+            "key": "POSTEVERYWHERE_API_KEY",
+            "label": "API Key",
+            "secret": true,
+            "required": true,
+            "description": "posteverywhere.io/api"
+          }
+        ],
+        "capabilities": [
+          "publish_post",
+          "schedule_post",
+          "list_connections"
+        ]
+      }
+    },
+    {
+      "id": "mcp-tiktok",
+      "name": "TikTok",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "API oficial: publicar videos, analytics, campanhas pagas.",
+      "author": "TikTok",
+      "homepage": "https://developers.tiktok.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-tiktok.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-tiktok/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.tiktok.com/",
+        "auth": "oauth",
+        "category": "social",
+        "tagline": "Publicacao oficial direto pro TikTok",
+        "longDescription": "MCP oficial do TikTok (2026). Da acesso a publicacao de videos, analytics e campanhas pagas (TikTok Ads) na mesma conexao.\n\nVantagem sobre PostEverywhere: e oficial — sem risco de quebrar quando TikTok mudar API. Tambem libera funcoes que so o oficial tem (analytics completo, conversao de Ads).",
+        "howItWorksInStudio": "OAuth uma vez. Publica, ve metricas, ou cria campanha de boost pelo chat.",
+        "useCases": [
+          {
+            "title": "Publicar Short",
+            "description": "Upload direto pro TikTok",
+            "example": "@TikTok publica /downloads/short.mp4, caption \"Davi tinha 17 anos quando enfrentou Golias\", hashtags #biblia #fe"
+          },
+          {
+            "title": "Ver analytics",
+            "description": "Performance dos ultimos posts",
+            "example": "@TikTok mostra views, likes e shares dos 5 ultimos videos"
+          },
+          {
+            "title": "Criar campanha paga",
+            "description": "Boost de video pra audiencia segmentada",
+            "example": "@TikTok cria campanha de boost pro video X, orcamento R$ 100, audiencia interessada em religiao Brasil"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta TikTok criador",
+            "url": "https://www.tiktok.com/signup"
+          },
+          {
+            "step": "OAuth no MCPCard (aprova app pelo TikTok)"
+          }
+        ],
+        "costInfo": "Publicacao e analytics: gratis. Ads cobra direto na plataforma (orcamento minimo R$ 10/dia).",
+        "capabilities": [
+          "upload_video",
+          "get_analytics",
+          "create_campaign",
+          "list_videos"
+        ]
+      }
+    },
+    {
+      "id": "mcp-meta-ads",
+      "name": "Meta Ads",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Gerencie Facebook e Instagram Ads via Claude/Gemini.",
+      "author": "Meta",
+      "homepage": "https://developers.facebook.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-meta-ads.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-meta-ads/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.facebook.com/ads",
+        "auth": "oauth",
+        "category": "social",
+        "tagline": "Boost de Reels/Stories sem abrir o Ads Manager",
+        "longDescription": "MCP oficial da Meta pra gerenciar Facebook e Instagram Ads. Voce pode criar campanhas, ver performance, ajustar orcamento, criar audiencias lookalike — tudo via chat.\n\nCaso de uso fortissimo: quando um Reel do canal \"estoura\" organicamente, voce ja manda boost de R$ 50 pra triplicar o alcance sem perder tempo abrindo o Ads Manager.",
+        "howItWorksInStudio": "OAuth da Meta. Acesso ao Business Manager. No chat, peca pra criar/listar/ajustar campanhas.",
+        "useCases": [
+          {
+            "title": "Boost rapido em Reel viral",
+            "description": "Pega impulso organico e amplifica",
+            "example": "@MetaAds boost no Reel ID 17891234, orcamento R$ 100, 3 dias, audiencia \"interessados em religiao Brasil 25-55\""
+          },
+          {
+            "title": "Analytics da semana",
+            "description": "Performance consolidada",
+            "example": "@MetaAds resume performance das campanhas ativas: gasto, impressoes, CPM, CTR"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha Facebook Business Manager",
+            "url": "https://business.facebook.com"
+          },
+          {
+            "step": "OAuth no MCPCard (Meta vai pedir aprovacao do app)"
+          }
+        ],
+        "costInfo": "O MCP em si e gratis. O custo e o gasto em Ads que voce define.",
+        "capabilities": [
+          "create_campaign",
+          "list_campaigns",
+          "get_insights",
+          "create_audience"
+        ]
+      }
+    },
+    {
+      "id": "mcp-google-ads",
+      "name": "Google Ads",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Gerencie campanhas Search, Display e YouTube Ads via chat.",
+      "author": "Google",
+      "homepage": "https://ads.google.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-google-ads.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-google-ads/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.googleadsapi.com/",
+        "auth": "oauth",
+        "category": "social",
+        "tagline": "YouTube Ads no chat — boost de videos especificos",
+        "longDescription": "MCP oficial do Google Ads. Inclui YouTube Ads (bumpers, in-stream, discovery).\n\nUtil pra promover videos especificos pro publico-alvo certo: pessoas que assistem canais similares, em paises de interesse, em horarios estrategicos.",
+        "howItWorksInStudio": "OAuth Google. Conecta a conta Ads vinculada ao canal do YouTube. Peca campanhas, performance, ajustes.",
+        "useCases": [
+          {
+            "title": "Boost em video novo do canal",
+            "description": "Promove pra audiencia segmentada",
+            "example": "@GoogleAds cria campanha YouTube Ads pro video https://youtu.be/abc123, orcamento R$ 200, 7 dias, audiencia \"interessados em religiao + historia\""
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Google Ads",
+            "url": "https://ads.google.com"
+          },
+          {
+            "step": "OAuth no MCPCard"
+          }
+        ],
+        "costInfo": "MCP gratis. Voce paga o gasto em Ads.",
+        "capabilities": [
+          "create_campaign",
+          "list_campaigns",
+          "get_metrics",
+          "youtube_ads"
+        ]
+      }
+    },
+    {
+      "id": "mcp-figma",
+      "name": "Figma",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Acesse frames, components e exports do Figma via chat.",
+      "author": "Figma",
+      "homepage": "https://figma.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-figma.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-figma/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.figma.com/",
+        "auth": "oauth",
+        "category": "design",
+        "tagline": "Capas e thumbs do Figma direto no chat",
+        "longDescription": "MCP oficial Figma. Se voce mantem o design das thumbs do canal em Figma (template padronizado), pode pedir pro chat exportar variacoes especificas.\n\nFluxo: voce tem um arquivo \"Template Thumbnails\" no Figma com instances pra cada video. No chat, pede pra exportar a variacao do video atual em PNG.",
+        "howItWorksInStudio": "OAuth Figma. Acessa arquivos compartilhados. Pode exportar frames como PNG/SVG/PDF.",
+        "useCases": [
+          {
+            "title": "Exportar thumb",
+            "description": "PNG da capa do video da semana",
+            "example": "@Figma exporta o frame \"Davi vs Golias\" do arquivo Thumbnails como PNG 1920x1080"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Figma",
+            "url": "https://figma.com"
+          },
+          {
+            "step": "OAuth no MCPCard"
+          }
+        ],
+        "costInfo": "Figma free serve. Sem cobranca extra do MCP.",
+        "capabilities": [
+          "list_files",
+          "export_frame",
+          "get_components"
+        ]
+      }
+    },
+    {
+      "id": "mcp-canva",
+      "name": "Canva",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Acesse templates Canva e gere variacoes direto pelo chat.",
+      "author": "Canva",
+      "homepage": "https://canva.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-canva.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-canva/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.canva.com/",
+        "auth": "oauth",
+        "category": "design",
+        "tagline": "Templates Canva + autofill via chat",
+        "longDescription": "MCP oficial Canva. Diferente do Figma, Canva tem a forca dos templates prontos + autofill (voce manda dados e ele preenche o template).\n\nFluxo: voce tem um template \"Thumb Canal Nardoto\". No chat, manda titulo+subtitulo do video novo. O Canva preenche o template e exporta.",
+        "howItWorksInStudio": "OAuth Canva. Pega templates da sua conta. Faz autofill com dados que voce passa no chat.",
+        "useCases": [
+          {
+            "title": "Thumb com autofill",
+            "description": "Preenche template com dados do video",
+            "example": "@Canva preenche template \"Thumb Nardoto\" com titulo \"DAVI vs GOLIAS\" subtitulo \"A verdade que ninguem contou\", exporta PNG"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Conta Canva Pro recomendada pra autofill",
+            "url": "https://canva.com/pricing"
+          },
+          {
+            "step": "OAuth no MCPCard"
+          }
+        ],
+        "costInfo": "Canva Free funciona com limites. Pro US$ 13/mes desbloqueia autofill e exports HD.",
+        "capabilities": [
+          "list_templates",
+          "autofill_template",
+          "export_design"
+        ]
+      }
+    },
+    {
+      "id": "mcp-github",
+      "name": "GitHub",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Issues, PRs, code, releases. O MCP mais usado de todos.",
+      "author": "GitHub / Anthropic",
+      "homepage": "https://github.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-github.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-github/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-github"
+        ],
+        "auth": "env",
+        "category": "dev",
+        "requiresNode": true,
+        "tagline": "O MCP mais usado do mercado — issues, PRs, releases",
+        "longDescription": "O MCP de referencia da industria. Da acesso ao GitHub: criar/listar issues, pull requests, releases, commits, code search.\n\nIdeal pra dev solo que mantem o codigo do Nardoto Studio (este aqui). Voce pede no chat \"lista issues abertas\" ou \"cria release v7.3.0\" sem sair do app.",
+        "howItWorksInStudio": "Roda via npx. Precisa Personal Access Token do GitHub (scopes: repo, issues, workflow).",
+        "useCases": [
+          {
+            "title": "Listar issues abertas",
+            "description": "Resumo de bugs e features pendentes",
+            "example": "@GitHub lista issues abertas no repo LoopLess-nardoto/NardotoStudio com label \"bug\""
+          },
+          {
+            "title": "Criar release",
+            "description": "Bumpa versao e publica",
+            "example": "@GitHub cria release v7.3.0 no repo nardoto-studio-releases com changelog do CHANGELOG.md"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie Personal Access Token",
+            "url": "https://github.com/settings/tokens"
+          },
+          {
+            "step": "Scopes necessarios: repo, issues, workflow, write:packages"
+          },
+          {
+            "step": "Cole o token no MCPCard"
+          }
+        ],
+        "costInfo": "GitHub Free serve. Sem cobranca do MCP.",
+        "envSchema": [
+          {
+            "key": "GITHUB_PERSONAL_ACCESS_TOKEN",
+            "label": "Personal Access Token",
+            "secret": true,
+            "required": true,
+            "description": "github.com/settings/tokens (scopes: repo, issues, workflow)"
+          }
+        ],
+        "capabilities": [
+          "create_issue",
+          "list_issues",
+          "create_pr",
+          "create_release",
+          "search_code"
+        ]
+      }
+    },
+    {
+      "id": "mcp-playwright",
+      "name": "Playwright",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Automacao de browser para tests, scraping e validacao de UI.",
+      "author": "Microsoft",
+      "homepage": "https://playwright.dev",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-playwright.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-playwright/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@microsoft/playwright-mcp"
+        ],
+        "auth": "none",
+        "category": "dev",
+        "requiresNode": true,
+        "tagline": "Robo de browser que testa e raspa qualquer site",
+        "longDescription": "MCP oficial Microsoft. Roda um browser headless controlado pelo agente. Faz screenshots, clica em botoes, preenche forms, raspa conteudo.\n\nPra criador: util pra raspar info de paginas (news, dados), tirar screenshots de matérias pra video de geopolitica, validar links no canal.",
+        "howItWorksInStudio": "Roda via npx. Sem auth — abre browser local. Primeira execucao baixa Chromium (~120MB).",
+        "useCases": [
+          {
+            "title": "Screenshot de noticia",
+            "description": "Captura layout de site pra usar no video",
+            "example": "@Playwright tira screenshot da noticia em https://www.bbc.com/news/..."
+          },
+          {
+            "title": "Raspar dados",
+            "description": "Coleta info estruturada de site",
+            "example": "@Playwright extrai os 10 ultimos posts do blog https://exemplo.com em formato JSON"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha Node instalado"
+          },
+          {
+            "step": "Clique em Conectar (sem chave, baixa Chromium na primeira chamada)"
+          }
+        ],
+        "costInfo": "100% gratis.",
+        "capabilities": [
+          "screenshot",
+          "click",
+          "fill_form",
+          "scrape",
+          "navigate"
+        ]
+      }
+    },
+    {
+      "id": "mcp-context7",
+      "name": "Context7",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Docs atualizadas de bibliotecas em tempo real. Sem hallucination.",
+      "author": "Upstash",
+      "homepage": "https://context7.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-context7.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-context7/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@upstash/context7-mcp"
+        ],
+        "auth": "none",
+        "category": "dev",
+        "requiresNode": true,
+        "tagline": "Docs atualizadas — Claude para de inventar API",
+        "longDescription": "Context7 e essencial pra dev. Os modelos AI tem cutoff de conhecimento e inventam APIs antigas. Context7 da docs ATUAIS de qualquer lib (React, Next.js, Electron, Vite, etc) em tempo real.\n\nResolve um problema enorme: quando voce pede pra Claude \"como faz X no Next.js 16\" e ele responde com sintaxe do Next.js 13, voce perde horas.",
+        "howItWorksInStudio": "Roda via npx, sem auth. Antes de gerar codigo, peca \"use context7 pra Next.js 16\" pra forcar busca de docs atualizadas.",
+        "useCases": [
+          {
+            "title": "Codigo com API atual",
+            "description": "Garante que nao usa sintaxe antiga",
+            "example": "use context7 pra Next.js 16: como faco app router com middleware?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha Node instalado"
+          },
+          {
+            "step": "Clique em Conectar (sem chave)"
+          }
+        ],
+        "costInfo": "100% gratis.",
+        "capabilities": [
+          "get_library_docs",
+          "resolve_library_id"
+        ]
+      }
+    },
+    {
+      "id": "mcp-stripe",
+      "name": "Stripe",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial Stripe — pagamentos, assinaturas, payouts.",
+      "author": "Stripe",
+      "homepage": "https://stripe.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-stripe.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-stripe/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.stripe.com/",
+        "auth": "apikey",
+        "category": "finance",
+        "tagline": "Cobrancas e faturamento do canal via chat",
+        "longDescription": "MCP oficial Stripe. Voce ja usa Stripe pra cobrar planos do Nardoto Studio (de acordo com memoria de planos). O MCP permite verificar faturamento, criar produtos, ver pagamentos pendentes, gerenciar assinaturas — tudo via chat.",
+        "howItWorksInStudio": "Cole a Secret Key (sk_live_... ou sk_test_...) no MCPCard.\n\nFluxo: end-of-day, peca \"@Stripe resume faturamento de hoje\" e veja sem abrir o dashboard.",
+        "useCases": [
+          {
+            "title": "Resumo do dia",
+            "description": "Quanto entrou hoje",
+            "example": "@Stripe resume pagamentos de hoje: total, count, ticket medio"
+          },
+          {
+            "title": "Assinaturas ativas",
+            "description": "Quantos clientes pagando agora",
+            "example": "@Stripe quantas assinaturas ativas existem no plano Nardoto Studio Pro?"
+          },
+          {
+            "title": "Criar produto/plano",
+            "description": "Adiciona novo SKU sem abrir dashboard",
+            "example": "@Stripe cria produto \"Mentoria Mensal\", preco R$ 297/mes, recorrente"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha conta Stripe",
+            "url": "https://dashboard.stripe.com/register"
+          },
+          {
+            "step": "Pegue a Secret Key",
+            "url": "https://dashboard.stripe.com/apikeys"
+          },
+          {
+            "step": "Use sk_test_... pra testar, sk_live_... pra producao"
+          },
+          {
+            "step": "Cole no MCPCard"
+          }
+        ],
+        "costInfo": "MCP gratis. Stripe cobra 3.99% + R$ 0.39 por pagamento (no Brasil).",
+        "envSchema": [
+          {
+            "key": "STRIPE_SECRET_KEY",
+            "label": "Stripe Secret Key",
+            "secret": true,
+            "required": true,
+            "description": "dashboard.stripe.com/apikeys"
+          }
+        ],
+        "capabilities": [
+          "list_charges",
+          "create_product",
+          "list_subscriptions",
+          "get_balance",
+          "create_customer"
+        ]
+      }
+    },
+    {
+      "id": "mcp-n8n",
+      "name": "n8n",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Workflows visuais 1000+ integracoes (Zapier alternativa open-source).",
+      "author": "n8n",
+      "homepage": "https://n8n.io",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.1/mcp-n8n.zip",
+      "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-n8n/icon.png",
+      "minAppVersion": "7.2.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://your-n8n.cloud/mcp",
+        "auth": "apikey",
+        "category": "dev",
+        "tagline": "Workflows do n8n disparados pelo chat",
+        "longDescription": "n8n e um Zapier open-source. Voce monta workflows visuais (trigger -> ação -> ação) ligando 1000+ servicos. O MCP permite disparar workflows pelo chat.\n\nPra criador: monta um workflow no n8n tipo \"Novo video no YouTube -> Posta no IG + Twitter + Discord\" e dispara pelo chat quando quiser.",
+        "howItWorksInStudio": "Voce precisa de uma instancia n8n rodando (n8n.cloud ou self-hosted). Cole a URL + API key.",
+        "useCases": [
+          {
+            "title": "Disparar workflow custom",
+            "description": "Aciona automacao multi-passo",
+            "example": "@n8n executa workflow \"Publicar Video\": payload com URL do video + titulo + descricao"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie instancia n8n cloud (gratis pra ate 1 worker)",
+            "url": "https://n8n.io/cloud/"
+          },
+          {
+            "step": "Crie um workflow MCP no n8n"
+          },
+          {
+            "step": "Pegue a URL + API key"
+          },
+          {
+            "step": "Cole no MCPCard (URL e Key separados — usa custom URL)"
+          }
+        ],
+        "costInfo": "n8n Cloud Starter US$ 20/mes. Self-hosted: 100% gratis se voce roda na sua VPS.",
+        "envSchema": [
+          {
+            "key": "N8N_API_KEY",
+            "label": "n8n API Key",
+            "secret": true,
+            "required": true,
+            "description": "Settings > API > Create API Key"
+          },
+          {
+            "key": "N8N_BASE_URL",
+            "label": "URL base do n8n",
+            "secret": false,
+            "required": true,
+            "description": "Ex: https://meu-canal.n8n.cloud"
+          }
+        ],
+        "capabilities": [
+          "execute_workflow",
+          "list_workflows",
+          "get_executions"
+        ]
+      }
     }
   ]
 }
