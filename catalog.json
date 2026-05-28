@@ -197,7 +197,7 @@
     {
       "id": "nardoto-search",
       "name": "Pesquisa Unificada",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "type": "panel",
       "description": "Pesquisa unificada: notícias, imagens e vídeos do YouTube",
       "author": "Nardoto",
@@ -247,7 +247,7 @@
     {
       "id": "google-tts",
       "name": "Google TTS",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Texto para fala com Google Gemini TTS - 30 vozes, Audio Drama, estilos de narracao",
       "author": "Nardoto",
@@ -257,7 +257,7 @@
     {
       "id": "nardoto-earth",
       "name": "Nardoto Earth",
-      "version": "1.2.0",
+      "version": "1.9.0",
       "type": "panel",
       "description": "Gerador de rotas KML/ESP com IA para Google Earth e Earth Studio",
       "author": "Nardoto",
@@ -322,6 +322,120 @@
       "author": "Nardoto",
       "icon": "Search",
       "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-newsroom.zip"
+    },
+    {
+      "id": "nardoto-ai33-tts",
+      "name": "AI33 TTS",
+      "version": "2.3.3",
+      "type": "panel",
+      "description": "TTS (texto, batch JSON/SRT, diálogo multi-voz), dublagem, transcrição, efeitos sonoros, voice changer, isolamento de voz, música e imagens via ai33.pro",
+      "author": "Nardoto",
+      "icon": "Mic",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-ai33-tts.zip"
+    },
+    {
+      "id": "nardoto-canva",
+      "name": "Canva Studio",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Crie designs profissionais com templates do Canva direto no Nardoto Studio",
+      "author": "Nardoto",
+      "icon": "Palette",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-canva.zip"
+    },
+    {
+      "id": "nardoto-flow-automation",
+      "name": "Automação Flow",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Automação em lote do Google Flow — gera vídeos e imagens com fila inteligente, retry automático e múltiplos modos",
+      "author": "Nardoto",
+      "icon": "Zap",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-flow-automation.zip"
+    },
+    {
+      "id": "hyperframes",
+      "name": "HyperFrames",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Crie vídeos com HTML + CSS + GSAP — renderização determinística via HyperFrames",
+      "author": "Nardoto",
+      "icon": "Code2",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/hyperframes.zip"
+    },
+    {
+      "id": "nardoto-rvc",
+      "name": "RVC Voice Changer",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Voice changer local via RVC — troca a voz mantendo a sincronia labial",
+      "author": "Nardoto",
+      "icon": "MicVocal",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-rvc.zip"
+    },
+    {
+      "id": "nardoto-scripts",
+      "name": "Nardoto Scripts",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "Console de automação JavaScript para pipelines criativos",
+      "author": "Nardoto",
+      "icon": "Terminal",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-scripts.zip"
+    },
+    {
+      "id": "cortes-automaticos",
+      "name": "Cortes Automáticos",
+      "version": "1.0.0",
+      "type": "panel",
+      "description": "A IA analisa o SRT, decide os cortes pra condensar a narrativa e exporta o projeto pro CapCut",
+      "author": "Nardoto",
+      "icon": "Scissors",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/cortes-automaticos.zip"
+    },
+    {
+      "id": "nardoto-roteiro-lote",
+      "name": "Roteiros em Lote",
+      "version": "0.2.0",
+      "type": "panel",
+      "description": "Dispara o coordenador de vídeo em lote (Claude/Codex/Gemini), com TTS Inworld e regeneração de prompts opcional",
+      "author": "Nardoto",
+      "icon": "FileText",
+      "wip": true,
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-roteiro-lote.zip"
+    }
+  ],
+  "flowExtensions": [
+    {
+      "id": "nardoto-google-tts",
+      "name": "Google AI Studio TTS Automator",
+      "version": "1.0.0",
+      "type": "flow-extension",
+      "description": "Divide o texto longo em partes e gera narração em paralelo no Google AI Studio (Gemini TTS)",
+      "author": "Nardoto",
+      "icon": "Mic",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-google-tts.zip"
+    },
+    {
+      "id": "nardoto-lmnt-tts",
+      "name": "LMNT TTS Automator",
+      "version": "1.0.0",
+      "type": "flow-extension",
+      "description": "Gera narração em paralelo pelo playground gratuito do LMNT (sem login, sem API key)",
+      "author": "Nardoto",
+      "icon": "Mic",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-lmnt-tts.zip"
+    },
+    {
+      "id": "nardoto-whatsapp",
+      "name": "WhatsApp Automação",
+      "version": "0.1.0",
+      "type": "flow-extension",
+      "description": "Automações do WhatsApp Web: extrai contatos de grupo, envia pra lista, auto-resposta com IA e controle pelo chat do Studio",
+      "author": "Nardoto",
+      "icon": "MessageCircle",
+      "wip": true,
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/nardoto-whatsapp.zip"
     }
   ],
   "mcps": [
@@ -1968,6 +2082,70 @@
           "execute_workflow",
           "list_workflows",
           "get_executions"
+        ]
+      }
+    },
+    {
+      "id": "mcp-git",
+      "name": "Git",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Operacoes git via MCP: status, log, diff, blame, show, commit. Padrao oficial do MCP.",
+      "author": "Anthropic / MCP",
+      "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "mcp-server-git",
+          "--repository",
+          "."
+        ],
+        "auth": "none",
+        "category": "dev",
+        "requiresNode": false,
+        "requiresPython": true,
+        "tagline": "Git nativo nas 4 IAs do chat",
+        "longDescription": "MCP oficial pra operacoes git. Funciona em Claude, Codex e Gemini (Antigravity nao consome MCP — usa git nativo via shell). O Studio passa --repository '.', entao opera no cwd do CLI (geralmente a raiz do projeto aberto).",
+        "howItWorksInStudio": "Roda via uvx (Python). Requer 'uv' instalado (https://docs.astral.sh/uv/). Sem auth, sem config — ativa pelo botao Conectar.",
+        "useCases": [
+          {
+            "title": "Conferir mudancas",
+            "description": "Pedir resumo do que voce alterou em uma branch",
+            "example": "Compare HEAD com master e me explique as mudancas"
+          },
+          {
+            "title": "Investigar regressao",
+            "description": "Usar git blame para achar quem introduziu um bug",
+            "example": "Qual commit introduziu a linha 145 de src/main.js?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Instale 'uv' (no Windows: `irm https://astral.sh/uv/install.ps1 | iex`)"
+          },
+          {
+            "step": "Clique em Conectar (sem chave)"
+          },
+          {
+            "step": "Abra um projeto git no Studio antes de pedir operacoes"
+          }
+        ],
+        "costInfo": "100% gratis. Roda local.",
+        "capabilities": [
+          "git_status",
+          "git_diff_unstaged",
+          "git_diff_staged",
+          "git_diff",
+          "git_commit",
+          "git_add",
+          "git_reset",
+          "git_log",
+          "git_create_branch",
+          "git_checkout",
+          "git_show",
+          "git_init"
         ]
       }
     }
