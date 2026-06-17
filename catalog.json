@@ -227,7 +227,7 @@
     {
       "id": "nardoto-html-viewer",
       "name": "Visualizador HTML",
-      "version": "1.1.2",
+      "version": "1.2.0",
       "type": "panel",
       "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
       "author": "Nardoto",
@@ -326,7 +326,7 @@
     {
       "id": "nardoto-ai33-tts",
       "name": "AI33 TTS",
-      "version": "2.3.3",
+      "version": "2.3.4",
       "type": "panel",
       "description": "TTS (texto, batch JSON/SRT, diálogo multi-voz), dublagem, transcrição, efeitos sonoros, voice changer, isolamento de voz, música e imagens via ai33.pro",
       "author": "Nardoto",
