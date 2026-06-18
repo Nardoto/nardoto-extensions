@@ -456,6 +456,8 @@
         "auth": "oauth",
         "category": "video",
         "tagline": "Avatar IA pra narrar seus videos sem gravar",
+        "pricing": "freemium",
+        "verified": true,
         "longDescription": "A HeyGen e a maior plataforma de avatares com IA do mercado. Sao mais de 230 avatares prontos (homens, mulheres, varias etnias e idades) ou voce pode criar seu proprio avatar digital a partir de 2 minutos de video.\n\nDepois de criar o avatar, basta digitar o roteiro e a HeyGen gera o video com o avatar falando, com sincronia labial perfeita, em mais de 175 idiomas.\n\nTambem faz traducao automatica de videos ja prontos: voce envia um MP4 em portugues e recebe a mesma pessoa falando ingles, espanhol, mandarim etc com a propria voz dela.",
         "howItWorksInStudio": "Voce conecta sua conta HeyGen via OAuth (1 clique). No chat, pede pro Claude/Gemini gerar o video com avatar e roteiro. O video gerado fica salvo na sua conta HeyGen e voce pode baixar pelo link que aparece no chat.\n\nIntegra muito bem com o fluxo intro-narrador do canal: voce escreve o testemunho biblico, manda pro HeyGen criar o avatar narrador, e ja recebe o MP4 pronto pra entrar na timeline.",
         "useCases": [
@@ -517,10 +519,12 @@
       "minAppVersion": "7.2.0",
       "mcp": {
         "transport": "http",
-        "url": "https://mcp.higgsfield.ai/",
+        "url": "https://mcp.higgsfield.ai/mcp",
         "auth": "apikey",
         "category": "video",
         "tagline": "30+ modelos de IA visual numa unica conversa",
+        "pricing": "freemium",
+        "verified": true,
         "longDescription": "Higgsfield e um hub que da acesso a 30+ modelos diferentes de imagem e video num so lugar: Soul, Cinema Studio, Flux, Seedream, Kling, Minimax Hailuo, Veo3 (Google) e mais.\n\nO MCP da Higgsfield e especial: o agente AI escolhe automaticamente o melhor modelo pra cada tarefa. Voce pede \"uma imagem cinematica de Davi vs Golias\" e ele decide se usa Flux (foto-realismo), Soul (estilo cinematografico) ou outro.\n\nUm dos casos de uso mais fortes pro nicho do canal Nardoto: criar capas no estilo classico (Caravaggio, Rembrandt) com qualidade museu.",
         "howItWorksInStudio": "Voce coloca a API key uma vez. Depois, no chat, qualquer pedido visual aciona o MCP. A imagem ou o video gerado aparece INLINE no chat (graca a integracao com tool_result image). Voce clica em \"Salvar na biblioteca\" e ele vai pro projeto.\n\nIdeal pra fluxo de capas, b-roll de cenarios biblicos, e visualizacoes de momentos historicos sem precisar de banco de imagens stock.",
         "useCases": [
@@ -592,12 +596,14 @@
         "command": "npx",
         "args": [
           "-y",
-          "@apinetwork/piapi-mcp-server"
+          "@iflow-mcp/piapi-mcp-server"
         ],
         "auth": "env",
         "category": "video",
         "requiresNode": true,
         "tagline": "Midjourney + Suno + Kling + Veo numa unica API",
+        "pricing": "paid",
+        "verified": true,
         "longDescription": "PiAPI agrega APIs nao-oficiais de Midjourney, Suno, Kling, Hailuo, Luma, Udio e mais. Em vez de criar conta e pagar mensalidade em cada uma, voce paga pay-as-you-go aqui e tem acesso a todas com 1 chave.\n\nEspecialmente util pra acessar Midjourney via API (que oficialmente nao tem API publica) e pra Suno (geracao de musica) que tem demanda alta.\n\nO MCP da PiAPI roda local via npx (precisa Node instalado). Mais lento na primeira chamada (baixa o pacote) mas depois fica rapido.",
         "howItWorksInStudio": "Voce coloca a chave PIAPI. No chat, peca midjourney/suno/kling/etc por nome e o MCP roteia pro modelo certo. Imagens vem inline no chat. Audios e videos vem como URL pra baixar.\n\nFluxo tipico: pede trilha sonora pra video epico no Suno → recebe MP3 pra baixar → joga no painel de audio do Studio.",
         "useCases": [
@@ -664,11 +670,18 @@
       "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-kie-ai/icon.png",
       "minAppVersion": "7.2.0",
       "mcp": {
-        "transport": "http",
-        "url": "https://mcp.kie.ai/",
-        "auth": "apikey",
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@felores/kie-ai-mcp-server"
+        ],
+        "auth": "env",
         "category": "video",
+        "requiresNode": true,
         "tagline": "25+ modelos de imagem, video e audio numa API",
+        "pricing": "paid",
+        "verified": true,
         "longDescription": "Kie.ai e similar ao PiAPI mas focado em qualidade premium. Da acesso a Google Veo 3 (modelo cinematografico de ultimo nivel), Runway Gen-4, Kling 2.5, Hailuo 02 Pro, e modelos de imagem como Ideogram, Recraft, FLUX 1.1 Pro.\n\nDiferencial: tem uma camada de cache inteligente que evita gerar a mesma coisa 2x, economizando creditos. E a documentacao e em ingles/portugues claro.\n\nMCP via HTTP, sem precisar instalar nada local.",
         "howItWorksInStudio": "Coloca a key uma vez via API key. No chat, pede direto: \"gera video estilo Veo 3 de...\" ou \"gera imagem Ideogram com texto: ...\" - o MCP escolhe ou voce especifica o modelo. Resultado vem como URL pra baixar.\n\nIdeal pra quem quer qualidade premium sem ter que aprender 5 dashboards diferentes.",
         "useCases": [
@@ -703,11 +716,11 @@
         "costInfo": "Pay-as-you-go. Veo 3 ~US$ 0.50/segundo de video. Ideogram ~US$ 0.05/imagem. Tem cache que evita cobrar 2x pelo mesmo prompt.",
         "envSchema": [
           {
-            "key": "KIE_API_KEY",
-            "label": "Kie API Key",
+            "key": "KIE_AI_API_KEY",
+            "label": "Kie.ai API Key",
             "secret": true,
             "required": true,
-            "description": "Dashboard em kie.ai"
+            "description": "Dashboard em kie.ai/settings/api-keys (MCP comunitario @felores/kie-ai-mcp-server)"
           }
         ],
         "capabilities": [
@@ -731,18 +744,15 @@
       "icon": "https://raw.githubusercontent.com/Nardoto/nardoto-extensions/main/mcp-runway/icon.png",
       "minAppVersion": "7.2.0",
       "mcp": {
-        "transport": "stdio",
-        "command": "npx",
-        "args": [
-          "-y",
-          "@runway/mcp-server"
-        ],
-        "auth": "env",
+        "transport": "http",
+        "url": "https://mcp.runwayml.com/mcp",
+        "auth": "oauth",
         "category": "video",
-        "requiresNode": true,
         "tagline": "Gen-4: o video AI mais cinematografico do mercado",
-        "longDescription": "Runway e o pioneiro do video AI cinematografico. O modelo Gen-4 (lancado em 2026) e considerado o estado-da-arte: cameras realistas, fisica natural, consistencia de personagem entre frames.\n\nFuncionalidades fortes: image-to-video (transforma uma imagem em video animado de 10s), motion brush (voce desenha onde a animacao acontece), e camera control (especifica pan, tilt, dolly).\n\nFunciona via npx, precisa de Node no PATH. Pra primeira chamada baixa o pacote (~1min).",
-        "howItWorksInStudio": "API key colocada uma vez. No chat: peca text-to-video, image-to-video, ou camera-controlled video. Resultado vem como URL.\n\nFluxo classico: gera capa estatica no Higgsfield → manda pro Runway transformar em video animado de 10s → entra na intro do video como cenario em movimento.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "Runway e o pioneiro do video AI cinematografico. O modelo Gen-4 (lancado em 2026) e considerado o estado-da-arte: cameras realistas, fisica natural, consistencia de personagem entre frames.\n\nFuncionalidades fortes: image-to-video (transforma uma imagem em video animado de 10s), motion brush (voce desenha onde a animacao acontece), e camera control (especifica pan, tilt, dolly).\n\nAgora roda como MCP oficial HTTP (https://mcp.runwayml.com/mcp), sem instalar nada: o login e via OAuth da sua conta Runway.",
+        "howItWorksInStudio": "Login via OAuth (1 clique, sem API key separada). No chat: peca text-to-video, image-to-video, ou camera-controlled video. Resultado vem como URL.\n\nFluxo classico: gera capa estatica no Higgsfield → manda pro Runway transformar em video animado de 10s → entra na intro do video como cenario em movimento.",
         "useCases": [
           {
             "title": "Animar capa estatica",
@@ -757,34 +767,14 @@
         ],
         "setupSteps": [
           {
-            "step": "Crie conta",
+            "step": "Tenha conta Runway",
             "url": "https://app.runwayml.com/signup"
           },
           {
-            "step": "Habilite acesso a API",
-            "url": "https://dev.runwayml.com"
-          },
-          {
-            "step": "Pegue API key em dev.runwayml.com",
-            "url": "https://dev.runwayml.com/api-keys"
-          },
-          {
-            "step": "Garanta que Node esta instalado (node --version no terminal)"
-          },
-          {
-            "step": "Cole no MCPCard ao Conectar"
+            "step": "Clique em Conectar no MCPCard — o login e via OAuth da sua conta Runway (sem API key separada)"
           }
         ],
-        "costInfo": "Pay-as-you-go. Gen-4 video 10s ~US$ 1.50. Image-to-video ~US$ 0.80. Plano gratuito tem 125 creditos pra testar.",
-        "envSchema": [
-          {
-            "key": "RUNWAY_API_KEY",
-            "label": "Runway API Key",
-            "secret": true,
-            "required": true,
-            "description": "dev.runwayml.com"
-          }
-        ],
+        "costInfo": "MCP oficial gratuito; o uso consome creditos do seu plano Runway (login via OAuth). Endpoint oficial https://mcp.runwayml.com/mcp.",
         "capabilities": [
           "text_to_video",
           "image_to_video",
@@ -814,6 +804,8 @@
         "category": "audio",
         "requiresPython": true,
         "tagline": "A voz IA mais realista do mercado, com sua propria voz clonada",
+        "pricing": "freemium",
+        "verified": true,
         "longDescription": "ElevenLabs e o padrao-ouro de TTS. As vozes sao indistinguiveis de humanas, com emocao, pausas naturais e respiracao.\n\nVoce pode usar vozes prontas (mais de 5000) ou clonar a sua propria a partir de 1 minuto de audio. Depois e so digitar texto e receber MP3 com sua voz lendo qualquer coisa, em qualquer idioma.\n\nTambem faz dubbing (pega video em portugues, traz a mesma voz falando ingles), e voice changer (transforma uma voz em outra mantendo entonacao).",
         "howItWorksInStudio": "API key colocada uma vez. No chat, peca TTS, clonagem ou dubbing. O audio gerado vem como URL pra baixar.\n\nFluxo recomendado pro canal: clone a propria voz uma vez. Depois cada testemunho biblico ou narracao de geopolitica e gerada com 1 prompt no chat, em segundos, no SEU timbre.",
         "useCases": [
@@ -895,6 +887,8 @@
         "auth": "apikey",
         "category": "audio",
         "tagline": "Trilha sonora premium sem dor de cabeca de copyright",
+        "pricing": "paid",
+        "verified": true,
         "longDescription": "Epidemic Sound e o servico mais usado por youtubers profissionais. 40.000+ musicas e 90.000+ SFX, todos liberados pra YouTube/TikTok/Instagram com a assinatura ativa.\n\nA grande vantagem e o catalogo curado por categoria/emocao/instrumento, e o sistema de stems (voce baixa partes separadas: bateria, baixo, melodia) pra montar variacoes.\n\nO MCP permite buscar e baixar direto pelo chat, sem abrir a web.",
         "howItWorksInStudio": "Cole sua API key uma vez (gerada no painel da Epidemic). No chat, peca musica por mood/genero/BPM. O MCP retorna URLs pra download.\n\nFluxo tipico: voce ja tem extensao Epidemic Sound no Studio (ja existente). O MCP virou alternativa via chat — util quando voce ja sabe a vibe (\"preciso de algo epico orquestral 90 BPM\") e quer pular o passo de navegar a UI.\n\nAVISO: API key do Epidemic Sound expira a cada 30 dias. Quando isso acontecer, regenere e cole de novo aqui.",
         "useCases": [
@@ -953,17 +947,18 @@
       "minAppVersion": "7.2.0",
       "mcp": {
         "transport": "stdio",
-        "command": "npx",
+        "command": "uvx",
         "args": [
-          "-y",
-          "suno-mcp-server"
+          "mcp-suno"
         ],
         "auth": "env",
         "category": "audio",
-        "requiresNode": true,
-        "tagline": "Musica AI original em 60s — 100% sua, sem royalty",
-        "longDescription": "Suno e o modelo de musica AI mais avancado de 2026. Voce descreve a musica em texto (\"trilha epica orquestral pra video sobre Davi e Golias, com coral feminino no climax\") e em ~60 segundos recebe uma musica completa com letra, melodia e producao profissional.\n\nDiferencial: voce pode pedir uma letra especifica (\"escreva uma cancao sobre a coragem de Davi\"), pedir estilo de artista (\"estilo trilha sonora Hans Zimmer\"), ou pedir musica instrumental.\n\nA musica gerada e SUA — voce pode monetizar sem dividir royalty.",
-        "howItWorksInStudio": "Roda via npx (precisa Node). Chave Suno colocada uma vez.\n\nNo chat: peca musica por descricao. Em 1-2 minutos recebe MP3 + letra. Salva direto na biblioteca de audio do projeto.",
+        "requiresPython": true,
+        "tagline": "Musica AI original em 60s (via AceDataCloud, nao-oficial)",
+        "pricing": "paid",
+        "verified": true,
+        "longDescription": "IMPORTANTE: a Suno NAO tem API nem MCP oficial (confirmado em 2026). Este conector usa o AceDataCloud, um servico de TERCEIRO que acessa a Suno por uma API nao-oficial e cobra a parte. Se preferir caminho oficial, gere musica por dentro dos hubs PiAPI ou Kie.ai (que ja incluem Suno).\n\nCom o AceDataCloud voce descreve a musica em texto e em ~60s recebe a faixa completa com letra, melodia e producao. Da pra pedir letra especifica, estilo de artista, ou instrumental.",
+        "howItWorksInStudio": "Roda via uvx (precisa do 'uv'/Python). Cole o token do AceDataCloud uma vez.\n\nNo chat: peca musica por descricao. Em 1-2 minutos recebe MP3 + letra. Salva direto na biblioteca de audio do projeto.",
         "useCases": [
           {
             "title": "Trilha cinematica customizada",
@@ -978,28 +973,28 @@
         ],
         "setupSteps": [
           {
-            "step": "Crie conta Suno",
-            "url": "https://suno.com"
+            "step": "Instale o 'uv' (Windows: irm https://astral.sh/uv/install.ps1 | iex)",
+            "url": "https://docs.astral.sh/uv/getting-started/installation/"
           },
           {
-            "step": "Plano Pro US$ 10/mes libera download MP3 + uso comercial",
-            "url": "https://suno.com/pricing"
+            "step": "Crie conta no AceDataCloud (provedor terceiro que acessa a Suno)",
+            "url": "https://platform.acedata.cloud"
           },
           {
-            "step": "Gere API key (em settings/api)"
+            "step": "Gere o API token na pagina de documentacao (botao Acquire)"
           },
           {
-            "step": "Cole no MCPCard ao Conectar"
+            "step": "Cole o token no MCPCard ao Conectar"
           }
         ],
-        "costInfo": "Plano gratuito 10 musicas/dia (sem uso comercial). Pro US$ 10/mes: 500/mes com uso comercial. Premier US$ 30/mes: 2000/mes.",
+        "costInfo": "Suno nao tem API oficial; este conector usa o AceDataCloud (terceiro), que cobra por geracao via creditos da conta AceDataCloud. Veja precos em platform.acedata.cloud.",
         "envSchema": [
           {
-            "key": "SUNO_API_KEY",
-            "label": "Suno Key",
+            "key": "ACEDATACLOUD_API_TOKEN",
+            "label": "AceDataCloud API Token",
             "secret": true,
             "required": true,
-            "description": "suno.com/settings/api"
+            "description": "platform.acedata.cloud (provedor terceiro — Suno nao tem API oficial)"
           }
         ],
         "capabilities": [
@@ -1032,6 +1027,8 @@
         "category": "stock",
         "requiresNode": true,
         "tagline": "Stock 100% gratis sem precisar de credito",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "Pexels e o maior banco de fotos e videos stock gratuitos. Tudo licenca CC0 — voce usa em qualquer projeto pessoal ou comercial sem precisar dar credito.\n\nO catalogo cobre principalmente fotos cotidianas, paisagens, business, lifestyle. Pra nicho biblico/historico nao e ideal — pra isso use Higgsfield/Runway pra GERAR a imagem. Pexels e melhor pra b-roll generico (paisagens, ceu, mar, etc).",
         "howItWorksInStudio": "Roda via npx. Chave gratuita (1 minuto pra cadastro). Limite generoso (200 req/hora).\n\nNo chat: pede foto ou video. Resultado vem com URL pra baixar.",
         "useCases": [
@@ -1098,6 +1095,8 @@
         "category": "stock",
         "requiresNode": true,
         "tagline": "Foto profissional gratis, qualidade editorial",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "Unsplash tem o catalogo mais bonito de stock gratuito. Os fotografos sao profissionais (muitos trabalham pra revistas). Qualidade visual MUITO superior ao Pexels.\n\nA contrapartida: Unsplash recomenda atribuicao (creditar o fotografo no video). O MCP retorna ja com o link de atribuicao pra voce copiar.\n\nDiferente do Pexels, Unsplash so tem fotos, nao videos.",
         "howItWorksInStudio": "Roda via npx. Key gratis (rate limit 50/hora). No chat, peca fotos e o MCP ja inclui atribuicao pra voce colar no final do video.",
         "useCases": [
@@ -1167,6 +1166,8 @@
         "category": "stock",
         "requiresNode": true,
         "tagline": "Busca em 3 bancos stock de uma vez",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "Em vez de instalar Pexels e Unsplash separados, esse MCP agrega Pexels + Unsplash + Pixabay numa busca unica. Voce pede uma vez e ele consulta os 3 e retorna o melhor.\n\nUtil quando voce nao sabe qual banco tem o que voce precisa. Tambem deduplica resultados.",
         "howItWorksInStudio": "Roda via npx. Configura 1 a 3 chaves (uma pra cada banco). Quanto mais bancos, melhor a cobertura. Pixabay e a unica que tambem tem videos free.",
         "useCases": [
@@ -1237,6 +1238,8 @@
         "auth": "oauth",
         "category": "workspace",
         "tagline": "Seu workspace Notion como tool do agente",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial do Notion. Da acesso completo ao seu workspace: criar/ler/atualizar paginas, queries em databases, gerenciar tasks.\n\nIdeal pra quem usa Notion como CMS do canal: roteiros, planejamento de videos, lista de ideias, cronograma de publicacao.\n\nO agente pode tanto buscar info (\"qual o roteiro do video da semana?\") quanto criar (\"salva esse roteiro novo na database de Roteiros\").",
         "howItWorksInStudio": "OAuth uma vez. No chat, peca info ou peca acao em paginas/databases.\n\nFluxo classico: termina de escrever um roteiro novo no chat -> pede pra salvar no Notion -> ele cria a pagina ja categorizada e taggeada na sua database.",
         "useCases": [
@@ -1292,6 +1295,8 @@
         "auth": "oauth",
         "category": "workspace",
         "tagline": "Toda a suite Google operavel via chat",
+        "pricing": "free",
+        "verified": false,
         "longDescription": "MCP oficial da Google. Da acesso a Gmail, Drive, Calendar, Docs, Sheets, Chat e Tasks numa unica conexao OAuth.\n\nVoce pode: ler emails, enviar respostas drafts, fazer queries no Drive, criar eventos no Calendar, ler/escrever Docs e Sheets.\n\nA seguranca e granular — no momento do OAuth voce escolhe exatamente quais scopes liberar.",
         "howItWorksInStudio": "OAuth uma vez. No chat, peca por servico: \"lista emails de hoje\", \"cria evento amanha 14h\", \"adiciona linha na planilha de gastos\".\n\nFluxo ideal: matinal — o chat resume sua caixa de entrada, mostra agenda do dia, e voce ja sai pra producao sem abrir 5 abas.",
         "useCases": [
@@ -1363,6 +1368,8 @@
         "auth": "oauth",
         "category": "workspace",
         "tagline": "Roadmap de producao no chat",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial da Linear. Linear e a ferramenta de PM preferida por times tech enxutos. Pro nicho de criador de conteudo, funciona como \"pipeline visual de producao\": cada video e uma issue, com status (ideia → roteiro → gravacao → edicao → publicado).\n\nVoce pode criar/buscar/atualizar issues, mover entre status, atribuir prioridades — tudo via chat.",
         "howItWorksInStudio": "OAuth uma vez. No chat: cria, lista, move issues.\n\nFluxo: termina o roteiro do proximo video -> pede pra criar issue \"Edicao do video X\" status \"Pronto pra edicao\" no Linear.",
         "useCases": [
@@ -1412,6 +1419,8 @@
         "auth": "oauth",
         "category": "workspace",
         "tagline": "Alternativa ao Linear pra times maiores",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial da Asana. Asana e mais \"corporate\" que Linear — voce ve em times maiores que rodam multiplos projetos paralelos. Se voce ja usa Asana pra organizar o canal, esse MCP integra direto.",
         "howItWorksInStudio": "OAuth uma vez. Crie, mova, atribua tasks via chat.",
         "useCases": [
@@ -1456,6 +1465,8 @@
         "auth": "oauth",
         "category": "social",
         "tagline": "Notifica e coordena via Slack pelo chat",
+        "pricing": "free",
+        "verified": false,
         "longDescription": "MCP oficial do Slack. Util pra times que coordenam producao via Slack. O agente pode enviar mensagens, ler canais, criar threads.",
         "howItWorksInStudio": "OAuth. Util pra notificar o time quando termina edicao, ou pedir resumo do que rolou nos canais.",
         "useCases": [
@@ -1503,6 +1514,8 @@
         "category": "social",
         "requiresNode": true,
         "tagline": "Publica seu video em 8 redes com 1 comando",
+        "pricing": "freemium",
+        "verified": true,
         "longDescription": "PostEverywhere e uma plataforma que centraliza a publicacao em 8 redes sociais. Voce conecta cada rede uma vez no painel deles, depois pelo MCP voce manda \"publica este video no IG + TikTok + YT\" e ele agenda/posta tudo.\n\nCobre as 8 grandes: Instagram, TikTok, YouTube, LinkedIn, Facebook, X (Twitter), Threads, Pinterest.\n\nEspecialmente util pro creator que recorta um video longo em multiplos shorts/reels — voce manda 1 comando no chat e os 5-10 cortes vao todos pra todas as redes ao mesmo tempo.",
         "howItWorksInStudio": "Roda via npx. Conecte sua conta PostEverywhere uma vez. Cada rede social conecta no painel deles (web).\n\nNo chat: peca pra publicar/agendar. Pode mandar varios videos numa batida.",
         "useCases": [
@@ -1566,6 +1579,8 @@
         "auth": "oauth",
         "category": "social",
         "tagline": "Publicacao oficial direto pro TikTok",
+        "pricing": "free",
+        "verified": false,
         "longDescription": "MCP oficial do TikTok (2026). Da acesso a publicacao de videos, analytics e campanhas pagas (TikTok Ads) na mesma conexao.\n\nVantagem sobre PostEverywhere: e oficial — sem risco de quebrar quando TikTok mudar API. Tambem libera funcoes que so o oficial tem (analytics completo, conversao de Ads).",
         "howItWorksInStudio": "OAuth uma vez. Publica, ve metricas, ou cria campanha de boost pelo chat.",
         "useCases": [
@@ -1620,6 +1635,8 @@
         "auth": "oauth",
         "category": "social",
         "tagline": "Boost de Reels/Stories sem abrir o Ads Manager",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial da Meta pra gerenciar Facebook e Instagram Ads. Voce pode criar campanhas, ver performance, ajustar orcamento, criar audiencias lookalike — tudo via chat.\n\nCaso de uso fortissimo: quando um Reel do canal \"estoura\" organicamente, voce ja manda boost de R$ 50 pra triplicar o alcance sem perder tempo abrindo o Ads Manager.",
         "howItWorksInStudio": "OAuth da Meta. Acesso ao Business Manager. No chat, peca pra criar/listar/ajustar campanhas.",
         "useCases": [
@@ -1669,6 +1686,8 @@
         "auth": "oauth",
         "category": "social",
         "tagline": "YouTube Ads no chat — boost de videos especificos",
+        "pricing": "free",
+        "verified": false,
         "longDescription": "MCP oficial do Google Ads. Inclui YouTube Ads (bumpers, in-stream, discovery).\n\nUtil pra promover videos especificos pro publico-alvo certo: pessoas que assistem canais similares, em paises de interesse, em horarios estrategicos.",
         "howItWorksInStudio": "OAuth Google. Conecta a conta Ads vinculada ao canal do YouTube. Peca campanhas, performance, ajustes.",
         "useCases": [
@@ -1713,6 +1732,8 @@
         "auth": "oauth",
         "category": "design",
         "tagline": "Capas e thumbs do Figma direto no chat",
+        "pricing": "free",
+        "verified": false,
         "longDescription": "MCP oficial Figma. Se voce mantem o design das thumbs do canal em Figma (template padronizado), pode pedir pro chat exportar variacoes especificas.\n\nFluxo: voce tem um arquivo \"Template Thumbnails\" no Figma com instances pra cada video. No chat, pede pra exportar a variacao do video atual em PNG.",
         "howItWorksInStudio": "OAuth Figma. Acessa arquivos compartilhados. Pode exportar frames como PNG/SVG/PDF.",
         "useCases": [
@@ -1756,6 +1777,8 @@
         "auth": "oauth",
         "category": "design",
         "tagline": "Templates Canva + autofill via chat",
+        "pricing": "freemium",
+        "verified": false,
         "longDescription": "MCP oficial Canva. Diferente do Figma, Canva tem a forca dos templates prontos + autofill (voce manda dados e ele preenche o template).\n\nFluxo: voce tem um template \"Thumb Canal Nardoto\". No chat, manda titulo+subtitulo do video novo. O Canva preenche o template e exporta.",
         "howItWorksInStudio": "OAuth Canva. Pega templates da sua conta. Faz autofill com dados que voce passa no chat.",
         "useCases": [
@@ -1804,6 +1827,8 @@
         "category": "dev",
         "requiresNode": true,
         "tagline": "O MCP mais usado do mercado — issues, PRs, releases",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "O MCP de referencia da industria. Da acesso ao GitHub: criar/listar issues, pull requests, releases, commits, code search.\n\nIdeal pra dev solo que mantem o codigo do Nardoto Studio (este aqui). Voce pede no chat \"lista issues abertas\" ou \"cria release v7.3.0\" sem sair do app.",
         "howItWorksInStudio": "Roda via npx. Precisa Personal Access Token do GitHub (scopes: repo, issues, workflow).",
         "useCases": [
@@ -1865,12 +1890,14 @@
         "command": "npx",
         "args": [
           "-y",
-          "@microsoft/playwright-mcp"
+          "@playwright/mcp"
         ],
         "auth": "none",
         "category": "dev",
         "requiresNode": true,
         "tagline": "Robo de browser que testa e raspa qualquer site",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial Microsoft. Roda um browser headless controlado pelo agente. Faz screenshots, clica em botoes, preenche forms, raspa conteudo.\n\nPra criador: util pra raspar info de paginas (news, dados), tirar screenshots de matérias pra video de geopolitica, validar links no canal.",
         "howItWorksInStudio": "Roda via npx. Sem auth — abre browser local. Primeira execucao baixa Chromium (~120MB).",
         "useCases": [
@@ -1925,6 +1952,8 @@
         "category": "dev",
         "requiresNode": true,
         "tagline": "Docs atualizadas — Claude para de inventar API",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "Context7 e essencial pra dev. Os modelos AI tem cutoff de conhecimento e inventam APIs antigas. Context7 da docs ATUAIS de qualquer lib (React, Next.js, Electron, Vite, etc) em tempo real.\n\nResolve um problema enorme: quando voce pede pra Claude \"como faz X no Next.js 16\" e ele responde com sintaxe do Next.js 13, voce perde horas.",
         "howItWorksInStudio": "Roda via npx, sem auth. Antes de gerar codigo, peca \"use context7 pra Next.js 16\" pra forcar busca de docs atualizadas.",
         "useCases": [
@@ -1966,6 +1995,8 @@
         "auth": "apikey",
         "category": "finance",
         "tagline": "Cobrancas e faturamento do canal via chat",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial Stripe. Voce ja usa Stripe pra cobrar planos do Nardoto Studio (de acordo com memoria de planos). O MCP permite verificar faturamento, criar produtos, ver pagamentos pendentes, gerenciar assinaturas — tudo via chat.",
         "howItWorksInStudio": "Cole a Secret Key (sk_live_... ou sk_test_...) no MCPCard.\n\nFluxo: end-of-day, peca \"@Stripe resume faturamento de hoje\" e veja sem abrir o dashboard.",
         "useCases": [
@@ -2037,6 +2068,8 @@
         "auth": "apikey",
         "category": "dev",
         "tagline": "Workflows do n8n disparados pelo chat",
+        "pricing": "freemium",
+        "verified": false,
         "longDescription": "n8n e um Zapier open-source. Voce monta workflows visuais (trigger -> ação -> ação) ligando 1000+ servicos. O MCP permite disparar workflows pelo chat.\n\nPra criador: monta um workflow no n8n tipo \"Novo video no YouTube -> Posta no IG + Twitter + Discord\" e dispara pelo chat quando quiser.",
         "howItWorksInStudio": "Voce precisa de uma instancia n8n rodando (n8n.cloud ou self-hosted). Cole a URL + API key.",
         "useCases": [
@@ -2107,6 +2140,8 @@
         "requiresNode": false,
         "requiresPython": true,
         "tagline": "Git nativo nas 4 IAs do chat",
+        "pricing": "free",
+        "verified": true,
         "longDescription": "MCP oficial pra operacoes git. Funciona em Claude, Codex e Gemini (Antigravity nao consome MCP — usa git nativo via shell). O Studio passa --repository '.', entao opera no cwd do CLI (geralmente a raiz do projeto aberto).",
         "howItWorksInStudio": "Roda via uvx (Python). Requer 'uv' instalado (https://docs.astral.sh/uv/). Sem auth, sem config — ativa pelo botao Conectar.",
         "useCases": [
@@ -2146,6 +2181,1230 @@
           "git_checkout",
           "git_show",
           "git_init"
+        ]
+      }
+    },
+    {
+      "id": "mcp-fal",
+      "name": "fal.ai",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Hub oficial da fal.ai: uma chave, 1000+ modelos de imagem, vídeo, áudio e 3D no chat do Studio.",
+      "author": "fal.ai",
+      "homepage": "https://fal.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.fal.ai/mcp",
+        "auth": "apikey",
+        "category": "video",
+        "tagline": "A maior cobertura de geração de vídeo num só MCP.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O fal.ai é o hub oficial hospedado da fal, acessado pelo endpoint remoto https://mcp.fal.ai/mcp. Com uma única chave (FAL_KEY) você ganha acesso a mais de 1000 modelos de geração: imagem, vídeo, áudio e música, e 3D. É a maior cobertura de vídeo concentrada num só MCP, reunindo modelos como Veo, Kling, Pika, Wan e Hailuo sob a mesma conexão.\n\nPor ser um servidor remoto via HTTP, não há nada para instalar nem manter no seu computador. Você conecta a chave uma vez e o catálogo inteiro fica disponível direto no chat do Studio. Em vez de abrir cada site de modelo e gerenciar logins separados, você descreve o que quer e o MCP roteia para o modelo certo.\n\nPara um canal que vive de testemunhos em primeira pessoa, b-roll cinematográfico e narração, isso significa ter, no mesmo lugar, a geração de planos de vídeo, imagens de apoio, trilhas e elementos 3D, sem trocar de ferramenta a cada etapa da produção.",
+        "howItWorksInStudio": "Depois de conectar a FAL_KEY, o fal.ai aparece como uma ferramenta disponível no chat do Studio. Você pede o que precisa em linguagem natural, por exemplo um plano de vídeo de um personagem bíblico ou uma imagem de apoio para o b-roll, e o assistente escolhe o modelo adequado dentro do catálogo da fal e dispara a geração. O resultado volta para o chat, pronto para você baixar e levar para a edição.\n\nComo tudo roda no servidor remoto da fal, o Studio só envia o pedido e recebe o arquivo: nenhum modelo pesado roda na sua máquina. Você pode pedir variações, ajustar o prompt e repetir a geração na mesma conversa até chegar no plano certo.",
+        "useCases": [
+          {
+            "title": "Plano cinematográfico de cena bíblica",
+            "description": "Gere um plano de vídeo de uma cena histórica ou bíblica para abrir o vídeo ou ilustrar o testemunho, usando um dos modelos de vídeo do catálogo (Veo, Kling, Pika, Wan, Hailuo).",
+            "example": "Gera um vídeo de 8 segundos: homem de túnica caminhando sozinho pelo deserto ao entardecer, luz dourada, câmera lenta."
+          },
+          {
+            "title": "B-roll histórico de apoio à narração",
+            "description": "Crie imagens e clipes curtos de ambientes, objetos e cenários antigos para cobrir trechos da narração quando não há filmagem real disponível.",
+            "example": "Cria uma imagem de uma cidade muralhada do antigo Oriente Médio ao amanhecer, estilo cinematográfico realista."
+          },
+          {
+            "title": "Trilha e ambiência para o vídeo",
+            "description": "Gere música ou ambiência sonora para sustentar o clima do testemunho e das passagens narradas, sem sair do chat.",
+            "example": "Gera uma trilha instrumental tensa e solene de 30 segundos para uma cena de julgamento."
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie uma conta na fal.ai e gere sua chave de API (FAL_KEY) no painel.",
+            "url": "https://fal.ai"
+          },
+          {
+            "step": "Conecte o MCP fal.ai no Studio apontando para o servidor remoto https://mcp.fal.ai/mcp e cole a FAL_KEY como credencial.",
+            "url": "https://mcp.fal.ai/mcp"
+          },
+          {
+            "step": "Volte ao chat e peça uma geração simples para confirmar que a conexão está ativa."
+          }
+        ],
+        "costInfo": "A cobrança é por execução, feita direto na sua conta da fal.ai: cada geração consome créditos conforme o modelo usado. Os valores variam por modelo (vídeo costuma custar mais que imagem); consulte os preços atuais no site da fal.",
+        "envSchema": [
+          {
+            "key": "FAL_KEY",
+            "label": "fal.ai API Key",
+            "secret": true,
+            "required": true,
+            "description": "fal.ai/dashboard/keys"
+          }
+        ],
+        "capabilities": [
+          "text_to_image",
+          "image_to_video",
+          "text_to_video",
+          "text_to_audio",
+          "list_models"
+        ]
+      }
+    },
+    {
+      "id": "mcp-replicate",
+      "name": "Replicate",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Hub oficial da Replicate com 1000+ modelos de IA (imagem, vídeo, áudio) acessíveis direto pelo chat do Studio.",
+      "author": "Replicate",
+      "homepage": "https://replicate.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "replicate-mcp"
+        ],
+        "auth": "env",
+        "category": "image",
+        "requiresNode": true,
+        "tagline": "Mil modelos de IA generativa, um token, dentro do seu fluxo de produção.",
+        "pricing": "paid",
+        "verified": true,
+        "longDescription": "O Replicate MCP é o conector oficial da Replicate (pacote npm replicate-mcp, licença Apache-2.0) que abre o catálogo de mais de 1000 modelos hospedados na plataforma direto pelo chat do Studio. São modelos de imagem (como a família Flux), vídeo e áudio, todos rodando na infraestrutura da Replicate e retornando o resultado pra você sem precisar montar ambiente, baixar pesos ou configurar GPU.\n\nEm vez de abrir o site, escolher um modelo na mão e copiar parâmetros, você descreve o que quer no chat e o MCP cuida da chamada. Isso é útil quando o canal pede variedade: um modelo melhor pra fotorrealismo de cena bíblica, outro pra estilizar um mapa geopolítico, outro pra gerar uma faixa de áudio ambiente. Tudo pela mesma conexão, com o mesmo token.\n\nA execução é local: o MCP roda na sua máquina via npx e fala com a API da Replicate usando seu REPLICATE_API_TOKEN. Você mantém controle de quais modelos chama e paga por uso (pay-per-run), sem mensalidade fixa nem servidor pra manter de pé.",
+        "howItWorksInStudio": "Depois de conectado, você usa o Replicate direto no chat do Studio: pede a imagem, o clipe ou o áudio em linguagem natural e o assistente aciona o modelo certo do catálogo, devolvendo o arquivo pronto pra entrar na sua linha de produção. Não precisa abrir o painel da Replicate nem sair do Studio.\n\nPor baixo, o MCP roda local via npx e autentica com seu REPLICATE_API_TOKEN. Cada geração é uma execução cobrada por uso na sua conta Replicate, então o Studio é só a interface de comando: quem processa e cobra é a plataforma da Replicate.",
+        "useCases": [
+          {
+            "title": "B-roll cinematográfico de cena bíblica",
+            "description": "Gerar imagens fotorrealistas de ambientes e momentos históricos pra ilustrar o testemunho do personagem, usando modelos de imagem do catálogo como o Flux.",
+            "example": "Gera uma imagem fotorrealista de um mercado em Jerusalém ao entardecer, luz dourada, estilo cinematográfico"
+          },
+          {
+            "title": "Mapa e arte de apoio pra vídeo geopolítico",
+            "description": "Criar mapas estilizados e ilustrações de apoio pros vídeos de geopolítica, testando modelos diferentes até achar o traço certo sem sair do chat.",
+            "example": "Cria uma ilustração de mapa do Oriente Médio antigo com rotas comerciais marcadas, estilo manuscrito"
+          },
+          {
+            "title": "Variações rápidas de thumbnail e abertura",
+            "description": "Pedir várias versões da mesma cena pra escolher a melhor composição de capa ou de abertura do vídeo antes de finalizar.",
+            "example": "Faz 4 variações de um retrato dramático de um profeta olhando pro horizonte, fundo de deserto"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie uma conta na Replicate e gere seu token de API na página de tokens.",
+            "url": "https://replicate.com/account/api-tokens"
+          },
+          {
+            "step": "Garanta que o Node está instalado na máquina (o MCP roda via npx), conferindo com 'node -v' no terminal.",
+            "url": "https://nodejs.org"
+          },
+          {
+            "step": "Conecte o MCP no Studio informando o comando 'npx -y replicate-mcp' e a variável REPLICATE_API_TOKEN com o token gerado."
+          },
+          {
+            "step": "Teste pelo chat pedindo uma imagem simples pra confirmar que a conexão e a cobrança estão funcionando."
+          }
+        ],
+        "costInfo": "A cobrança é pay-per-run: você paga por execução de modelo na sua própria conta Replicate, sem mensalidade pelo MCP. O preço varia conforme o modelo (imagem, vídeo ou áudio) e o tempo de processamento, então consulte os valores de cada modelo no site da Replicate.",
+        "envSchema": [
+          {
+            "key": "REPLICATE_API_TOKEN",
+            "label": "Replicate API Token",
+            "secret": true,
+            "required": true,
+            "description": "replicate.com/account/api-tokens"
+          }
+        ],
+        "capabilities": [
+          "run_model",
+          "search_models",
+          "flux_image",
+          "video_generate"
+        ]
+      }
+    },
+    {
+      "id": "mcp-cartesia",
+      "name": "Cartesia",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial de voz da Cartesia: TTS Sonic de baixíssima latência, STT, listagem e clonagem de vozes, rodando local via uvx.",
+      "author": "Cartesia",
+      "homepage": "https://cartesia.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "cartesia-mcp"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresPython": true,
+        "tagline": "A voz dos seus personagens, com latência quase zero.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O Cartesia é o servidor MCP oficial de voz da Cartesia. Ele conecta o chat do Studio ao motor Sonic, focado em síntese de fala (TTS) de baixíssima latência, e traz também transcrição (STT), listagem e clonagem de vozes e um dicionário de pronúncia pra acertar nomes difíceis.\n\nNa prática, ele te dá controle sobre vozes pela conversa: você lista as vozes disponíveis, clona uma voz de referência e gera narração ou falas de personagem sem sair do fluxo de trabalho. O dicionário de pronúncia resolve o problema clássico de nomes bíblicos, lugares antigos e termos históricos que os modelos de voz costumam ler errado.\n\nFunciona como complemento ao ElevenLabs: você pode manter o ElevenLabs pra um tipo de voz e usar o Sonic da Cartesia quando precisar de respostas rápidas ou de outra paleta de timbres. O servidor roda localmente na sua máquina via uvx e a Cartesia oferece plano gratuito pra começar.",
+        "howItWorksInStudio": "Depois de conectado, você fala com o Cartesia direto pelo chat do Studio. Pede pra listar as vozes, escolher uma, gerar a narração de um trecho de roteiro ou transcrever um áudio de referência, e o MCP executa essas ações via Sonic sem você abrir outra ferramenta.\n\nO servidor sobe local pelo uvx (cartesia-mcp), então o áudio gerado fica disponível pra você levar pro vídeo. Combina bem com o resto do pipeline do canal: você escreve o testemunho ou a intro no chat, gera a voz ali mesmo e segue pra montagem.",
+        "useCases": [
+          {
+            "title": "Narração rápida do testemunho em primeira pessoa",
+            "description": "Gere a voz do personagem bíblico narrando o hook de abertura sem sair do chat, com latência baixa pra iterar várias takes até achar o tom certo.",
+            "example": "Gera a narração desse testemunho de Caim em primeira pessoa com uma voz grave e cansada"
+          },
+          {
+            "title": "Acertar pronúncia de nomes bíblicos e históricos",
+            "description": "Use o dicionário de pronúncia pra forçar a leitura correta de nomes de personagens, cidades antigas e termos geopolíticos que a voz costuma errar.",
+            "example": "Adiciona no dicionário de pronúncia: Nabucodonosor, Habacuque e Tessalônica, e regenera a narração"
+          },
+          {
+            "title": "Clonar uma voz de referência pro narrador do canal",
+            "description": "Clone uma voz a partir de uma amostra e reutilize esse timbre como o narrador padrão dos vídeos históricos e geopolíticos.",
+            "example": "Lista as vozes disponíveis e clona essa amostra de áudio pra eu usar como narrador fixo"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Instale o uv (gerenciador Python que fornece o uvx), pré-requisito pra rodar o servidor.",
+            "url": "https://docs.astral.sh/uv/getting-started/installation/"
+          },
+          {
+            "step": "Crie a conta na Cartesia e gere sua API key no painel (tem plano gratuito pra começar).",
+            "url": "https://cartesia.ai/"
+          },
+          {
+            "step": "Conecte o MCP no Studio apontando pra cartesia-mcp via uvx e informe a API key quando solicitado."
+          },
+          {
+            "step": "Teste pelo chat: peça pra listar as vozes pra confirmar que o servidor subiu e a chave está válida."
+          }
+        ],
+        "costInfo": "A Cartesia tem plano gratuito pra começar e planos pagos conforme o uso. Os valores mudam, então confira a página de preços no site oficial antes de escalar.",
+        "envSchema": [
+          {
+            "key": "CARTESIA_API_KEY",
+            "label": "Cartesia API Key",
+            "secret": true,
+            "required": true,
+            "description": "play.cartesia.ai/console (API Keys)"
+          }
+        ],
+        "capabilities": [
+          "text_to_speech",
+          "list_voices",
+          "clone_voice",
+          "speech_to_text"
+        ]
+      }
+    },
+    {
+      "id": "mcp-hume",
+      "name": "Hume AI",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial da Hume AI com Octave TTS: narração com controle emocional e expressivo (raiva, sussurro, empolgação).",
+      "author": "Hume AI",
+      "homepage": "https://hume.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@humeai/mcp-server"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresNode": true,
+        "tagline": "Narração que sente o roteiro: do sussurro ao grito, com a emoção certa.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O Hume AI é o MCP oficial da Hume e traz o Octave TTS, um motor de texto-para-fala baseado em LLM que entende o sentido do que você escreveu antes de falar. Em vez de só ler as palavras numa entonação neutra, ele ajusta a emoção e a entrega: dá pra pedir raiva, sussurro, empolgação, tristeza contida, urgência. Para narração dramática, esse controle expressivo é o que separa uma leitura automática de uma performance.\n\nIsso casa direto com testemunhos em primeira pessoa de personagens bíblicos, narração histórica e leitura geopolítica, onde o tom carrega metade da mensagem. A mesma frase muda completamente quando é dita num lamento baixo ou num brado de revolta, e o Octave deixa você dirigir essa diferença em vez de torcer pra voz acertar sozinha.\n\nO servidor roda localmente via npx (precisa de Node instalado) e a Hume oferece um plano gratuito pra você testar antes de comprometer qualquer coisa. Conecta no chat do Studio como qualquer outro MCP, sem servidor extra pra manter no ar.",
+        "howItWorksInStudio": "Depois de configurado, o Hume AI fica disponível como ferramenta dentro do chat do Studio. Você descreve a fala e o tom em linguagem natural, e a IA chama o Octave TTS pra gerar o áudio com a emoção pedida. Na prática, você cola o trecho do roteiro, diz qual personagem está falando e em que estado emocional, e recebe o arquivo de voz pronto pra entrar na narração.\n\nComo o servidor roda local via npx, o áudio é gerado pela sua máquina conversando com a Hume, sem depender de nenhum painel separado. Dá pra iterar rápido: gerar uma versão sussurrada, ouvir, pedir a mesma linha com mais raiva, e comparar, tudo pelo chat.",
+        "useCases": [
+          {
+            "title": "Testemunho bíblico em primeira pessoa",
+            "description": "Gere a narração do personagem com a carga emocional certa pra cada momento da confissão, do arrependimento quebrado ao desabafo intenso, mantendo a voz crível em vez de uma leitura plana.",
+            "example": "Gera a fala do Judas confessando a traição, voz baixa e culpada quase sussurrando no começo e quebrando no final"
+          },
+          {
+            "title": "Narração histórica com peso dramático",
+            "description": "Crie a locução de um episódio histórico ajustando o tom conforme a tensão da cena, da calmaria à virada, pra segurar a atenção do espectador no momento exato.",
+            "example": "Narra a queda de Constantinopla em tom grave e tenso, subindo pra urgência quando as muralhas cedem"
+          },
+          {
+            "title": "Abertura geopolítica de impacto",
+            "description": "Produza a fala de abertura de um vídeo geopolítico com entrega firme e provocativa, pra fisgar quem chega nos primeiros segundos antes do b-roll.",
+            "example": "Faz a intro de um vídeo sobre o conflito no Oriente Médio, voz firme e provocadora, ritmo de quem está revelando algo"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Instale o Node.js na máquina, já que o servidor roda via npx (precisa do Node pra funcionar).",
+            "url": "https://nodejs.org"
+          },
+          {
+            "step": "Crie uma conta na Hume AI e pegue sua chave de API no painel. Há plano gratuito pra começar.",
+            "url": "https://platform.hume.ai"
+          },
+          {
+            "step": "Cadastre o MCP no Studio com o comando 'npx -y @humeai/mcp-server' e informe a chave de API da Hume."
+          },
+          {
+            "step": "Abra o chat do Studio, peça uma narração de teste com um tom específico (ex: sussurro) e confirme que o áudio sai com a emoção pedida."
+          }
+        ],
+        "costInfo": "A Hume AI tem plano gratuito pra testar o Octave TTS, e os planos pagos cobram por uso conforme o volume de áudio gerado. Consulte os valores atualizados no site da Hume, já que os preços variam por plano.",
+        "envSchema": [
+          {
+            "key": "HUME_API_KEY",
+            "label": "Hume API Key",
+            "secret": true,
+            "required": true,
+            "description": "platform.hume.ai (API keys)"
+          }
+        ],
+        "capabilities": [
+          "octave_tts",
+          "list_voices",
+          "voice_design"
+        ]
+      }
+    },
+    {
+      "id": "mcp-minimax",
+      "name": "MiniMax",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial da MiniMax: TTS, clonagem de voz, imagem, vídeo (Hailuo-02) e música num só servidor.",
+      "author": "MiniMax",
+      "homepage": "https://minimax.io",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "minimax-mcp",
+          "-y"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresPython": true,
+        "tagline": "Voz, imagem, vídeo e música da MiniMax direto no chat do Studio.",
+        "pricing": "paid",
+        "verified": true,
+        "longDescription": "O MiniMax MCP é o servidor oficial da MiniMax e junta cinco capacidades multimodais num só lugar: text-to-audio (TTS), clonagem de voz, geração de imagem, geração de vídeo com o modelo Hailuo-02 (768p e 1080p) e geração de música. Em vez de assinar e integrar quatro ou cinco serviços separados, você fala com um único MCP pelo chat e ele entrega narração, b-roll, trilha e arte.\n\nPara um canal que produz vídeos bíblicos, históricos e de geopolítica, isso cobre boa parte da linha de produção: a narração em primeira pessoa do personagem sai como áudio, o b-roll cinematográfico sai como vídeo Hailuo-02, e a trilha de fundo sai como música. A clonagem de voz permite manter uma identidade vocal consistente entre vídeos da mesma série.\n\nO servidor roda localmente via uvx, então depende de ter o uv (e Python) instalados na máquina. A cobrança é por uso, feita na sua conta MiniMax conforme o que você gera (áudio, imagem, vídeo, música).",
+        "howItWorksInStudio": "Depois de conectar o MCP, você pede as gerações em linguagem natural no chat do Studio: descreve a narração que quer ouvir, a cena de b-roll, a arte ou a trilha, e o MiniMax MCP executa a ferramenta certa (TTS, clonagem, imagem, vídeo ou música) e devolve o arquivo pronto pra você baixar e levar pra timeline.\n\nComo o servidor roda local via uvx na sua máquina, as chaves e a autenticação ficam do seu lado e cada geração é faturada direto na sua conta MiniMax. Você consegue encadear pedidos numa mesma conversa, por exemplo gerar a narração de um trecho e logo em seguida pedir a cena de vídeo que acompanha aquela fala.",
+        "useCases": [
+          {
+            "title": "Narração do testemunho em primeira pessoa",
+            "description": "Transforme o roteiro do personagem bíblico em narração com TTS, mantendo a mesma voz entre episódios via clonagem de voz.",
+            "example": "Gera a narração desse testemunho do rei Davi em tom grave e confessional"
+          },
+          {
+            "title": "B-roll cinematográfico com Hailuo-02",
+            "description": "Crie cenas de vídeo para ilustrar a narração histórica ou geopolítica, em 768p ou 1080p, sem precisar de imagens de banco.",
+            "example": "Cria um vídeo 1080p de uma cidade da antiga Babilônia ao entardecer, plano aéreo lento"
+          },
+          {
+            "title": "Trilha de fundo para o vídeo",
+            "description": "Gere música de fundo no clima da cena (tensão, contemplação, épico) para colar sob a narração.",
+            "example": "Faz uma trilha instrumental épica e tensa de 1 minuto pra cena de batalha"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Instale o uv (gerenciador Python que provê o uvx) na sua máquina, seguindo a documentação oficial.",
+            "url": "https://docs.astral.sh/uv/getting-started/installation/"
+          },
+          {
+            "step": "Crie sua conta MiniMax e gere uma API key no painel da plataforma.",
+            "url": "https://www.minimax.io/"
+          },
+          {
+            "step": "Conecte o MCP no Studio configurando o comando uvx minimax-mcp -y com a sua API key da MiniMax."
+          },
+          {
+            "step": "No chat, peça uma geração simples (uma narração curta, por exemplo) para confirmar que o servidor está respondendo."
+          }
+        ],
+        "costInfo": "A cobrança é por uso e cai direto na sua conta MiniMax, variando conforme o que você gera (áudio, imagem, vídeo Hailuo-02 ou música). Os valores exatos mudam por modelo e resolução; consulte o site da MiniMax para os preços atuais.",
+        "envSchema": [
+          {
+            "key": "MINIMAX_API_KEY",
+            "label": "MiniMax API Key",
+            "secret": true,
+            "required": true,
+            "description": "platform.minimax.io (API keys)"
+          },
+          {
+            "key": "MINIMAX_API_HOST",
+            "label": "API Host",
+            "secret": false,
+            "required": false,
+            "description": "https://api.minimax.io (global) ou https://api.minimaxi.chat"
+          }
+        ],
+        "capabilities": [
+          "text_to_audio",
+          "voice_clone",
+          "text_to_image",
+          "generate_video",
+          "music_generation"
+        ]
+      }
+    },
+    {
+      "id": "mcp-recraft",
+      "name": "Recraft",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial da Recraft para gerar imagens raster e vetor, vetorizar, remover fundo e fazer upscale. Forte em logos, ícones e elementos gráficos.",
+      "author": "Recraft",
+      "homepage": "https://recraft.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@recraft-ai/mcp-recraft-server"
+        ],
+        "auth": "env",
+        "category": "image",
+        "requiresNode": true,
+        "tagline": "O único que entrega vetor de verdade, direto do chat.",
+        "pricing": "paid",
+        "verified": true,
+        "longDescription": "O Recraft é o MCP oficial da Recraft, focado em geração de imagem com um diferencial raro: além de raster (PNG/JPG comum), ele gera e trabalha vetor de verdade. Isso o torna a escolha certa quando você precisa de logotipos, ícones e elementos gráficos limpos, que escalam sem perder qualidade e que você consegue editar depois fora do Studio.\n\nO conjunto de capacidades vai além de só gerar. Ele faz image-to-image (transformar uma imagem existente em outra a partir de um prompt), vetorização (transformar um raster em vetor editável), remoção de fundo e upscale (aumentar resolução). Na prática, dá pra fechar um fluxo inteiro de arte gráfica dentro de uma conversa: gera o elemento, limpa o fundo, vetoriza e aumenta a resolução, tudo sem trocar de ferramenta.\n\nPor ser o MCP oficial, ele acompanha de perto as capacidades da própria Recraft. O foco não é substituir geradores de cena ou b-roll cinematográfico, e sim resolver a parte gráfica e vetorial: aquilo que precisa de traço limpo, contorno definido e escalabilidade. É a peça que faltava pra produzir os elementos de marca e de thumbnail sem depender de ferramenta externa.",
+        "howItWorksInStudio": "Depois de conectado, o Recraft fica disponível direto no chat do Studio. Você descreve o que precisa em linguagem natural e a IA chama as ferramentas certas: gerar um ícone em vetor, vetorizar um PNG que você já tem, remover o fundo de um elemento ou aumentar a resolução de uma arte. O resultado volta no próprio chat, pronto pra usar na thumbnail ou na identidade do vídeo.\n\nO fluxo combina bem com encadeamento: você pode pedir pra gerar um símbolo, depois remover o fundo dele e por fim vetorizar, em mensagens seguidas, sem sair da conversa. Como roda local via npx, não tem painel separado nem instalação pesada — é só conectar e conversar.",
+        "useCases": [
+          {
+            "title": "Ícone vetorial pra identidade do canal",
+            "description": "Gera símbolos e ícones em vetor (que escalam sem perder qualidade) pra usar como marca recorrente em thumbnails e aberturas de vídeos bíblicos e históricos.",
+            "example": "Gera um ícone vetorial de uma coroa antiga com traço dourado, fundo transparente"
+          },
+          {
+            "title": "Vetorizar e limpar elemento de thumbnail",
+            "description": "Pega um elemento raster que você já tem, remove o fundo e vetoriza pra deixar o contorno limpo e reaproveitável em várias thumbnails da série.",
+            "example": "Vetoriza essa imagem do pergaminho e remove o fundo"
+          },
+          {
+            "title": "Selo gráfico pra série temática",
+            "description": "Cria um selo ou emblema vetorial pra marcar uma série (testemunhos bíblicos, episódios geopolíticos) e mantém o mesmo elemento gráfico consistente entre os vídeos.",
+            "example": "Cria um selo vetorial 'Testemunhos' em estilo manuscrito antigo"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie uma conta na Recraft e gere uma chave de API no painel da conta.",
+            "url": "https://www.recraft.ai"
+          },
+          {
+            "step": "No Studio, adicione o MCP Recraft (servidor local via npx) e cole a chave de API quando solicitado."
+          },
+          {
+            "step": "Confirme que o comando de execução é: npx -y @recraft-ai/mcp-recraft-server"
+          },
+          {
+            "step": "Abra o chat e peça uma geração simples (um ícone vetorial, por exemplo) pra validar que está respondendo."
+          }
+        ],
+        "costInfo": "A cobrança é por uso, ligada à sua conta Recraft — cada geração, vetorização, remoção de fundo ou upscale consome do seu saldo/plano. Os valores variam por operação e podem mudar; consulte o site da Recraft para a tabela atualizada.",
+        "envSchema": [
+          {
+            "key": "RECRAFT_API_KEY",
+            "label": "Recraft API Key",
+            "secret": true,
+            "required": true,
+            "description": "recraft.ai/profile/api"
+          }
+        ],
+        "capabilities": [
+          "generate_image",
+          "generate_vector",
+          "image_to_image",
+          "vectorize",
+          "remove_background",
+          "upscale"
+        ]
+      }
+    },
+    {
+      "id": "mcp-ideogram",
+      "name": "Ideogram",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial da Ideogram (modelo V3): gera imagens com texto legivel dentro da arte, alem de editar, reenquadrar e dar upscale. Remoto, login OAuth.",
+      "author": "Ideogram",
+      "homepage": "https://ideogram.ai",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.ideogram.ai/mcp",
+        "auth": "oauth",
+        "category": "image",
+        "tagline": "A IA de imagem que finalmente acerta o texto dentro da arte.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O Ideogram e o servidor MCP oficial da Ideogram, conectado direto ao endpoint vivo da plataforma com login pela sua propria conta via OAuth. Ele expoe o modelo V3, que e o melhor do mercado para renderizar texto dentro da imagem: titulos de thumbnail, frases curtas, nomes e logotipos saem legiveis e bem posicionados, sem aquela sopa de letras tortas que Flux e Recraft costumam gerar.\n\nAlem da geracao, o MCP cobre o ciclo completo de trabalho com a imagem: edicao de trechos especificos, reframe para mudar o enquadramento ou a proporcao (de quadrado para 16:9, por exemplo) e upscale para subir a resolucao da arte final. Tudo isso pelo chat do Studio, sem abrir o site da Ideogram nem copiar e colar prompts entre abas.\n\nE um servidor remoto: nada roda na sua maquina e nao ha chave de API para colar em arquivo. Voce conecta uma vez pela conta Ideogram via OAuth e o Studio passa a falar com o modelo V3 diretamente.",
+        "howItWorksInStudio": "Depois de conectar, voce conversa com o Ideogram pelo chat do Studio como com qualquer outro MCP. Descreva a imagem que quer e o V3 gera; mande uma imagem existente e peca para editar um trecho, mudar a proporcao com reframe ou aumentar a resolucao com upscale. O resultado volta no proprio chat, pronto para baixar e jogar no seu fluxo de thumbnail ou de b-roll.\n\nO ganho concreto e nas pecas com texto. Quando voce precisa de um titulo grande e legivel cravado na arte, peca ao Ideogram em vez de tentar arrumar a mao depois. Ele costuma acertar o texto de primeira, o que para quem produz capa em volume significa menos retrabalho por video.",
+        "useCases": [
+          {
+            "title": "Thumbnail com titulo legivel cravado na arte",
+            "description": "Gerar a capa do video ja com a frase de chamada renderizada dentro da imagem, no estilo cinematografico do canal, sem montar o texto por cima depois.",
+            "example": "Cria uma thumbnail vertical sombria com o titulo \"A CONFISSAO DE JUDAS\" em letras grandes legiveis, rosto angustiado em primeira pessoa, luz de tocha"
+          },
+          {
+            "title": "Reenquadrar b-roll para varios formatos",
+            "description": "Pegar uma cena de b-roll gerada em 16:9 e usar reframe para tirar a versao vertical do mesmo plano, mantendo o enquadramento util para Shorts e cortes.",
+            "example": "Reenquadra essa cena do exodo no deserto de 16:9 para 9:16 sem cortar a figura central"
+          },
+          {
+            "title": "Selo ou logotipo de serie historica",
+            "description": "Criar um selo ou marca de abertura com nome legivel para identificar a serie (testemunhos biblicos, geopolitica), e dar upscale para usar em alta resolucao na vinheta.",
+            "example": "Faz um selo dourado com o texto \"TESTEMUNHOS\" em estilo de moeda antiga romana e depois da upscale"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "No Studio, abra a loja de MCPs, encontre o Ideogram e clique em conectar."
+          },
+          {
+            "step": "Faca login na sua conta Ideogram pela tela de OAuth que abrir (sem colar chave de API).",
+            "url": "https://ideogram.ai/"
+          },
+          {
+            "step": "Autorize o acesso e confirme que o MCP aparece como conectado no chat."
+          },
+          {
+            "step": "Mande um prompt de teste pedindo uma imagem com texto para validar que o modelo V3 esta respondendo."
+          }
+        ],
+        "costInfo": "A conexao via MCP usa creditos da sua propria conta Ideogram, entao o custo segue o plano que voce tiver com eles, do gratuito aos planos pagos. Consulte os valores e limites atualizados direto no site da Ideogram, ja que mudam de tempos em tempos.",
+        "capabilities": [
+          "generate",
+          "edit",
+          "reference",
+          "reframe",
+          "upscale"
+        ]
+      }
+    },
+    {
+      "id": "mcp-pika",
+      "name": "Pika",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial da Pika: gera vídeo, imagem, música e voz por chat, com efeitos criativos (Pikaffects). Remoto, sem instalar nada.",
+      "author": "Pika",
+      "homepage": "https://pika.art",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.pika.me/api/mcp",
+        "auth": "oauth",
+        "category": "video",
+        "tagline": "Geração de vídeo criativo direto do chat, sem sair do Studio.",
+        "pricing": "paid",
+        "verified": true,
+        "longDescription": "O Pika MCP é o conector oficial da Pika para o chat do Studio. São 42 ferramentas que dão acesso à plataforma de geração da Pika: vídeo, imagem, música e voz, tudo pelo mesmo canal. A Pika é conhecida pelos Pikaffects, efeitos criativos aplicados em vídeo (transformações, transições e movimentos estilizados) que rendem aberturas e b-roll com cara autoral sem depender de edição manual quadro a quadro.\n\nA conexão é remota via servidor HTTP com autenticação OAuth pela sua conta Google. Não há nada para instalar, compilar ou manter no seu PC: você autoriza uma vez e as ferramentas ficam disponíveis no chat. Como tudo roda na nuvem da Pika, o consumo de máquina local é mínimo, o que ajuda em sessões longas de produção.\n\nPara o fluxo do canal, o Pika cobre as pontas criativas que normalmente exigem trocar de ferramenta: gerar um plano de vídeo a partir de uma descrição, criar uma imagem de referência, aplicar um efeito sobre material existente ou gerar trilha e voz para um trecho. O resultado entra no seu pipeline de narração e b-roll cinematográfico.",
+        "howItWorksInStudio": "Depois de conectar, você conversa com o Pika pelo chat do Studio do mesmo jeito que conversa com qualquer IA: descreve a cena, o efeito ou a trilha que quer e o MCP escolhe a ferramenta certa entre as 42 disponíveis. Você pode pedir um vídeo a partir de um texto, transformar uma imagem em movimento, aplicar um Pikaffect sobre um clipe ou gerar música e voz para acompanhar a narração.\n\nO acesso é por OAuth Google, então a primeira chamada pode pedir autorização no navegador. Feita a conexão, os pedidos saem direto do chat e os arquivos gerados ficam prontos para entrar na sua timeline e na montagem final do vídeo.",
+        "useCases": [
+          {
+            "title": "B-roll cinematográfico para testemunho bíblico",
+            "description": "Gerar planos curtos de vídeo para ilustrar a narração em primeira pessoa de um personagem bíblico, com clima e ambientação coerentes com a cena.",
+            "example": "Gera um vídeo de 5s: deserto ao entardecer, caravana de mercadores ao longe, luz dourada, câmera lenta"
+          },
+          {
+            "title": "Efeito de abertura com Pikaffect",
+            "description": "Aplicar um efeito criativo da Pika sobre uma imagem ou clipe para criar uma transição ou revelação impactante na abertura de um episódio histórico.",
+            "example": "Aplica um Pikaffect de fumaça e revelação nesta imagem do mapa antigo de Jerusalém"
+          },
+          {
+            "title": "Trilha e voz para um trecho de narração",
+            "description": "Gerar música de fundo e uma voz de apoio para um trecho geopolítico ou histórico, mantendo o tom sério e cinematográfico do canal.",
+            "example": "Cria uma trilha tensa e instrumental de 30s para um trecho sobre a queda de um império"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "No painel de Extensões/MCPs do Studio, adicione o Pika como servidor remoto HTTP (OAuth)."
+          },
+          {
+            "step": "Tenha uma conta Pika ativa com créditos disponíveis.",
+            "url": "https://pika.art"
+          },
+          {
+            "step": "Na primeira chamada, autorize o acesso via OAuth com sua conta Google no navegador."
+          },
+          {
+            "step": "Volte ao chat do Studio e teste com um pedido curto de vídeo ou imagem para confirmar a conexão."
+          }
+        ],
+        "costInfo": "A geração é cobrada em créditos da própria Pika, conforme o plano da sua conta. O MCP em si não adiciona custo: você gasta créditos a cada vídeo, imagem, música ou voz gerada. Consulte os planos e o valor dos créditos no site da Pika.",
+        "capabilities": [
+          "generate_video",
+          "generate_image",
+          "generate_music",
+          "generate_voice"
+        ]
+      }
+    },
+    {
+      "id": "mcp-coverr",
+      "name": "Coverr",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP oficial e gratuito da Coverr: banco de vídeo cinematográfico curado (natureza, paisagens, água, fogo, atmosfera, texturas) com busca por cena específica e áudios, direto no chat.",
+      "author": "Coverr",
+      "homepage": "https://coverr.co",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "http",
+        "url": "https://mcp.coverr.co/mcp",
+        "auth": "apikey",
+        "category": "stock",
+        "tagline": "Stock de vídeo cinematográfico, de graça, dentro do chat.",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "A Coverr mantém um acervo de vídeos curados com cara de cinema: planos de natureza, céu, paisagens, água, fogo, atmosfera e texturas. Este é o MCP oficial e gratuito da própria Coverr, ligado por servidor remoto. Você descreve o b-roll que precisa em português, e ele devolve clipes prontos para baixar e jogar na timeline. Nada de gerar vídeo por IA aqui: é mídia real, finalizada, pronta para usar.\n\nSão três ferramentas. A search_videos faz a busca por tema e clima. A get_video_scenes vai mais fundo e acha o plano específico dentro do acervo, quando você já sabe a imagem exata que quer. A get_audios traz trilhas e ambiências para casar com as imagens. Tudo pelo mesmo canal, sem trocar de aba nem abrir o site.\n\nPor ser servidor remoto via HTTP, não instala nada no seu computador. A conexão usa uma chave por cabeçalho e o plano gratuito libera 50 chamadas por hora, o suficiente para garimpar b-roll de um vídeo inteiro numa sessão de roteiro.",
+        "howItWorksInStudio": "Você conversa com o MCP direto no chat do Studio. Pede o tipo de cena que precisa para o vídeo, recebe os clipes encontrados pela Coverr e baixa os que servem para usar na sua edição. Quando já tem a imagem na cabeça, pede o plano específico e a busca por cena afina o resultado.\n\nComo é um servidor remoto, basta conectar uma vez com a chave da Coverr. Depois disso, o b-roll cinematográfico e as trilhas ficam a um pedido de distância enquanto você monta o roteiro, sem sair do chat e sem instalar nenhum programa.",
+        "useCases": [
+          {
+            "title": "B-roll cinematográfico para narração bíblica",
+            "description": "Achar planos atmosféricos que sustentam a narração em primeira pessoa enquanto o testemunho avança, sem depender só de geração por IA.",
+            "example": "acha b-roll cinematográfico de deserto ao amanhecer e céu com nuvens densas"
+          },
+          {
+            "title": "Atmosfera para reconstituição histórica",
+            "description": "Cobrir trechos de história e geopolítica com texturas de fogo, água e paisagem que dão peso visual ao relato.",
+            "example": "procura planos de fogo de tochas e água escura correndo, clima tenso"
+          },
+          {
+            "title": "Trilha e ambiência junto do b-roll",
+            "description": "Pegar áudio que combina com as imagens do mesmo acervo, fechando a cena sem garimpar trilha em outro lugar.",
+            "example": "me traz uma ambiência sonora grave pra cena de tempestade no mar"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie sua conta na Coverr e gere a chave de API no painel.",
+            "url": "https://coverr.co/"
+          },
+          {
+            "step": "No Studio, adicione o MCP remoto da Coverr apontando para o endpoint https://mcp.coverr.co/mcp.",
+            "url": "https://mcp.coverr.co/mcp"
+          },
+          {
+            "step": "Informe a chave no cabeçalho x-coverr-api-key da conexão."
+          },
+          {
+            "step": "Peça um b-roll qualquer no chat para confirmar que a conexão respondeu."
+          }
+        ],
+        "costInfo": "MCP oficial e gratuito da Coverr. O plano gratuito libera 50 chamadas por hora. Servidor remoto, não instala nada no seu computador.",
+        "envSchema": [
+          {
+            "key": "COVERR_API_KEY",
+            "label": "Coverr API Key",
+            "secret": true,
+            "required": true,
+            "headerName": "x-coverr-api-key",
+            "description": "coverr.co — API key gratuita (free 50 chamadas/hora)"
+          }
+        ],
+        "capabilities": [
+          "search_videos",
+          "get_video_scenes",
+          "get_audios"
+        ]
+      }
+    },
+    {
+      "id": "mcp-wikimedia",
+      "name": "Wikimedia Commons",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca no acervo de domínio público e CC0 do Wikimedia Commons: mapas antigos, gravuras, manuscritos, arte sacra e fotos de ruínas, sem chave de API.",
+      "author": "Wikimedia Commons",
+      "homepage": "https://commons.wikimedia.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "wikimedia-image-search-mcp"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "O acervo histórico que o stock genérico não tem",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Wikimedia Commons é o maior repositório de mídia livre da internet, e este MCP abre essa porta direto no chat do Studio. São milhões de arquivos de domínio público e CC0: mapas históricos, gravuras antigas, manuscritos, arte sacra, retratos clássicos e fotos de sítios arqueológicos e ruínas. É exatamente o tipo de material que bancos genéricos como Pexels e Unsplash não cobrem, porque eles vivem de foto moderna e lifestyle, não de acervo histórico e bíblico.\n\nA busca devolve thumbnails para você avaliar antes de baixar, e tem filtro de licença focado em uso sem restrição (no_restrictions e CC0). Assim você separa de cara o que pode usar com tranquilidade do que tem alguma amarra. Em vez de garimpar página por página no site do Commons, você descreve o que precisa e recebe os resultados prontos para conferir.\n\nNão exige chave de API nem cadastro. O servidor roda local na sua máquina via npx, conversando com a API pública do Wikimedia. É o complemento natural para quem trabalha com conteúdo histórico, religioso e geopolítico e precisa de imagens de época de verdade, não de recriações modernas.",
+        "howItWorksInStudio": "Depois de conectado, o MCP fica disponível no chat como uma ferramenta de busca de imagens. Você pede o que precisa em linguagem natural (\"mapa antigo do Império Romano\", \"gravura da queda de Jerusalém\") e o Studio retorna os resultados do Wikimedia Commons com thumbnails para visualizar e o filtro de licença aplicado, para você escolher só o que é livre de restrição.\n\nO servidor sobe localmente via npx quando o Studio precisa dele, sem chave e sem custo de API. Você avalia as miniaturas no próprio chat e segue com as imagens escolhidas para o seu roteiro ou para o b-roll do vídeo.",
+        "useCases": [
+          {
+            "title": "B-roll histórico de época",
+            "description": "Reforce a narração de um vídeo bíblico ou histórico com material visual da época em vez de recriações modernas. Mapas, gravuras e arte sacra de domínio público dão peso de documento ao testemunho em primeira pessoa.",
+            "example": "busca gravuras antigas e mapas históricos da Jerusalém do tempo de Jesus"
+          },
+          {
+            "title": "Retratos e cenas de personagens bíblicos",
+            "description": "Encontre pinturas clássicas e arte sacra de personagens e episódios bíblicos para ilustrar o hook e a narração, com licença livre confirmada antes de usar.",
+            "example": "acha pinturas clássicas em domínio público de Davi e Golias"
+          },
+          {
+            "title": "Sítios arqueológicos e ruínas para vídeo geopolítico",
+            "description": "Pegue fotos de ruínas e sítios arqueológicos reais para sustentar pautas históricas e geopolíticas, dando contexto de lugar que o stock genérico não oferece.",
+            "example": "fotos CC0 de ruínas da Babilônia e sítios arqueológicos da Mesopotâmia"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado na máquina (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configurações do Studio usando o comando npx -y wikimedia-image-search-mcp."
+          },
+          {
+            "step": "Salve a conexão. O servidor sobe local na primeira chamada, sem chave nem cadastro."
+          },
+          {
+            "step": "No chat, peça as imagens em linguagem natural e use o filtro de licença (no_restrictions / CC0) para escolher o que pode usar."
+          }
+        ],
+        "costInfo": "Gratuito. O Wikimedia Commons é um acervo de mídia livre e não cobra pela busca nem exige chave de API. O servidor roda local via npx, sem assinatura nem cota. Você só precisa do Node.js instalado. Atenção apenas à licença de cada arquivo: use o filtro de no_restrictions / CC0 e confira a atribuição quando a licença pedir.",
+        "capabilities": [
+          "search_images",
+          "get_image_info",
+          "filter_by_license"
+        ]
+      }
+    },
+    {
+      "id": "mcp-openverse",
+      "name": "Openverse",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Banco de imagens com licença livre (CC e domínio público) agregadas de várias fontes, com busca direta no chat e sem chave obrigatória.",
+      "author": "Openverse",
+      "homepage": "https://openverse.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "mcp-openverse"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Imagens livres pra usar sem dor de cabeça jurídica",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Openverse é um projeto da Wikimedia Foundation que reúne, num único lugar, imagens com licença Creative Commons e de domínio público vindas de várias fontes, incluindo o Flickr. Este MCP (de terceiro) traz esse acervo pra dentro do chat do Studio: você descreve a cena que precisa e recebe resultados prontos pra baixar, com a licença de cada item à mão.\n\nA vantagem central é a segurança jurídica. Tudo que sai do Openverse é mídia com licença livre, o que importa quando o canal é monetizado e você não pode arriscar uma reivindicação de direitos autorais. Em vez de garimpar bancos genéricos e torcer pra imagem ser liberada, você parte de um acervo onde o uso livre já é a regra.\n\nSão três ferramentas: busca por palavras-chave, detalhes de uma imagem específica (autoria, licença, origem) e imagens relacionadas pra ampliar a seleção a partir de um resultado que já agradou. O acesso anônimo funciona sem chave nenhuma; registrar uma conta apenas eleva o limite de requisições se você precisar de mais volume.",
+        "howItWorksInStudio": "Roda local via npx, sem instalação manual nem chave de API. Ao ativar a extensão, o Studio executa `npx -y mcp-openverse` e o MCP fica disponível pro chat na hora, no tier anônimo.\n\nDaí é só pedir em linguagem natural: descreva a imagem, peça detalhes de um resultado pra conferir a licença antes de usar, ou peça relacionadas pra montar uma série coerente. As três ferramentas (busca, detalhes e relacionadas) ficam acessíveis direto na conversa, sem sair do fluxo de produção do vídeo.",
+        "useCases": [
+          {
+            "title": "B-roll histórico com uso liberado",
+            "description": "Buscar fotos de domínio público de locais, artefatos e cenas históricas pra ilustrar a narração sem risco de copyright no canal monetizado.",
+            "example": "acha imagens de domínio público de ruínas romanas pra usar de b-roll"
+          },
+          {
+            "title": "Apoio visual pra tema geopolítico",
+            "description": "Encontrar mapas, bandeiras e registros de eventos com licença livre pra sustentar a parte geopolítica do vídeo com material que pode ir ao ar sem reivindicação.",
+            "example": "busca imagens CC de mapas do Oriente Médio com a licença na descrição"
+          },
+          {
+            "title": "Conferir licença e expandir a seleção",
+            "description": "Verificar a autoria e a licença de uma imagem antes de baixar e, a partir dela, puxar relacionadas pra formar uma sequência visual coerente.",
+            "example": "mostra os detalhes de licença dessa imagem e traz outras parecidas"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Ative a extensão do Openverse na loja de extensões do Studio."
+          },
+          {
+            "step": "O Studio roda automaticamente `npx -y mcp-openverse` e disponibiliza o MCP no chat (tier anônimo, sem chave)."
+          },
+          {
+            "step": "Opcional: crie uma conta no Openverse caso queira elevar o limite de requisições do tier anônimo.",
+            "url": "https://openverse.org/"
+          }
+        ],
+        "costInfo": "Gratuito. O acervo do Openverse é de uso livre e o acesso anônimo via MCP não exige chave nem pagamento. Registrar uma conta no Openverse, também sem custo, apenas eleva o limite de requisições caso você precise de mais volume. As imagens têm licença Creative Commons ou são de domínio público; confira a licença de cada item antes de usar.",
+        "capabilities": [
+          "search_images",
+          "image_details",
+          "related_images"
+        ]
+      }
+    },
+    {
+      "id": "mcp-iconify",
+      "name": "Iconify",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP de busca de ícones que entrega SVGs prontos de mais de 200.000 ícones em 200+ coleções, sem chave de API.",
+      "author": "Iconify",
+      "homepage": "https://iconify.design",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "iconify-mcp"
+        ],
+        "auth": "none",
+        "category": "design",
+        "requiresNode": true,
+        "tagline": "200 mil ícones em SVG, busca por palavra, zero configuração.",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Iconify é um servidor MCP de terceiros que abre um acervo de mais de 200.000 ícones, reunidos de mais de 200 coleções, direto no chat do Studio. Você descreve o que precisa em texto - cruz, espada, mapa, coroa, peixe, balança - e ele devolve o SVG correspondente, pronto para usar. É a opção gratuita mais ampla de ícones disponível, sem cadastro e sem limite de chave.\n\nComo o retorno é SVG, o ícone entra limpo em qualquer resolução: serve tanto para uma thumbnail grande quanto para um selo discreto num canto da tela. Você usa o mesmo arquivo para compor lower-thirds, marcar capítulos do vídeo ou montar sobreposições temáticas sem perder nitidez.\n\nVale lembrar que o Iconify é um banco de ícones prontos, não um gerador por IA. O que você pede é o que existe no acervo - e o acervo é grande o bastante para cobrir símbolos religiosos, militares, geográficos e heráldicos que aparecem em conteúdo bíblico, histórico e geopolítico.",
+        "howItWorksInStudio": "O Iconify roda localmente via npx, sem servidor externo e sem chave de API. Ao ativar a extensão, o Studio sobe o processo `npx -y iconify-mcp` por baixo dos panos e expõe a busca de ícones como ferramenta do chat.\n\nA partir daí é só pedir em linguagem natural. Você digita o conceito que quer no chat, a IA procura no acervo e devolve o SVG do ícone escolhido - que você baixa e leva direto para a thumbnail, o overlay ou o lower-third do vídeo.",
+        "useCases": [
+          {
+            "title": "Símbolos para vídeos bíblicos",
+            "description": "Encontre ícones de cruz, peixe, coroa ou espada em SVG para marcar a abertura, capítulos ou momentos-chave da narração de um testemunho em primeira pessoa.",
+            "example": "ícone de cruz e peixe em svg pra abertura do testemunho"
+          },
+          {
+            "title": "Mapas e símbolos geopolíticos",
+            "description": "Puxe ícones de mapa, território ou bandeira para sobrepor a um b-roll cinematográfico e situar o espectador onde a história acontece.",
+            "example": "ícone de mapa e território pra overlay do vídeo de geopolítica"
+          },
+          {
+            "title": "Selos e brasões históricos",
+            "description": "Busque coroas, balanças, escudos e elementos heráldicos para compor lower-thirds e dar peso visual a vídeos históricos.",
+            "example": "ícone de coroa e balança em svg pro lower-third"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Abra a aba Extensões do Studio e ative o Iconify MCP."
+          },
+          {
+            "step": "O Studio sobe o servidor automaticamente via npx (`npx -y iconify-mcp`) na primeira vez - aguarde a instalação concluir."
+          },
+          {
+            "step": "Volte ao chat e peça o ícone que precisa por palavra (cruz, mapa, coroa) para receber o SVG pronto."
+          }
+        ],
+        "costInfo": "Gratuito. O Iconify não cobra e não exige chave de API - todo o acervo de mais de 200.000 ícones fica disponível sem cadastro. O único requisito é ter o Node.js instalado para o npx rodar o servidor localmente.",
+        "capabilities": [
+          "search_icons",
+          "get_icon_svg",
+          "list_icon_sets"
+        ]
+      }
+    },
+    {
+      "id": "mcp-pixabay-video",
+      "name": "Pixabay Vídeo",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "MCP de terceiro que busca vídeos de stock gratuitos no Pixabay (natureza, céu, fogo, água, deserto, fumaça) para b-roll de ambientação bíblica e histórica.",
+      "author": "Pixabay Vídeo",
+      "homepage": "https://pixabay.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "pixabay-mcp"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "B-roll gratuito do Pixabay direto no chat",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Pixabay Vídeo conecta o Studio ao acervo de vídeos de stock do Pixabay, todos de uso livre e gratuito. Pelo chat você descreve a cena que precisa e o MCP devolve clipes prontos: paisagens de deserto, céu ao entardecer, chamas, correntes de água, fumaça subindo, ondas batendo na pedra. É mídia pronta para baixar, não geração por IA.\n\nPara o canal Nardoto Studio, esse é o material que dá corpo ao b-roll cinematográfico entre os trechos de narração e os testemunhos em primeira pessoa. Enquanto a voz conduz a história de um personagem bíblico, a tela mostra o deserto onde ele caminhou, o fogo do altar, o rio que ele atravessou. O MCP entrega esses planos de ambientação sem custo e sem sair do chat.\n\nFunciona como complemento do Coverr: onde um banco não tem o clipe que você quer, o outro costuma cobrir. A ferramenta disponível é uma só, search_pixabay_videos, que faz a busca por palavra-chave no acervo de vídeo do Pixabay e retorna os resultados com os links de download.",
+        "howItWorksInStudio": "No chat do Studio você pede a cena em linguagem natural (\"preciso de um clipe de deserto ao pôr do sol\") e o assistente chama a tool search_pixabay_videos, que consulta o acervo de vídeo do Pixabay e devolve uma lista de clipes com prévia e link. Você escolhe o que serve, baixa e arrasta para a timeline do CapCut como b-roll.\n\nO MCP roda localmente via npx, sem instalação manual de pacote. A única configuração é a chave gratuita do Pixabay, que você provavelmente já tem ativa por usar o Pixabay de imagens no Stock Images Multi. A mesma chave atende imagem e vídeo.",
+        "useCases": [
+          {
+            "title": "Ambientação de cena bíblica",
+            "description": "Cobrir a narração de um personagem do Antigo Testamento com planos de deserto, céu e fogo, dando peso visual à história sem usar imagem genérica.",
+            "example": "Acha 3 clipes de deserto ao entardecer pra ambientar a travessia"
+          },
+          {
+            "title": "B-roll de elementos para transição",
+            "description": "Inserir cortes curtos de água, fumaça ou chamas entre os trechos de fala para dar respiro e ritmo cinematográfico ao vídeo.",
+            "example": "Procura clipe de fumaça subindo em câmera lenta pra transição"
+          },
+          {
+            "title": "Complemento quando o Coverr não tem",
+            "description": "Quando a busca no Coverr não devolve o plano certo, recorrer ao acervo do Pixabay para fechar a cena.",
+            "example": "No Coverr não achei correnteza de rio, procura no Pixabay"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Garanta uma chave gratuita do Pixabay. Se você já usa o Pixabay de imagens no Stock Images Multi, a mesma chave serve.",
+            "url": "https://pixabay.com/api/docs/"
+          },
+          {
+            "step": "Adicione o MCP Pixabay Vídeo na aba de MCPs do Studio com o comando npx -y pixabay-mcp."
+          },
+          {
+            "step": "Cole a chave do Pixabay na configuração do MCP."
+          },
+          {
+            "step": "Abra o chat e peça um clipe (ex.: \"acha vídeo de deserto ao pôr do sol\") para confirmar que a busca responde."
+          }
+        ],
+        "costInfo": "O acervo de vídeo do Pixabay é gratuito e a chave de API também não tem custo. O MCP roda local via npx, sem servidor pago. A cota da API gratuita do Pixabay é generosa para uso individual; em caso de busca muito intensa, o próprio Pixabay aplica limites de requisição por hora.",
+        "envSchema": [
+          {
+            "key": "PIXABAY_API_KEY",
+            "label": "Pixabay API Key",
+            "secret": true,
+            "required": true,
+            "description": "pixabay.com/api/docs (gratis, instantaneo)"
+          }
+        ],
+        "capabilities": [
+          "search_pixabay_videos",
+          "search_pixabay_images"
+        ]
+      }
+    },
+    {
+      "id": "mcp-noun-project",
+      "name": "Noun Project",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Milhões de ícones consistentes pra thumbnails e overlays, com busca e download de SVG/PNG direto no chat.",
+      "author": "Noun Project",
+      "homepage": "https://thenounproject.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@alisaitteke/noun-mcp"
+        ],
+        "auth": "env",
+        "category": "design",
+        "requiresNode": true,
+        "tagline": "Ícones consistentes pra thumbnail, buscados pelo chat.",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O Noun Project e uma das maiores bibliotecas de icones do mundo, com milhoes de simbolos num estilo visual consistente — otimo pra manter a identidade das suas thumbnails e overlays. Este MCP (comunitario, @alisaitteke/noun-mcp) liga o acervo direto ao chat do Studio.\n\nVoce pede o icone por palavra (cruz, espada, coroa, mapa, balanca, pomba) e recebe opcoes pra baixar em SVG ou PNG, com controle de cor e tamanho. Tem busca, colecoes, autocomplete e checagem da sua cota.\n\nO tier gratuito libera os icones de dominio publico e cerca de 5.000 chamadas por mes; a biblioteca completa exige plano pago do Noun Project. A autenticacao e OAuth, mas o MCP resolve a assinatura sozinho — voce so cola a key e o secret uma vez.",
+        "howItWorksInStudio": "Roda via npx (precisa Node). Cole a API key e o secret do Noun Project uma vez e escolha o tier (FREE ou PAID).\n\nNo chat, peca o icone que precisa pra capa ou overlay e baixe em SVG/PNG na cor e tamanho que quiser, sem abrir o site.",
+        "useCases": [
+          {
+            "title": "Icone simbolico pra thumbnail biblica",
+            "description": "Simbolos limpos (cruz, coroa, espada, pomba) pra reforcar o tema da capa.",
+            "example": "baixa um icone de coroa em SVG branco pra thumbnail"
+          },
+          {
+            "title": "Overlay de mapa em video geopolitico",
+            "description": "Icones de mapa, bussola e rota pra ilustrar deslocamentos e territorio.",
+            "example": "acha icones de mapa e bussola e baixa em PNG 512px"
+          },
+          {
+            "title": "Conjunto coeso de icones",
+            "description": "Pegar varios icones da mesma colecao pra manter o estilo consistente.",
+            "example": "busca uma colecao de icones de objetos antigos e mostra as opcoes"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta de desenvolvedor no Noun Project e gere API Key + Secret",
+            "url": "https://thenounproject.com/developers/"
+          },
+          {
+            "step": "Cole a NOUN_CONSUMER_KEY e a NOUN_CONSUMER_SECRET no card ao Conectar"
+          },
+          {
+            "step": "Defina o tier: FREE (dominio publico, ~5k/mes) ou PAID (biblioteca completa)"
+          },
+          {
+            "step": "Garanta que o Node esta instalado e clique em Conectar"
+          }
+        ],
+        "costInfo": "Tier FREE: icones de dominio publico + ~5.000 chamadas/mes, sem cartao. Biblioteca completa exige plano pago do Noun Project. O MCP em si e gratuito.",
+        "envSchema": [
+          {
+            "key": "NOUN_CONSUMER_KEY",
+            "label": "Noun Project API Key",
+            "secret": true,
+            "required": true,
+            "description": "thenounproject.com/developers (API Key)"
+          },
+          {
+            "key": "NOUN_CONSUMER_SECRET",
+            "label": "Noun Project API Secret",
+            "secret": true,
+            "required": true,
+            "description": "thenounproject.com/developers (Secret)"
+          },
+          {
+            "key": "NOUN_API_TIER",
+            "label": "Tier (FREE ou PAID)",
+            "secret": false,
+            "required": false,
+            "placeholder": "FREE",
+            "description": "FREE = dominio publico ~5k/mes; PAID = biblioteca completa"
+          }
+        ],
+        "capabilities": [
+          "search_icons",
+          "get_icon",
+          "download_icon",
+          "search_collections",
+          "get_collection",
+          "icon_autocomplete",
+          "check_usage"
+        ]
+      }
+    },
+    {
+      "id": "mcp-jamendo",
+      "name": "Jamendo",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa musica Creative Commons do Jamendo direto no chat, sempre com a licenca e um aviso de uso comercial em cada faixa.",
+      "author": "Nardoto",
+      "homepage": "https://www.jamendo.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-jamendo"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresNode": true,
+        "tagline": "Trilha Creative Commons buscada pelo chat",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Jamendo e um dos maiores acervos de musica Creative Commons do mundo, com milhares de faixas de artistas independentes. Este MCP, feito pelo Nardoto, liga esse acervo direto ao chat do Studio: voce descreve o clima que precisa (epico, tenso, melancolico, orquestral) e recebe faixas com a licenca e um link de download.\n\nO ponto critico que este MCP resolve e a seguranca de licenca. Boa parte do Jamendo e CC-BY-NC, ou seja, proibido em video MONETIZADO. Por isso toda resposta traz o campo uso_comercial, deixando claro quando a faixa pode entrar num video do YouTube com anuncio e quando precisaria de uma licenca paga via Jamendo Licensing. Voce escolhe a trilha sabendo o que pode e o que nao pode.\n\nE musica pronta para baixar, nao geracao por IA. Tem tres ferramentas: search_tracks (busca por texto, tags de mood e duracao, com opcao instrumental), get_track (detalhes de uma faixa) e download_track (link MP3 quando permitido).",
+        "howItWorksInStudio": "No chat voce pede a trilha em linguagem natural (\"acha uma musica instrumental epica pra abertura\") e o assistente chama a tool search_tracks, que consulta o Jamendo e devolve faixas com nome, artista, duracao, licenca e o aviso de uso comercial. Voce escolhe, baixa o MP3 e leva pra timeline do CapCut.\n\nO MCP roda localmente via npx, sem instalar pacote na mao. A unica configuracao e o Client ID gratuito do Jamendo, criado em segundos no portal de desenvolvedor, sem cartao.",
+        "useCases": [
+          {
+            "title": "Trilha de fundo para narracao biblica",
+            "description": "Achar musica instrumental de clima epico ou solene pra acompanhar a narracao sem brigar com a voz.",
+            "example": "Acha uma trilha instrumental solene pra narrar a travessia do Mar Vermelho"
+          },
+          {
+            "title": "Abertura e encerramento do video",
+            "description": "Pegar uma faixa marcante pra intro e outra mais calma pro encerramento, mantendo o canal com identidade sonora.",
+            "example": "Procura uma musica epica curta pra abertura, com licenca livre pra monetizar"
+          },
+          {
+            "title": "Filtrar so o que pode monetizar",
+            "description": "Garantir que a faixa escolhida nao seja CC-BY-NC antes de usar num video com anuncios.",
+            "example": "Dessa lista, quais faixas posso usar em video monetizado?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie uma conta de desenvolvedor no Jamendo e registre um app pra obter o Client ID (gratis, sem cartao).",
+            "url": "https://devportal.jamendo.com"
+          },
+          {
+            "step": "Adicione o MCP Jamendo na aba de MCPs do Studio (npx -y nardoto-mcp-jamendo)."
+          },
+          {
+            "step": "Cole o Client ID na configuracao do MCP e clique em Conectar."
+          },
+          {
+            "step": "No chat, peca uma trilha (ex.: \"acha musica instrumental epica\") pra confirmar que a busca responde."
+          }
+        ],
+        "costInfo": "O acervo Creative Commons do Jamendo e gratuito e o Client ID da API tambem nao tem custo. O MCP roda local via npx, sem servidor pago. Atencao: muita faixa e CC-BY-NC (uso pessoal/educacional livre, mas PROIBIDO em video monetizado). Pra monetizar com uma faixa NC e preciso licenciar via Jamendo Licensing, que e pago e cobrado a parte. O proprio MCP avisa a licenca em cada resultado.",
+        "envSchema": [
+          {
+            "key": "JAMENDO_CLIENT_ID",
+            "label": "Jamendo Client ID",
+            "secret": true,
+            "required": true,
+            "description": "devportal.jamendo.com (gratis, sem cartao)"
+          }
+        ],
+        "capabilities": [
+          "search_tracks",
+          "get_track",
+          "download_track"
+        ]
+      }
+    },
+    {
+      "id": "mcp-freesound",
+      "name": "Freesound",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa efeitos sonoros (SFX) Creative Commons do Freesound direto no chat, com a licenca e o aviso de uso comercial em cada som.",
+      "author": "Nardoto",
+      "homepage": "https://freesound.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-freesound"
+        ],
+        "auth": "env",
+        "category": "audio",
+        "requiresNode": true,
+        "tagline": "Efeitos sonoros Creative Commons pelo chat",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Freesound e o maior banco colaborativo de efeitos sonoros e samples Creative Commons da internet, com milhoes de sons enviados por gente do mundo todo. Este MCP, feito pelo Nardoto, traz esse acervo pro chat do Studio: voce descreve o som que precisa (vento de deserto, passos no cascalho, multidao distante, porta de madeira rangendo) e recebe resultados prontos pra baixar.\n\nCada resposta inclui a licenca e o campo uso_comercial, distinguindo o que e CC0 (dominio publico, livre ate em video monetizado), o que exige atribuicao e o que e CC-BY-NC (proibido monetizar). Isso protege quem publica no YouTube com anuncios.\n\nO download e do preview MP3, que ja cobre cerca de 90 por cento dos efeitos usados em video (o arquivo original .wav/.flac exigiria OAuth2 e ficou fora do escopo). As tres ferramentas sao search_sounds (busca por texto com filtro de duracao), get_sound (detalhes) e download_preview (link do MP3 sem login extra).",
+        "howItWorksInStudio": "No chat voce pede o efeito em linguagem natural (\"preciso de um som de vento de deserto\") e o assistente chama a tool search_sounds, que consulta o Freesound e devolve sons com nome, autor, duracao, licenca, aviso de uso comercial e o link do preview MP3. Voce escolhe, baixa e usa como SFX na timeline.\n\nO MCP roda localmente via npx, sem instalar pacote na mao. A unica configuracao e o Token gratuito do Freesound, gerado na area de API do site.",
+        "useCases": [
+          {
+            "title": "Ambiencia de cena historica",
+            "description": "Cobrir uma cena com sons de fundo (vento, fogo crepitando, multidao, mar) pra dar imersao a narracao.",
+            "example": "Acha um som de vento de deserto longo pra ambientar a cena"
+          },
+          {
+            "title": "SFX pontual de impacto",
+            "description": "Inserir efeitos curtos (espada desembainhando, porta batendo, trovao) nos momentos de tensao do roteiro.",
+            "example": "Procura um som de trovao forte e curto pra um corte dramatico"
+          },
+          {
+            "title": "Garantir som livre pra monetizar",
+            "description": "Filtrar so sons CC0 ou com atribuicao permitida antes de usar num video com anuncios.",
+            "example": "Quais desses sons sao CC0 e posso usar em video monetizado?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta no Freesound e gere um Token de API (gratis).",
+            "url": "https://freesound.org/apiv2/apply"
+          },
+          {
+            "step": "Adicione o MCP Freesound na aba de MCPs do Studio (npx -y nardoto-mcp-freesound)."
+          },
+          {
+            "step": "Cole o Token na configuracao do MCP e clique em Conectar."
+          },
+          {
+            "step": "No chat, peca um efeito (ex.: \"acha som de passos no cascalho\") pra confirmar que responde."
+          }
+        ],
+        "costInfo": "O Freesound e gratuito e o Token de API tambem nao tem custo. O MCP roda local via npx, sem servidor pago. O download e do preview MP3 (suficiente pra video); o arquivo original em alta exigiria OAuth2 e nao e coberto. Atencao a licenca de cada som: CC0 e livre, CC-BY exige atribuicao e CC-BY-NC e proibido em conteudo monetizado. O proprio MCP avisa em cada resultado.",
+        "envSchema": [
+          {
+            "key": "FREESOUND_API_KEY",
+            "label": "Freesound API Token",
+            "secret": true,
+            "required": true,
+            "description": "freesound.org/apiv2/apply (gratis)"
+          }
+        ],
+        "capabilities": [
+          "search_sounds",
+          "get_sound",
+          "download_preview"
+        ]
+      }
+    },
+    {
+      "id": "mcp-iconfinder",
+      "name": "Iconfinder",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa icones (SVG/PNG) do Iconfinder direto no chat, trazendo por padrao so os gratuitos pra nao consumir credito.",
+      "author": "Nardoto",
+      "homepage": "https://www.iconfinder.com",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-iconfinder"
+        ],
+        "auth": "env",
+        "category": "design",
+        "requiresNode": true,
+        "tagline": "Icones SVG/PNG pra thumbnail, buscados pelo chat",
+        "pricing": "freemium",
+        "verified": true,
+        "longDescription": "O Iconfinder e um dos maiores acervos de icones de alta qualidade da web, com milhoes de simbolos em SVG e PNG. Este MCP, feito pelo Nardoto, liga esse acervo ao chat do Studio pra agilizar a criacao de thumbnails e overlays sem abrir o site.\n\nPor seguranca de custo, a busca traz por padrao SO icones gratuitos (premium=0), pra nunca consumir credito sem voce pedir. Se quiser, da pra incluir os premium passando include_premium. O free tier do Iconfinder cobre uma cota diaria generosa pra uso individual.\n\nVoce pede o icone por palavra (cruz, espada, coroa, mapa, balanca, pomba) e recebe os melhores links de download em SVG (vetor, escala sem perder qualidade) e PNG (a maior resolucao disponivel). As ferramentas sao search_icons e get_icon. As download_url retornadas exigem a mesma chave pra baixar de fato.",
+        "howItWorksInStudio": "No chat voce pede o icone que precisa (\"acha um icone de coroa em SVG\") e o assistente chama a tool search_icons, que consulta o Iconfinder e devolve opcoes gratuitas com links SVG e PNG. Voce escolhe e baixa pra usar na thumbnail ou como overlay no video.\n\nO MCP roda localmente via npx, sem instalar pacote na mao. A unica configuracao e a API key gratuita do portal de desenvolvedor do Iconfinder.",
+        "useCases": [
+          {
+            "title": "Icone simbolico pra thumbnail",
+            "description": "Simbolos limpos (cruz, coroa, espada, pomba) pra reforcar o tema da capa em poucos segundos.",
+            "example": "Baixa um icone de coroa em SVG pra thumbnail"
+          },
+          {
+            "title": "Overlay em video geopolitico ou historico",
+            "description": "Icones de mapa, bussola e rota pra ilustrar deslocamentos e territorios na tela.",
+            "example": "Acha icones de mapa e bussola e baixa em PNG na maior resolucao"
+          },
+          {
+            "title": "Conjunto coeso de icones",
+            "description": "Pegar varios icones do mesmo estilo pra manter a identidade visual consistente entre os videos.",
+            "example": "Procura um conjunto de icones de objetos antigos no mesmo estilo"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie conta no portal de desenvolvedor do Iconfinder e gere uma API key (free tier, sem cartao).",
+            "url": "https://developer.iconfinder.com"
+          },
+          {
+            "step": "Adicione o MCP Iconfinder na aba de MCPs do Studio (npx -y nardoto-mcp-iconfinder)."
+          },
+          {
+            "step": "Cole a API key na configuracao do MCP e clique em Conectar."
+          },
+          {
+            "step": "No chat, peca um icone (ex.: \"acha um icone de cruz em SVG\") pra confirmar que responde."
+          }
+        ],
+        "costInfo": "O free tier do Iconfinder e gratuito e cobre uma cota diaria generosa pra uso individual; a API key tambem nao tem custo. O MCP roda local via npx, sem servidor pago. Por padrao a busca traz so icones gratuitos pra nao consumir credito. Os icones premium exigem creditos pagos do Iconfinder e so aparecem se voce pedir explicitamente (include_premium).",
+        "envSchema": [
+          {
+            "key": "ICONFINDER_API_KEY",
+            "label": "Iconfinder API Key",
+            "secret": true,
+            "required": true,
+            "description": "developer.iconfinder.com (free tier, sem cartao)"
+          }
+        ],
+        "capabilities": [
+          "search_icons",
+          "get_icon"
         ]
       }
     }
