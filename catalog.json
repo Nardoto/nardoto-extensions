@@ -3733,6 +3733,79 @@
           "detalhes"
         ]
       }
+    },
+    {
+      "id": "mcp-nara",
+      "name": "US National Archives (NARA)",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa fotos e filmes da 2a Guerra do US National Archives (NARA), em dominio publico. O melhor B-roll militar oficial dos EUA.",
+      "author": "Nardoto",
+      "homepage": "https://catalog.archives.gov",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-nara"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Fotos e filmes de 2a Guerra em dominio publico",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O US National Archives (NARA) guarda o acervo militar oficial dos Estados Unidos, em grande parte em DOMINIO PUBLICO (obra do governo federal). Sao mais de 1,4 milhao de resultados pra \"world war ii\": fotos e filmes de epoca de altissimo valor pra B-roll historico. Este MCP, feito pelo Nardoto, traz essa busca pro chat do Studio.\n\nVoce busca por texto em ingles e recebe os registros com as URLs de download direto de cada objeto digital (foto, filme). Como a maioria e dominio publico federal, e material seguro pra usar inclusive em video monetizado — o MCP ainda assim sinaliza pra conferir restricoes do registro.\n\nUm detalhe importante de acesso: o NARA tem um endpoint publico (usado pela propria interface do site) que e gratuito mas INSTAVEL — as vezes o servidor devolve a pagina em vez do JSON. Por isso o MCP faz retry automatico, e voce pode (opcional, recomendado) definir uma NARA_API_KEY gratuita pra acesso estavel. Sem a chave ele funciona, mas pode falhar de vez em quando; com a chave, fica solido.",
+        "howItWorksInStudio": "No chat voce pede a midia em linguagem natural (\"acha fotos da invasao da Normandia\", \"filmes do Pacifico na 2a Guerra\") e o assistente chama buscar_midia, que consulta o NARA e devolve os registros com titulo e as URLs de download direto. Com baixar_midia voce confirma o link e recebe o aviso de licenca (dominio publico).\n\nO MCP roda localmente via npx. Funciona sem chave (com retry, pode falhar as vezes); pra estabilidade, pegue uma NARA_API_KEY gratuita e cole na configuracao.",
+        "useCases": [
+          {
+            "title": "B-roll oficial de 2a Guerra",
+            "description": "Cobrir a narracao com fotos e filmes militares oficiais dos EUA, em dominio publico, dando peso de documento ao video.",
+            "example": "Acha filmes da Normandia no Arquivo Nacional dos EUA"
+          },
+          {
+            "title": "Fotos historicas de eventos especificos",
+            "description": "Pegar registros fotograficos de batalhas, frentes e momentos especificos pra ilustrar pautas historicas.",
+            "example": "Procura fotos da batalha de Iwo Jima em dominio publico"
+          },
+          {
+            "title": "Material seguro pra monetizar",
+            "description": "Usar acervo de dominio publico federal, sem o risco de copyright que um banco generico traria.",
+            "example": "Esse filme do NARA e dominio publico? Posso usar monetizado?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-nara."
+          },
+          {
+            "step": "Opcional mas recomendado: pegue uma NARA_API_KEY gratuita e cole na configuracao, pra acesso estavel.",
+            "url": "https://catalog.archives.gov/api/v2"
+          },
+          {
+            "step": "No chat, peca a midia em ingles (ex.: \"D-Day photos\") e baixe os objetos retornados."
+          }
+        ],
+        "costInfo": "Gratuito. O acervo do NARA e majoritariamente dominio publico (obra do governo federal dos EUA). O MCP roda local via npx. Sem chave usa o endpoint publico do site (gratis, porem instavel — pode devolver a pagina em vez do JSON; o MCP faz retry). A NARA_API_KEY e gratuita e deixa o acesso estavel — recomendada pra uso frequente. Alguns registros tem restricao de doacao/uso; o MCP avisa pra conferir antes de monetizar.",
+        "envSchema": [
+          {
+            "key": "NARA_API_KEY",
+            "label": "NARA API Key (opcional)",
+            "secret": true,
+            "required": false,
+            "description": "catalog.archives.gov/api/v2 (gratis) — opcional, deixa o acesso estavel"
+          }
+        ],
+        "capabilities": [
+          "buscar_midia",
+          "baixar_midia"
+        ]
+      }
     }
   ]
 }
