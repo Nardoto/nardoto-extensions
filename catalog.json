@@ -3407,6 +3407,332 @@
           "get_icon"
         ]
       }
+    },
+    {
+      "id": "mcp-archive",
+      "name": "Internet Archive",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa midia historica do Internet Archive (archive.org): footage e audio de epoca, filmes da 2a Guerra, imagens e textos de dominio publico. Sem chave.",
+      "author": "Nardoto",
+      "homepage": "https://archive.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-archive"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Footage e audio historico de dominio publico",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Internet Archive (archive.org) e o maior acervo de midia historica baixavel da internet, e este MCP, feito pelo Nardoto, traz isso direto pro chat do Studio. E a unica fonte que entrega VIDEO de epoca de verdade sem dor: newsreels e filmes do US Army/Navy, colecao Prelinger, audio e textos. Para um canal de narracao biblica e historica, e o lugar de onde sai o b-roll de 2a Guerra (subject:\"World War, 1939-1945\" devolve milhares de filmes) e de outros periodos.\n\nVoce pode buscar com texto simples ou com a sintaxe Lucene do Archive (filtrar por colecao, assunto, ano, tipo de midia). A busca devolve os itens; uma segunda ferramenta lista os arquivos baixaveis de cada item com a URL de download direto, e uma terceira monta o link de um arquivo especifico.\n\nDetalhe critico: a licenca VARIA por item (nem tudo e dominio publico). Por isso toda resposta expoe a licenca e os direitos (rights) e um aviso de uso comercial. Quem monetiza no YouTube ve na hora se a faixa pode entrar ou nao. Sem chave, sem cadastro, roda local via npx.",
+        "howItWorksInStudio": "No chat voce pede a midia em linguagem natural (\"acha filmes da 2a Guerra de dominio publico\", \"audio de discurso historico\") e o assistente chama buscar_midia, que consulta o Internet Archive e devolve os itens com identifier, tipo e licenca. Voce usa listar_arquivos pra ver os arquivos baixaveis de um item (com tamanho e URL) e baixa o que serve pra timeline do CapCut.\n\nO MCP roda localmente via npx, sem instalar pacote na mao e sem chave. So confira o campo de licenca/uso_comercial antes de usar em video monetizado.",
+        "useCases": [
+          {
+            "title": "Footage de 2a Guerra pra documentario",
+            "description": "Cobrir a narracao historica com filmes reais de epoca (newsreels, registros militares) em vez de recriacao moderna, dando peso de documento ao video.",
+            "example": "Acha filmes de dominio publico da 2a Guerra pra usar de b-roll"
+          },
+          {
+            "title": "Audio e discursos historicos",
+            "description": "Pegar gravacoes de epoca (discursos, radio) pra ilustrar momentos historicos com a voz original.",
+            "example": "Procura audio de dominio publico de discursos da Segunda Guerra"
+          },
+          {
+            "title": "Filtrar so o que pode monetizar",
+            "description": "Conferir a licenca de cada item antes de usar num video com anuncios, evitando material com copyright incerto.",
+            "example": "Esse filme e dominio publico? Posso usar em video monetizado?"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-archive."
+          },
+          {
+            "step": "Salve a conexao. Sobe local na primeira chamada, sem chave nem cadastro."
+          },
+          {
+            "step": "No chat, peca a midia e confira o campo de licenca/uso_comercial antes de usar."
+          }
+        ],
+        "costInfo": "Gratuito. O Internet Archive nao cobra pela busca nem exige chave. O MCP roda local via npx. Atencao: a licenca varia por item (muito e dominio publico, mas nem tudo) — o MCP expoe a licenca e o aviso de uso comercial em cada resultado pra voce decidir antes de monetizar.",
+        "capabilities": [
+          "buscar_midia",
+          "listar_arquivos",
+          "baixar_arquivo"
+        ]
+      }
+    },
+    {
+      "id": "mcp-met",
+      "name": "Met Museum",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa obras do Metropolitan Museum of Art (Met): arte biblica e historica em CC0 (uso livre, inclusive monetizado). Sem chave.",
+      "author": "Nardoto",
+      "homepage": "https://www.metmuseum.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-met"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Arte biblica e historica em CC0, buscada pelo chat",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "O Metropolitan Museum of Art (Met) tem uma das maiores colecoes de arte do mundo, e boa parte esta em CC0 — dominio publico total, uso livre inclusive em video monetizado, sem precisar creditar. Este MCP, feito pelo Nardoto, liga esse acervo ao chat do Studio. Para um canal de narracao biblica e historica, e ouro: pinturas e gravuras renascentistas de cenas biblicas (Moises, Davi, a Natividade, a Ultima Ceia), retratos classicos e antiguidades.\n\nVoce busca por texto em ingles e o MCP ja devolve as obras com imagem: titulo, artista, data, a URL da imagem em alta resolucao e a marcacao de dominio publico. Da pra pedir so as obras CC0, pra garantir que tudo que aparecer pode ser usado sem amarra. So imagem (o Met nao tem video).\n\nSem chave, sem cadastro, roda local via npx. E o complemento perfeito do Wikimedia Commons e da Gallica pra quem precisa de arte de epoca de verdade.",
+        "howItWorksInStudio": "No chat voce pede a obra em linguagem natural (\"acha uma pintura de Moises em CC0\", \"retrato classico de rei\") e o assistente chama buscar_obras, que consulta o Met e devolve as obras com imagem em alta resolucao e a marcacao de dominio publico. Com baixar_imagem voce pega os detalhes completos de uma obra pelo objectID.\n\nO MCP roda localmente via npx, sem chave. As obras marcadas como dominio publico sao CC0 — uso livre, inclusive monetizado, sem atribuicao.",
+        "useCases": [
+          {
+            "title": "Pintura classica de cena biblica",
+            "description": "Ilustrar a narracao com arte renascentista de episodios biblicos (CC0, sem amarra de direitos), dando erudicao ao video.",
+            "example": "Acha uma pintura em dominio publico de Davi e Golias"
+          },
+          {
+            "title": "Retrato ou antiguidade pra contexto historico",
+            "description": "Pegar retratos classicos e objetos antigos pra dar contexto visual de epoca a pautas historicas.",
+            "example": "Procura retratos classicos de imperadores romanos em CC0"
+          },
+          {
+            "title": "Capa e thumbnail com arte de impacto",
+            "description": "Usar uma obra de arte forte e livre como base de thumbnail, sem risco de direitos.",
+            "example": "Acha uma imagem CC0 da Ultima Ceia em alta resolucao"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-met."
+          },
+          {
+            "step": "Salve a conexao. Sobe local na primeira chamada, sem chave nem cadastro."
+          },
+          {
+            "step": "No chat, peca a obra (ex.: \"pintura de Moises CC0\") e baixe a imagem em alta resolucao."
+          }
+        ],
+        "costInfo": "Gratuito. A API do Met e publica, sem chave e sem custo. O MCP roda local via npx. As obras com dominio_publico=true sao CC0 (uso livre, inclusive monetizado, sem atribuicao); as demais podem ter restricao — o MCP avisa em cada resultado.",
+        "capabilities": [
+          "buscar_obras",
+          "baixar_imagem"
+        ]
+      }
+    },
+    {
+      "id": "mcp-wellcome",
+      "name": "Wellcome Collection",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa imagens historicas livres da Wellcome Collection: gravuras, ilustracoes, mapas e cenas de epoca. ~85 mil imagens, sem chave.",
+      "author": "Nardoto",
+      "homepage": "https://wellcomecollection.org",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-wellcome"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Gravuras e ilustracoes historicas livres, pelo chat",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "A Wellcome Collection tem um acervo enorme de imagens historicas livres — cerca de 85 mil arquivos em Public Domain Mark, CC0 e CC-BY. Este MCP, feito pelo Nardoto, abre esse acervo no chat do Studio. Sao gravuras, ilustracoes antigas, mapas, retratos e cenas de epoca: material de documento, nao recriacao moderna, ideal pra dar peso visual a um canal de narracao historica.\n\nVoce busca por texto em ingles e pode filtrar direto por licenca (pdm, cc0, cc-by) pra so trazer o que da pra usar sem amarra. A imagem vem via IIIF e o MCP ja monta a URL JPEG em resolucao cheia, pronta pra baixar. So imagem.\n\nSem chave, sem cadastro, roda local via npx. Atencao: cc-by exige creditar \"Wellcome Collection\", e cerca de 21% do acervo e \"In Copyright\" — por isso o filtro de licenca importa.",
+        "howItWorksInStudio": "No chat voce pede a imagem em linguagem natural (\"gravura antiga de soldado romano\", \"mapa historico da Palestina\") e o assistente chama buscar_imagens, que consulta a Wellcome e devolve as imagens com a URL JPEG pronta e a licenca de cada uma. Use o filtro de licenca (pdm/cc0) pra so trazer o que e livre, e baixe o que serve.\n\nO MCP roda localmente via npx, sem chave. Confira a licenca: pdm/cc0 sao livres inclusive em monetizado; cc-by exige creditar a Wellcome Collection.",
+        "useCases": [
+          {
+            "title": "Gravura de epoca pra ambientacao",
+            "description": "Cobrir a narracao com gravuras e ilustracoes antigas que dao textura de documento historico ao video.",
+            "example": "Acha gravuras antigas de Jerusalem em dominio publico"
+          },
+          {
+            "title": "Mapa ou ilustracao historica",
+            "description": "Pegar mapas antigos e ilustracoes de epoca pra ilustrar contexto geografico e historico.",
+            "example": "Procura um mapa historico da Terra Santa, licenca livre"
+          },
+          {
+            "title": "So o que pode monetizar",
+            "description": "Filtrar por pdm/cc0 pra garantir imagens livres antes de usar num video com anuncios.",
+            "example": "So imagens CC0 de cenas biblicas, por favor"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-wellcome."
+          },
+          {
+            "step": "Salve a conexao. Sobe local na primeira chamada, sem chave nem cadastro."
+          },
+          {
+            "step": "No chat, peca a imagem e use o filtro de licenca (pdm/cc0) pra escolher so o que e livre."
+          }
+        ],
+        "costInfo": "Gratuito. A API da Wellcome Collection e publica, sem chave e sem custo. O MCP roda local via npx. pdm/cc0 sao livres inclusive em monetizado; cc-by exige creditar \"Wellcome Collection\". Use o filtro de licenca pra evitar os ~21% \"In Copyright\".",
+        "capabilities": [
+          "buscar_imagens",
+          "baixar_imagem"
+        ]
+      }
+    },
+    {
+      "id": "mcp-gallica",
+      "name": "Gallica / BnF",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa imagens da Gallica/BnF: Terra Santa, manuscritos biblicos iluminados, mapas e gravuras antigas. Sem chave (download via IIIF).",
+      "author": "Nardoto",
+      "homepage": "https://gallica.bnf.fr",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-gallica"
+        ],
+        "auth": "none",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Terra Santa e manuscritos biblicos, da BnF",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "A Gallica e a biblioteca digital da BnF (Biblioteca Nacional da Franca), com um acervo riquissimo pra conteudo biblico e historico: vistas da Terra Santa, manuscritos biblicos iluminados, mapas antigos e gravuras. Este MCP, feito pelo Nardoto, traz essa busca pro chat do Studio.\n\nVoce busca por texto (em portugues, frances ou ingles) com filtro de tipo (imagem, manuscrito, mapa, gravura) e recebe os itens com o identificador (ark) de cada um. Uma segunda ferramenta monta a URL JPEG de qualquer pagina/folio do documento, via o padrao IIIF, em alta resolucao.\n\nSem chave, mas com uma pegadinha que o MCP ja resolve: a Gallica exige User-Agent de navegador, senao responde 403 — o servidor ja manda o cabecalho certo. Licenca: a maioria e domaine public, mas a BnF pede o credito \"Source: gallica.bnf.fr / BnF\" e restringe uso comercial pesado, entao confira o item.",
+        "howItWorksInStudio": "No chat voce pede o documento em linguagem natural (\"manuscrito biblico iluminado\", \"mapa antigo de Jerusalem\") e o assistente chama buscar, que consulta a Gallica e devolve os itens com o ark. Com baixar_pagina voce monta a URL JPEG de uma pagina especifica (IIIF, alta resolucao) e baixa.\n\nO MCP roda localmente via npx, sem chave, e ja envia o User-Agent de navegador que a Gallica exige. Lembre do credito \"Source: gallica.bnf.fr / BnF\".",
+        "useCases": [
+          {
+            "title": "Manuscrito biblico iluminado",
+            "description": "Ilustrar a narracao com folios de manuscritos biblicos medievais, dando aura de documento sagrado antigo ao video.",
+            "example": "Acha um manuscrito biblico iluminado e baixa a pagina de abertura"
+          },
+          {
+            "title": "Vista historica da Terra Santa",
+            "description": "Pegar gravuras e vistas antigas de Jerusalem e da Terra Santa pra ambientar pautas biblicas.",
+            "example": "Procura gravuras antigas de Jerusalem na Gallica"
+          },
+          {
+            "title": "Mapa antigo pra contexto geopolitico",
+            "description": "Usar mapas historicos de alta resolucao pra ilustrar territorios e rotas em videos historicos.",
+            "example": "Acha um mapa antigo do Oriente Medio e baixa em alta"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Tenha o Node.js instalado (o servidor roda via npx)."
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-gallica."
+          },
+          {
+            "step": "Salve a conexao. Sobe local na primeira chamada, sem chave nem cadastro."
+          },
+          {
+            "step": "No chat, busque o documento e use baixar_pagina pra pegar a pagina em alta resolucao. Credite a BnF."
+          }
+        ],
+        "costInfo": "Gratuito. A Gallica nao cobra nem exige chave (o MCP ja manda o User-Agent de navegador que ela exige). O MCP roda local via npx. A maioria do acervo e domaine public, mas a BnF pede o credito \"Source: gallica.bnf.fr / BnF\" e restringe uso comercial pesado — confira as condicoes do item antes de monetizar.",
+        "capabilities": [
+          "buscar",
+          "baixar_pagina"
+        ]
+      }
+    },
+    {
+      "id": "mcp-europeana",
+      "name": "Europeana",
+      "version": "1.0.0",
+      "type": "mcp",
+      "description": "Busca e baixa midia de 4000+ instituicoes europeias (incl. arquivos municipais e 2a Guerra) via Europeana. Imagem, video, audio e texto. Chave gratis.",
+      "author": "Nardoto",
+      "homepage": "https://www.europeana.eu",
+      "downloadUrl": "https://github.com/Nardoto/nardoto-extensions",
+      "minAppVersion": "7.4.0",
+      "mcp": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "nardoto-mcp-europeana"
+        ],
+        "auth": "env",
+        "category": "stock",
+        "requiresNode": true,
+        "tagline": "Arquivos europeus (incl. municipais e 2a Guerra)",
+        "pricing": "free",
+        "verified": true,
+        "longDescription": "A Europeana agrega o patrimonio cultural de mais de 4000 instituicoes europeias num so lugar — museus, bibliotecas e ARQUIVOS, inclusive municipais e governamentais. Este MCP, feito pelo Nardoto, traz essa busca pro chat do Studio. E a melhor porta pratica pra \"conteudo de arquivos do mundo\": em vez de garimpar prefeitura por prefeitura (que nao tem API), voce busca no agregador que ja indexa esse acervo.\n\nA cobertura da 2a Guerra e alta (colecoes dedicadas a 1939-1945, lado europeu) e ha imagem, video, audio e texto. Voce busca por texto, filtra por tipo de midia e, por padrao, so traz conteudo de uso livre (reusability=open) com midia. A resposta inclui a URL de download (do provedor de origem), o thumbnail, a instituicao e os direitos de cada item.\n\nPrecisa de uma chave de API gratuita da Europeana (cadastro rapido). Roda local via npx. Atencao: a midia mora no provedor original (estabilidade e CORS podem variar) e a licenca varia por item — confira os direitos antes de monetizar.",
+        "howItWorksInStudio": "No chat voce pede a midia em linguagem natural (\"foto de Berlim em 1945\", \"documento de arquivo municipal europeu\") e o assistente chama buscar, que consulta a Europeana e devolve os itens com URL de download, instituicao e direitos. Com detalhes voce abre um registro especifico pelo recordId.\n\nO MCP roda localmente via npx. A unica configuracao e a chave gratuita da Europeana, colada uma vez. Confira o campo de direitos antes de usar em monetizado.",
+        "useCases": [
+          {
+            "title": "Acervo de 2a Guerra do lado europeu",
+            "description": "Pegar fotos e documentos europeus de 1939-1945 pra complementar o footage americano (Archive/NARA) com a perspectiva do outro lado.",
+            "example": "Acha fotos de arquivo europeu da 2a Guerra, uso livre"
+          },
+          {
+            "title": "Arquivos municipais e governamentais",
+            "description": "Buscar material de arquivos de cidades e governos europeus que so existe agregado na Europeana, nao numa API propria.",
+            "example": "Procura documentos historicos de arquivos municipais europeus"
+          },
+          {
+            "title": "Patrimonio cultural pra pauta historica",
+            "description": "Encontrar arte, mapas e manuscritos de museus europeus pra ilustrar pautas historicas com material de epoca.",
+            "example": "Acha mapas medievais europeus de uso livre"
+          }
+        ],
+        "setupSteps": [
+          {
+            "step": "Crie uma chave de API gratuita da Europeana (cadastro rapido).",
+            "url": "https://pro.europeana.eu/page/get-api"
+          },
+          {
+            "step": "Adicione o MCP nas configuracoes do Studio com o comando npx -y nardoto-mcp-europeana."
+          },
+          {
+            "step": "Cole a EUROPEANA_API_KEY na configuracao do MCP e clique em Conectar."
+          },
+          {
+            "step": "No chat, peca a midia (ex.: \"foto de arquivo europeu da 2a Guerra\") e confira os direitos antes de usar."
+          }
+        ],
+        "costInfo": "Gratuito. A chave de API da Europeana e gratuita (cadastro). O MCP roda local via npx. A midia mora no provedor de origem (estabilidade/CORS podem variar) e a licenca varia por item — o MCP filtra por reusability=open por padrao e mostra os direitos de cada resultado pra voce conferir antes de monetizar.",
+        "envSchema": [
+          {
+            "key": "EUROPEANA_API_KEY",
+            "label": "Europeana API Key",
+            "secret": true,
+            "required": true,
+            "description": "pro.europeana.eu/page/get-api (gratis)"
+          }
+        ],
+        "capabilities": [
+          "buscar",
+          "detalhes"
+        ]
+      }
     }
   ]
 }
