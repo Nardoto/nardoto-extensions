@@ -197,7 +197,7 @@
     {
       "id": "nardoto-search",
       "name": "Pesquisa Unificada",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "type": "panel",
       "description": "Pesquisa unificada: notícias, imagens e vídeos do YouTube",
       "author": "Nardoto",
@@ -207,7 +207,7 @@
     {
       "id": "nardoto-tradutor",
       "name": "Tradutor IA",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Tradução de textos e legendas com IA",
       "author": "Nardoto",
@@ -217,7 +217,7 @@
     {
       "id": "nardoto-image-gen",
       "name": "ai33",
-      "version": "1.1.5",
+      "version": "1.2.0",
       "type": "panel",
       "description": "Geração de imagens em massa via IA",
       "author": "Nardoto",
@@ -227,7 +227,7 @@
     {
       "id": "nardoto-html-viewer",
       "name": "Visualizador HTML",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "type": "panel",
       "description": "Visualize HTML e JSON gerados pela IA com preview, zoom, console e histórico",
       "author": "Nardoto",
@@ -237,7 +237,7 @@
     {
       "id": "nardoto-inworld-tts",
       "name": "Inworld TTS",
-      "version": "1.8.0",
+      "version": "1.9.0",
       "type": "panel",
       "description": "Geração de voz, clonagem e design de vozes via Inworld AI",
       "author": "Nardoto",
@@ -247,7 +247,7 @@
     {
       "id": "google-tts",
       "name": "Google TTS",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "type": "panel",
       "description": "Texto para fala com Google Gemini TTS - 30 vozes, Audio Drama, estilos de narracao",
       "author": "Nardoto",
@@ -257,7 +257,7 @@
     {
       "id": "nardoto-earth",
       "name": "Nardoto Earth",
-      "version": "1.9.0",
+      "version": "1.10.0",
       "type": "panel",
       "description": "Gerador de rotas KML/ESP com IA para Google Earth e Earth Studio",
       "author": "Nardoto",
@@ -267,7 +267,7 @@
     {
       "id": "nardoto-elevenlabs",
       "name": "ElevenLabs Studio",
-      "version": "1.2.5",
+      "version": "1.3.0",
       "type": "panel",
       "description": "Narração, efeitos sonoros, clonagem de voz e produção de áudio completa via ElevenLabs",
       "detailedDescription": "O ElevenLabs Studio integra a API da ElevenLabs diretamente no Nardoto Studio. Oferece narração com vozes ultra-realistas, clonagem de voz instantânea, geração de efeitos sonoros, isolamento de voz e produção de áudio profissional. Tudo sem sair do editor.",
@@ -286,7 +286,7 @@
     {
       "id": "epidemic-sound",
       "name": "Epidemic Sound",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Busca e download de músicas, SFX, voiceover e stems do Epidemic Sound + Freesound",
       "author": "Nardoto",
@@ -296,7 +296,7 @@
     {
       "id": "mapeamento-filme",
       "name": "Mapeamento de Filme",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Extrai frames, analisa com IA e gera resumo visual de filmes",
       "author": "Nardoto",
@@ -306,7 +306,7 @@
     {
       "id": "remotion-studio",
       "name": "Remotion Studio",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "type": "panel",
       "description": "Crie vídeos com código usando Remotion e IA - criação, cenas e SFX",
       "author": "Nardoto",
@@ -316,7 +316,7 @@
     {
       "id": "nardoto-newsroom",
       "name": "Newsroom Intel",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Coleta noticias, imagens, videos, fontes e creditos em um pacote pronto para videos geopoliticos",
       "author": "Nardoto",
@@ -326,7 +326,7 @@
     {
       "id": "nardoto-ai33-tts",
       "name": "AI33 TTS",
-      "version": "2.3.4",
+      "version": "3.0.0",
       "type": "panel",
       "description": "TTS (texto, batch JSON/SRT, diálogo multi-voz), dublagem, transcrição, efeitos sonoros, voice changer, isolamento de voz, música e imagens via ai33.pro",
       "author": "Nardoto",
@@ -336,7 +336,7 @@
     {
       "id": "nardoto-canva",
       "name": "Canva Studio",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Crie designs profissionais com templates do Canva direto no Nardoto Studio",
       "author": "Nardoto",
@@ -346,7 +346,7 @@
     {
       "id": "nardoto-flow-automation",
       "name": "Automação Flow",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Automação em lote do Google Flow — gera vídeos e imagens com fila inteligente, retry automático e múltiplos modos",
       "author": "Nardoto",
@@ -356,7 +356,7 @@
     {
       "id": "hyperframes",
       "name": "HyperFrames",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Crie vídeos com HTML + CSS + GSAP — renderização determinística via HyperFrames",
       "author": "Nardoto",
@@ -366,7 +366,7 @@
     {
       "id": "nardoto-rvc",
       "name": "RVC Voice Changer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Voice changer local via RVC — troca a voz mantendo a sincronia labial",
       "author": "Nardoto",
@@ -376,7 +376,7 @@
     {
       "id": "nardoto-scripts",
       "name": "Nardoto Scripts",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "Console de automação JavaScript para pipelines criativos",
       "author": "Nardoto",
@@ -386,7 +386,7 @@
     {
       "id": "cortes-automaticos",
       "name": "Cortes Automáticos",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "panel",
       "description": "A IA analisa o SRT, decide os cortes pra condensar a narrativa e exporta o projeto pro CapCut",
       "author": "Nardoto",
@@ -396,7 +396,7 @@
     {
       "id": "nardoto-roteiro-lote",
       "name": "Roteiros em Lote",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "type": "panel",
       "description": "Dispara o coordenador de vídeo em lote (Claude/Codex/Gemini), com TTS Inworld e regeneração de prompts opcional",
       "author": "Nardoto",
