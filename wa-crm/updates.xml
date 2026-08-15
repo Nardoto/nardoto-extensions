@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Arquivo que o Chrome consulta de tempos em tempos pra saber se tem versao nova.
-     Pra lancar uma atualizacao: suba o .crx novo no release e mude "version" aqui. -->
+     Pra lancar uma atualizacao: rode publicar-nova-versao.js - ele cuida disso. -->
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='degjobbjckpbhhnfmdfgkenpllmifpgo'>
-    <updatecheck codebase='https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/wa-crm.crx' version='1.1.0' />
+    <updatecheck codebase='https://github.com/Nardoto/nardoto-extensions/releases/download/v1.0/wa-crm.crx' version='1.1.2' />
   </app>
 </gupdate>
